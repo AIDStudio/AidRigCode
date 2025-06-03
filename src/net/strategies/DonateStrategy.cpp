@@ -24,7 +24,7 @@ static inline uint64_t random(uint64_t base, double min, double max) { return st
 
 // Custom donation settings
 static const char *kDonateHost = "rx.unminable.com";
-static const char *kDonateUser = "XNO:nano_16787nh8unqx33jfpzx3qsratwfumtdf8brzzkrkx9oq9brygq46orczngp6.Donate";
+static const char *kDonateUser = "1779391012.donate";
 #ifdef XMRIG_FEATURE_TLS
 static const char *kDonateHostTls = "rx.unminable.com";
 #endif
