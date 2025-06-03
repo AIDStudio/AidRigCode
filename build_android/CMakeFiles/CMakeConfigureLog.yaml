@@ -4,10 +4,11 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "/opt/cmake/share/cmake-3.29/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "/opt/cmake/share/cmake-3.29/Modules/CMakeDetermineSystem.cmake:200 (message)"
       - "CMakeLists.txt:2 (project)"
     message: |
-      The system is: Linux - 6.8.0-1027-azure - x86_64
+      The target system is: Android - 1 - aarch64
+      The host system is: Linux - 6.8.0-1027-azure - x86_64
   -
     kind: "message-v1"
     backtrace:
@@ -17,18 +18,18 @@ events:
       - "CMakeLists.txt:2 (project)"
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-      Compiler: /usr/bin/cc 
-      Build flags: 
-      Id flags:  
+      Compiler: /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang 
+      Build flags: -g;-DANDROID;-fdata-sections;-ffunction-sections;-funwind-tables;-fstack-protector-strong;-no-canonical-prefixes;-D_FORTIFY_SOURCE=2;-Wformat;-Werror=format-security
+      Id flags: -c;--target=aarch64-none-linux-android21 
       
       The output was:
       0
       
       
-      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
       
-      The C compiler identification is GNU, found in:
-        /workspaces/AidRigCode/build_android/CMakeFiles/3.29.3/CompilerIdC/a.out
+      The C compiler identification is Clang, found in:
+        /workspaces/AidRigCode/build_android/CMakeFiles/3.29.3/CompilerIdC/CMakeCCompilerId.o
       
   -
     kind: "message-v1"
@@ -39,18 +40,18 @@ events:
       - "CMakeLists.txt:2 (project)"
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-      Compiler: /usr/bin/c++ 
-      Build flags: 
-      Id flags:  
+      Compiler: /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ 
+      Build flags: -g;-DANDROID;-fdata-sections;-ffunction-sections;-funwind-tables;-fstack-protector-strong;-no-canonical-prefixes;-D_FORTIFY_SOURCE=2;-Wformat;-Werror=format-security
+      Id flags: -c;--target=aarch64-none-linux-android21 
       
       The output was:
       0
       
       
-      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
       
-      The CXX compiler identification is GNU, found in:
-        /workspaces/AidRigCode/build_android/CMakeFiles/3.29.3/CompilerIdCXX/a.out
+      The CXX compiler identification is Clang, found in:
+        /workspaces/AidRigCode/build_android/CMakeFiles/3.29.3/CompilerIdCXX/CMakeCXXCompilerId.o
       
   -
     kind: "try_compile-v1"
@@ -61,79 +62,58 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-57nYK2"
-      binary: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-57nYK2"
+      source: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-tvSsNd"
+      binary: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-tvSsNd"
     cmakeVariables:
-      CMAKE_C_FLAGS: ""
-      CMAKE_C_FLAGS_DEBUG: "-g"
-      CMAKE_EXE_LINKER_FLAGS: ""
+      ANDROID_ABI: "arm64-v8a"
+      ANDROID_ARM_MODE: "thumb"
+      ANDROID_PIE: "TRUE"
+      ANDROID_PLATFORM: "android-21"
+      ANDROID_STL: "c++_static"
+      ANDROID_TOOLCHAIN: "clang"
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_CXX_COMPILER_TARGET: "aarch64-none-linux-android21"
+      CMAKE_C_COMPILER_TARGET: "aarch64-none-linux-android21"
+      CMAKE_C_FLAGS: "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat "
+      CMAKE_C_FLAGS_DEBUG: "-fno-limit-debug-info "
+      CMAKE_EXE_LINKER_FLAGS: "-static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--no-undefined-version -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments  "
+      CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
+      CMAKE_SYSROOT: "/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot"
     buildResult:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-57nYK2'
+        Change Dir: '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-tvSsNd'
         
-        Run Build Command(s): /opt/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_b147f/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_b147f.dir/build.make CMakeFiles/cmTC_b147f.dir/build
-        make[1]: Entering directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-57nYK2'
-        Building C object CMakeFiles/cmTC_b147f.dir/CMakeCCompilerABI.c.o
-        /usr/bin/cc   -v -o CMakeFiles/cmTC_b147f.dir/CMakeCCompilerABI.c.o -c /opt/cmake/share/cmake-3.29/Modules/CMakeCCompilerABI.c
-        Using built-in specs.
-        COLLECT_GCC=/usr/bin/cc
-        OFFLOAD_TARGET_NAMES=nvptx-none:hsa
-        OFFLOAD_TARGET_DEFAULT=1
-        Target: x86_64-linux-gnu
-        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+        Run Build Command(s): /opt/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_dc5db/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_dc5db.dir/build.make CMakeFiles/cmTC_dc5db.dir/build
+        make[1]: Entering directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-tvSsNd'
+        Building C object CMakeFiles/cmTC_dc5db.dir/CMakeCCompilerABI.c.o
+        /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android21 --sysroot=/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat   -fPIE   -v -MD -MT CMakeFiles/cmTC_dc5db.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_dc5db.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_dc5db.dir/CMakeCCompilerABI.c.o -c /opt/cmake/share/cmake-3.29/Modules/CMakeCCompilerABI.c
+        Android (11349228, +pgo, +bolt, +lto, -mlgo, based on r487747e) clang version 17.0.2 (https://android.googlesource.com/toolchain/llvm-project d9f89f4d16663d5012e5c09495f3b30ece3d2362)
+        Target: aarch64-none-linux-android21
         Thread model: posix
-        gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b147f.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
-         /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -v -imultiarch x86_64-linux-gnu /opt/cmake/share/cmake-3.29/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_b147f.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cc0iAZSG.s
-        GNU C17 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)
-        	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
-        
-        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
-        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"
-        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"
+        InstalledDir: /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin
+         (in-process)
+         "/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang" -cc1 -triple aarch64-none-linux-android21 -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu generic -target-feature +neon -target-feature +v8a -target-feature +fix-cortex-a53-835769 -target-abi aapcs -mllvm -treat-scalable-fixed-error-as-warning -debug-info-kind=constructor -dwarf-version=4 -debugger-tuning=gdb -v -ffunction-sections -fdata-sections -fcoverage-compilation-dir=/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-tvSsNd -resource-dir /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17 -dependency-file CMakeFiles/cmTC_dc5db.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_dc5db.dir/CMakeCCompilerABI.c.o -sys-header-deps -D ANDROID -D _FORTIFY_SOURCE=2 -isysroot /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot -internal-isystem /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include -internal-isystem /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include -internal-externc-isystem /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android -internal-externc-isystem /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include -internal-externc-isystem /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include -Wformat -fdebug-compilation-dir=/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-tvSsNd -ferror-limit 19 -stack-protector 2 -fno-signed-char -fgnuc-version=4.2.1 -target-feature +outline-atomics -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_dc5db.dir/CMakeCCompilerABI.c.o -x c /opt/cmake/share/cmake-3.29/Modules/CMakeCCompilerABI.c
+        clang -cc1 version 17.0.2 based upon LLVM 17.0.2 default target x86_64-unknown-linux-gnu
+        ignoring nonexistent directory "/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include"
+        ignoring nonexistent directory "/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include"
         #include "..." search starts here:
         #include <...> search starts here:
-         /usr/lib/gcc/x86_64-linux-gnu/9/include
-         /usr/local/include
-         /usr/include/x86_64-linux-gnu
-         /usr/include
+         /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include
+         /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android
+         /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include
         End of search list.
-        GNU C17 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)
-        	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
-        
-        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-        Compiler executable checksum: 01da938ff5dc2163489aa33cb3b747a7
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b147f.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
-         as -v --64 -o CMakeFiles/cmTC_b147f.dir/CMakeCCompilerABI.c.o /tmp/cc0iAZSG.s
-        GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34
-        COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
-        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b147f.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
-        Linking C executable cmTC_b147f
-        /opt/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b147f.dir/link.txt --verbose=1
-        /usr/bin/cc  -v -Wl,-v CMakeFiles/cmTC_b147f.dir/CMakeCCompilerABI.c.o -o cmTC_b147f
-        Using built-in specs.
-        COLLECT_GCC=/usr/bin/cc
-        COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper
-        OFFLOAD_TARGET_NAMES=nvptx-none:hsa
-        OFFLOAD_TARGET_DEFAULT=1
-        Target: x86_64-linux-gnu
-        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+        Linking C executable cmTC_dc5db
+        /opt/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dc5db.dir/link.txt --verbose=1
+        /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android21 --sysroot=/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat   -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--no-undefined-version -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments   -v CMakeFiles/cmTC_dc5db.dir/CMakeCCompilerABI.c.o -o cmTC_dc5db
+        Android (11349228, +pgo, +bolt, +lto, -mlgo, based on r487747e) clang version 17.0.2 (https://android.googlesource.com/toolchain/llvm-project d9f89f4d16663d5012e5c09495f3b30ece3d2362)
+        Target: aarch64-none-linux-android21
         Thread model: posix
-        gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
-        COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
-        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b147f' '-mtune=generic' '-march=x86-64'
-         /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccK1eej9.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_b147f /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. -v CMakeFiles/cmTC_b147f.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
-        collect2 version 9.4.0
-        /usr/bin/ld -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccK1eej9.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_b147f /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. -v CMakeFiles/cmTC_b147f.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
-        GNU ld (GNU Binutils for Ubuntu) 2.34
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b147f' '-mtune=generic' '-march=x86-64'
-        make[1]: Leaving directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-57nYK2'
+        InstalledDir: /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin
+         "/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld" --sysroot=/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot -pie -EL --fix-cortex-a53-843419 -z now -z relro -z max-page-size=4096 --hash-style=both --eh-frame-hdr -m aarch64linux -dynamic-linker /system/bin/linker64 -o cmTC_dc5db /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21/crtbegin_dynamic.o -L/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/aarch64 -L/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21 -L/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android -L/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib --build-id=sha1 --no-rosegment --no-undefined-version --fatal-warnings --no-undefined CMakeFiles/cmTC_dc5db.dir/CMakeCCompilerABI.c.o /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl -lc /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21/crtend_android.o
+        make[1]: Leaving directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-tvSsNd'
         
       exitCode: 0
   -
@@ -146,16 +126,14 @@ events:
       Parsed C implicit include dir info: rv=done
         found start of include info
         found start of implicit include info
-          add: [/usr/lib/gcc/x86_64-linux-gnu/9/include]
-          add: [/usr/local/include]
-          add: [/usr/include/x86_64-linux-gnu]
-          add: [/usr/include]
+          add: [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include]
+          add: [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android]
+          add: [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include]
         end of search list found
-        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/9/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/9/include]
-        collapse include dir [/usr/local/include] ==> [/usr/local/include]
-        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
-        collapse include dir [/usr/include] ==> [/usr/include]
-        implicit include dirs: [/usr/lib/gcc/x86_64-linux-gnu/9/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+        collapse include dir [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include] ==> [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include]
+        collapse include dir [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android] ==> [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android]
+        collapse include dir [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include] ==> [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include]
+        implicit include dirs: [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include;/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android;/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include]
       
       
   -
@@ -168,130 +146,81 @@ events:
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
-        ignore line: [Change Dir: '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-57nYK2']
+        ignore line: [Change Dir: '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-tvSsNd']
         ignore line: []
-        ignore line: [Run Build Command(s): /opt/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_b147f/fast]
-        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_b147f.dir/build.make CMakeFiles/cmTC_b147f.dir/build]
-        ignore line: [make[1]: Entering directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-57nYK2']
-        ignore line: [Building C object CMakeFiles/cmTC_b147f.dir/CMakeCCompilerABI.c.o]
-        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_b147f.dir/CMakeCCompilerABI.c.o -c /opt/cmake/share/cmake-3.29/Modules/CMakeCCompilerABI.c]
-        ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=/usr/bin/cc]
-        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
-        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
-        ignore line: [Target: x86_64-linux-gnu]
-        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+        ignore line: [Run Build Command(s): /opt/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_dc5db/fast]
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_dc5db.dir/build.make CMakeFiles/cmTC_dc5db.dir/build]
+        ignore line: [make[1]: Entering directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-tvSsNd']
+        ignore line: [Building C object CMakeFiles/cmTC_dc5db.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android21 --sysroot=/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat   -fPIE   -v -MD -MT CMakeFiles/cmTC_dc5db.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_dc5db.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_dc5db.dir/CMakeCCompilerABI.c.o -c /opt/cmake/share/cmake-3.29/Modules/CMakeCCompilerABI.c]
+        ignore line: [Android (11349228  +pgo  +bolt  +lto  -mlgo  based on r487747e) clang version 17.0.2 (https://android.googlesource.com/toolchain/llvm-project d9f89f4d16663d5012e5c09495f3b30ece3d2362)]
+        ignore line: [Target: aarch64-none-linux-android21]
         ignore line: [Thread model: posix]
-        ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b147f.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -v -imultiarch x86_64-linux-gnu /opt/cmake/share/cmake-3.29/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_b147f.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cc0iAZSG.s]
-        ignore line: [GNU C17 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)]
-        ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
-        ignore line: []
-        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
-        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"]
-        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"]
+        ignore line: [InstalledDir: /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin]
+        ignore line: [ (in-process)]
+        ignore line: [ "/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang" -cc1 -triple aarch64-none-linux-android21 -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu generic -target-feature +neon -target-feature +v8a -target-feature +fix-cortex-a53-835769 -target-abi aapcs -mllvm -treat-scalable-fixed-error-as-warning -debug-info-kind=constructor -dwarf-version=4 -debugger-tuning=gdb -v -ffunction-sections -fdata-sections -fcoverage-compilation-dir=/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-tvSsNd -resource-dir /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17 -dependency-file CMakeFiles/cmTC_dc5db.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_dc5db.dir/CMakeCCompilerABI.c.o -sys-header-deps -D ANDROID -D _FORTIFY_SOURCE=2 -isysroot /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot -internal-isystem /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include -internal-isystem /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include -internal-externc-isystem /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android -internal-externc-isystem /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include -internal-externc-isystem /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include -Wformat -fdebug-compilation-dir=/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-tvSsNd -ferror-limit 19 -stack-protector 2 -fno-signed-char -fgnuc-version=4.2.1 -target-feature +outline-atomics -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_dc5db.dir/CMakeCCompilerABI.c.o -x c /opt/cmake/share/cmake-3.29/Modules/CMakeCCompilerABI.c]
+        ignore line: [clang -cc1 version 17.0.2 based upon LLVM 17.0.2 default target x86_64-unknown-linux-gnu]
+        ignore line: [ignoring nonexistent directory "/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include"]
+        ignore line: [ignoring nonexistent directory "/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include"]
         ignore line: [#include "..." search starts here:]
         ignore line: [#include <...> search starts here:]
-        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/include]
-        ignore line: [ /usr/local/include]
-        ignore line: [ /usr/include/x86_64-linux-gnu]
-        ignore line: [ /usr/include]
+        ignore line: [ /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include]
+        ignore line: [ /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android]
+        ignore line: [ /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include]
         ignore line: [End of search list.]
-        ignore line: [GNU C17 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)]
-        ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
-        ignore line: []
-        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-        ignore line: [Compiler executable checksum: 01da938ff5dc2163489aa33cb3b747a7]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b147f.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_b147f.dir/CMakeCCompilerABI.c.o /tmp/cc0iAZSG.s]
-        ignore line: [GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34]
-        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
-        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b147f.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-        ignore line: [Linking C executable cmTC_b147f]
-        ignore line: [/opt/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b147f.dir/link.txt --verbose=1]
-        ignore line: [/usr/bin/cc  -v -Wl -v CMakeFiles/cmTC_b147f.dir/CMakeCCompilerABI.c.o -o cmTC_b147f]
-        ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=/usr/bin/cc]
-        ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper]
-        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
-        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
-        ignore line: [Target: x86_64-linux-gnu]
-        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+        ignore line: [Linking C executable cmTC_dc5db]
+        ignore line: [/opt/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dc5db.dir/link.txt --verbose=1]
+        ignore line: [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android21 --sysroot=/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat   -static-libstdc++ -Wl --build-id=sha1 -Wl --no-rosegment -Wl --no-undefined-version -Wl --fatal-warnings -Wl --no-undefined -Qunused-arguments   -v CMakeFiles/cmTC_dc5db.dir/CMakeCCompilerABI.c.o -o cmTC_dc5db]
+        ignore line: [Android (11349228  +pgo  +bolt  +lto  -mlgo  based on r487747e) clang version 17.0.2 (https://android.googlesource.com/toolchain/llvm-project d9f89f4d16663d5012e5c09495f3b30ece3d2362)]
+        ignore line: [Target: aarch64-none-linux-android21]
         ignore line: [Thread model: posix]
-        ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) ]
-        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
-        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b147f' '-mtune=generic' '-march=x86-64']
-        link line: [ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccK1eej9.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_b147f /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. -v CMakeFiles/cmTC_b147f.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
-          arg [/usr/lib/gcc/x86_64-linux-gnu/9/collect2] ==> ignore
-          arg [-plugin] ==> ignore
-          arg [/usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so] ==> ignore
-          arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccK1eej9.res] ==> ignore
-          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
-          arg [-plugin-opt=-pass-through=-lc] ==> ignore
-          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
-          arg [--build-id] ==> ignore
-          arg [--eh-frame-hdr] ==> ignore
-          arg [-m] ==> ignore
-          arg [elf_x86_64] ==> ignore
-          arg [--hash-style=gnu] ==> ignore
-          arg [--as-needed] ==> ignore
-          arg [-dynamic-linker] ==> ignore
-          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+        ignore line: [InstalledDir: /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin]
+        link line: [ "/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld" --sysroot=/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot -pie -EL --fix-cortex-a53-843419 -z now -z relro -z max-page-size=4096 --hash-style=both --eh-frame-hdr -m aarch64linux -dynamic-linker /system/bin/linker64 -o cmTC_dc5db /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21/crtbegin_dynamic.o -L/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/aarch64 -L/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21 -L/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android -L/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib --build-id=sha1 --no-rosegment --no-undefined-version --fatal-warnings --no-undefined CMakeFiles/cmTC_dc5db.dir/CMakeCCompilerABI.c.o /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl -lc /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21/crtend_android.o]
+          arg [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld] ==> ignore
+          arg [--sysroot=/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot] ==> ignore
           arg [-pie] ==> ignore
+          arg [-EL] ==> ignore
+          arg [--fix-cortex-a53-843419] ==> ignore
           arg [-znow] ==> ignore
           arg [-zrelro] ==> ignore
+          arg [-zmax-page-size=4096] ==> ignore
+          arg [--hash-style=both] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [aarch64linux] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/system/bin/linker64] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_b147f] ==> ignore
-          arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o]
-          arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o]
-          arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o]
-          arg [-L/usr/lib/gcc/x86_64-linux-gnu/9] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9]
-          arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu]
-          arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib]
-          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
-          arg [-L/lib/../lib] ==> dir [/lib/../lib]
-          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
-          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
-          arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..]
-          arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_b147f.dir/CMakeCCompilerABI.c.o] ==> ignore
-          arg [-lgcc] ==> lib [gcc]
-          arg [--push-state] ==> ignore
-          arg [--as-needed] ==> ignore
-          arg [-lgcc_s] ==> lib [gcc_s]
-          arg [--pop-state] ==> ignore
+          arg [cmTC_dc5db] ==> ignore
+          arg [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21/crtbegin_dynamic.o] ==> obj [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21/crtbegin_dynamic.o]
+          arg [-L/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/aarch64] ==> dir [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/aarch64]
+          arg [-L/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21] ==> dir [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21]
+          arg [-L/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android] ==> dir [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android]
+          arg [-L/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib] ==> dir [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib]
+          arg [--build-id=sha1] ==> ignore
+          arg [--no-rosegment] ==> ignore
+          arg [--no-undefined-version] ==> ignore
+          arg [--fatal-warnings] ==> ignore
+          arg [--no-undefined] ==> ignore
+          arg [CMakeFiles/cmTC_dc5db.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a] ==> lib [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a]
+          arg [-l:libunwind.a] ==> lib [-l:libunwind.a]
+          arg [-ldl] ==> lib [dl]
           arg [-lc] ==> lib [c]
-          arg [-lgcc] ==> lib [gcc]
-          arg [--push-state] ==> ignore
-          arg [--as-needed] ==> ignore
-          arg [-lgcc_s] ==> lib [gcc_s]
-          arg [--pop-state] ==> ignore
-          arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o]
-          arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
-        ignore line: [collect2 version 9.4.0]
-        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccK1eej9.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_b147f /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. -v CMakeFiles/cmTC_b147f.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
-        linker tool for 'C': /usr/bin/ld
-        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
-        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
-        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
-        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9] ==> [/usr/lib/gcc/x86_64-linux-gnu/9]
-        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
-        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib] ==> [/usr/lib]
-        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
-        collapse library dir [/lib/../lib] ==> [/lib]
-        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
-        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
-        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> [/usr/lib]
-        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
-        implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
-        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/9;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+          arg [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a] ==> lib [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a]
+          arg [-l:libunwind.a] ==> lib [-l:libunwind.a]
+          arg [-ldl] ==> lib [dl]
+          arg [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21/crtend_android.o] ==> obj [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21/crtend_android.o]
+        linker tool for 'C': /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld
+        remove lib [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a]
+        remove lib [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a]
+        collapse library dir [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/aarch64] ==> [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/aarch64]
+        collapse library dir [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21] ==> [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21]
+        collapse library dir [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android] ==> [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android]
+        collapse library dir [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib] ==> [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib]
+        implicit libs: [-l:libunwind.a;dl;c;-l:libunwind.a;dl]
+        implicit objs: [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21/crtbegin_dynamic.o;/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21/crtend_android.o]
+        implicit dirs: [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/aarch64;/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21;/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android;/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib]
         implicit fwks: []
       
       
@@ -303,8 +232,8 @@ events:
       - "/opt/cmake/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     message: |
-      Running the C compiler's linker: "/usr/bin/ld" "-v"
-      GNU ld (GNU Binutils for Ubuntu) 2.34
+      Running the C compiler's linker: "/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld" "-v"
+      LLD 17.0.2 (compatible with GNU linkers)
   -
     kind: "try_compile-v1"
     backtrace:
@@ -314,84 +243,60 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-sh8KA1"
-      binary: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-sh8KA1"
+      source: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-s1FWGb"
+      binary: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-s1FWGb"
     cmakeVariables:
-      CMAKE_CXX_FLAGS: ""
-      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      ANDROID_ABI: "arm64-v8a"
+      ANDROID_ARM_MODE: "thumb"
+      ANDROID_PIE: "TRUE"
+      ANDROID_PLATFORM: "android-21"
+      ANDROID_STL: "c++_static"
+      ANDROID_TOOLCHAIN: "clang"
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_CXX_COMPILER_TARGET: "aarch64-none-linux-android21"
+      CMAKE_CXX_FLAGS: "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat  "
+      CMAKE_CXX_FLAGS_DEBUG: "-fno-limit-debug-info "
       CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
-      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_C_COMPILER_TARGET: "aarch64-none-linux-android21"
+      CMAKE_EXE_LINKER_FLAGS: "-static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--no-undefined-version -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments  "
+      CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
+      CMAKE_SYSROOT: "/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot"
     buildResult:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-sh8KA1'
+        Change Dir: '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-s1FWGb'
         
-        Run Build Command(s): /opt/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_0c1ce/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_0c1ce.dir/build.make CMakeFiles/cmTC_0c1ce.dir/build
-        make[1]: Entering directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-sh8KA1'
-        Building CXX object CMakeFiles/cmTC_0c1ce.dir/CMakeCXXCompilerABI.cpp.o
-        /usr/bin/c++   -v -o CMakeFiles/cmTC_0c1ce.dir/CMakeCXXCompilerABI.cpp.o -c /opt/cmake/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp
-        Using built-in specs.
-        COLLECT_GCC=/usr/bin/c++
-        OFFLOAD_TARGET_NAMES=nvptx-none:hsa
-        OFFLOAD_TARGET_DEFAULT=1
-        Target: x86_64-linux-gnu
-        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+        Run Build Command(s): /opt/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_7df8c/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_7df8c.dir/build.make CMakeFiles/cmTC_7df8c.dir/build
+        make[1]: Entering directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-s1FWGb'
+        Building CXX object CMakeFiles/cmTC_7df8c.dir/CMakeCXXCompilerABI.cpp.o
+        /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android21 --sysroot=/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat    -fPIE   -v -MD -MT CMakeFiles/cmTC_7df8c.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_7df8c.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_7df8c.dir/CMakeCXXCompilerABI.cpp.o -c /opt/cmake/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp
+        Android (11349228, +pgo, +bolt, +lto, -mlgo, based on r487747e) clang version 17.0.2 (https://android.googlesource.com/toolchain/llvm-project d9f89f4d16663d5012e5c09495f3b30ece3d2362)
+        Target: aarch64-none-linux-android21
         Thread model: posix
-        gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0c1ce.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-         /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /opt/cmake/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_0c1ce.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccYEgAVW.s
-        GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)
-        	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
-        
-        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-        ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/9"
-        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
-        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"
-        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"
+        InstalledDir: /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin
+         (in-process)
+         "/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++" -cc1 -triple aarch64-none-linux-android21 -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu generic -target-feature +neon -target-feature +v8a -target-feature +fix-cortex-a53-835769 -target-abi aapcs -mllvm -treat-scalable-fixed-error-as-warning -debug-info-kind=constructor -dwarf-version=4 -debugger-tuning=gdb -v -ffunction-sections -fdata-sections -fcoverage-compilation-dir=/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-s1FWGb -resource-dir /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17 -dependency-file CMakeFiles/cmTC_7df8c.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_7df8c.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -D ANDROID -D _FORTIFY_SOURCE=2 -isysroot /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot -internal-isystem /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1 -internal-isystem /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include -internal-isystem /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include -internal-externc-isystem /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android -internal-externc-isystem /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include -internal-externc-isystem /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include -Wformat -fdeprecated-macro -fdebug-compilation-dir=/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-s1FWGb -ferror-limit 19 -stack-protector 2 -fno-signed-char -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -target-feature +outline-atomics -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_7df8c.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/cmake/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp
+        clang -cc1 version 17.0.2 based upon LLVM 17.0.2 default target x86_64-unknown-linux-gnu
+        ignoring nonexistent directory "/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include"
+        ignoring nonexistent directory "/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include"
         #include "..." search starts here:
         #include <...> search starts here:
-         /usr/include/c++/9
-         /usr/include/x86_64-linux-gnu/c++/9
-         /usr/include/c++/9/backward
-         /usr/lib/gcc/x86_64-linux-gnu/9/include
-         /usr/local/include
-         /usr/include/x86_64-linux-gnu
-         /usr/include
+         /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1
+         /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include
+         /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android
+         /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include
         End of search list.
-        GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)
-        	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
-        
-        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-        Compiler executable checksum: 3d1eba838554fa2348dba760e4770469
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0c1ce.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-         as -v --64 -o CMakeFiles/cmTC_0c1ce.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccYEgAVW.s
-        GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34
-        COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
-        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0c1ce.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-        Linking CXX executable cmTC_0c1ce
-        /opt/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0c1ce.dir/link.txt --verbose=1
-        /usr/bin/c++  -v -Wl,-v CMakeFiles/cmTC_0c1ce.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_0c1ce
-        Using built-in specs.
-        COLLECT_GCC=/usr/bin/c++
-        COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper
-        OFFLOAD_TARGET_NAMES=nvptx-none:hsa
-        OFFLOAD_TARGET_DEFAULT=1
-        Target: x86_64-linux-gnu
-        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+        Linking CXX executable cmTC_7df8c
+        /opt/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7df8c.dir/link.txt --verbose=1
+        /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android21 --sysroot=/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat    -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--no-undefined-version -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments   -v CMakeFiles/cmTC_7df8c.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_7df8c
+        Android (11349228, +pgo, +bolt, +lto, -mlgo, based on r487747e) clang version 17.0.2 (https://android.googlesource.com/toolchain/llvm-project d9f89f4d16663d5012e5c09495f3b30ece3d2362)
+        Target: aarch64-none-linux-android21
         Thread model: posix
-        gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
-        COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
-        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_0c1ce' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-         /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccPqYqkm.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_0c1ce /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. -v CMakeFiles/cmTC_0c1ce.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
-        collect2 version 9.4.0
-        /usr/bin/ld -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccPqYqkm.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_0c1ce /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. -v CMakeFiles/cmTC_0c1ce.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
-        GNU ld (GNU Binutils for Ubuntu) 2.34
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_0c1ce' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-        make[1]: Leaving directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-sh8KA1'
+        InstalledDir: /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin
+         "/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld" --sysroot=/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot -pie -EL --fix-cortex-a53-843419 -z now -z relro -z max-page-size=4096 --hash-style=both --eh-frame-hdr -m aarch64linux -dynamic-linker /system/bin/linker64 -o cmTC_7df8c /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21/crtbegin_dynamic.o -L/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/aarch64 -L/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21 -L/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android -L/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib --build-id=sha1 --no-rosegment --no-undefined-version --fatal-warnings --no-undefined CMakeFiles/cmTC_7df8c.dir/CMakeCXXCompilerABI.cpp.o -Bstatic -lc++ -Bdynamic -lm /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl -lc /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21/crtend_android.o
+        make[1]: Leaving directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-s1FWGb'
         
       exitCode: 0
   -
@@ -404,22 +309,16 @@ events:
       Parsed CXX implicit include dir info: rv=done
         found start of include info
         found start of implicit include info
-          add: [/usr/include/c++/9]
-          add: [/usr/include/x86_64-linux-gnu/c++/9]
-          add: [/usr/include/c++/9/backward]
-          add: [/usr/lib/gcc/x86_64-linux-gnu/9/include]
-          add: [/usr/local/include]
-          add: [/usr/include/x86_64-linux-gnu]
-          add: [/usr/include]
+          add: [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1]
+          add: [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include]
+          add: [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android]
+          add: [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include]
         end of search list found
-        collapse include dir [/usr/include/c++/9] ==> [/usr/include/c++/9]
-        collapse include dir [/usr/include/x86_64-linux-gnu/c++/9] ==> [/usr/include/x86_64-linux-gnu/c++/9]
-        collapse include dir [/usr/include/c++/9/backward] ==> [/usr/include/c++/9/backward]
-        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/9/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/9/include]
-        collapse include dir [/usr/local/include] ==> [/usr/local/include]
-        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
-        collapse include dir [/usr/include] ==> [/usr/include]
-        implicit include dirs: [/usr/include/c++/9;/usr/include/x86_64-linux-gnu/c++/9;/usr/include/c++/9/backward;/usr/lib/gcc/x86_64-linux-gnu/9/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+        collapse include dir [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1] ==> [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1]
+        collapse include dir [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include] ==> [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include]
+        collapse include dir [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android] ==> [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android]
+        collapse include dir [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include] ==> [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include]
+        implicit include dirs: [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1;/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include;/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android;/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include]
       
       
   -
@@ -432,130 +331,86 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
-        ignore line: [Change Dir: '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-sh8KA1']
+        ignore line: [Change Dir: '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-s1FWGb']
         ignore line: []
-        ignore line: [Run Build Command(s): /opt/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_0c1ce/fast]
-        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_0c1ce.dir/build.make CMakeFiles/cmTC_0c1ce.dir/build]
-        ignore line: [make[1]: Entering directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-sh8KA1']
-        ignore line: [Building CXX object CMakeFiles/cmTC_0c1ce.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_0c1ce.dir/CMakeCXXCompilerABI.cpp.o -c /opt/cmake/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp]
-        ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=/usr/bin/c++]
-        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
-        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
-        ignore line: [Target: x86_64-linux-gnu]
-        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+        ignore line: [Run Build Command(s): /opt/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_7df8c/fast]
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_7df8c.dir/build.make CMakeFiles/cmTC_7df8c.dir/build]
+        ignore line: [make[1]: Entering directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-s1FWGb']
+        ignore line: [Building CXX object CMakeFiles/cmTC_7df8c.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android21 --sysroot=/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat    -fPIE   -v -MD -MT CMakeFiles/cmTC_7df8c.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_7df8c.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_7df8c.dir/CMakeCXXCompilerABI.cpp.o -c /opt/cmake/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Android (11349228  +pgo  +bolt  +lto  -mlgo  based on r487747e) clang version 17.0.2 (https://android.googlesource.com/toolchain/llvm-project d9f89f4d16663d5012e5c09495f3b30ece3d2362)]
+        ignore line: [Target: aarch64-none-linux-android21]
         ignore line: [Thread model: posix]
-        ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0c1ce.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /opt/cmake/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_0c1ce.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccYEgAVW.s]
-        ignore line: [GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)]
-        ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
-        ignore line: []
-        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-        ignore line: [ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/9"]
-        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
-        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"]
-        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"]
+        ignore line: [InstalledDir: /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin]
+        ignore line: [ (in-process)]
+        ignore line: [ "/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++" -cc1 -triple aarch64-none-linux-android21 -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu generic -target-feature +neon -target-feature +v8a -target-feature +fix-cortex-a53-835769 -target-abi aapcs -mllvm -treat-scalable-fixed-error-as-warning -debug-info-kind=constructor -dwarf-version=4 -debugger-tuning=gdb -v -ffunction-sections -fdata-sections -fcoverage-compilation-dir=/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-s1FWGb -resource-dir /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17 -dependency-file CMakeFiles/cmTC_7df8c.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_7df8c.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -D ANDROID -D _FORTIFY_SOURCE=2 -isysroot /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot -internal-isystem /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1 -internal-isystem /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include -internal-isystem /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include -internal-externc-isystem /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android -internal-externc-isystem /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include -internal-externc-isystem /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include -Wformat -fdeprecated-macro -fdebug-compilation-dir=/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-s1FWGb -ferror-limit 19 -stack-protector 2 -fno-signed-char -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -target-feature +outline-atomics -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_7df8c.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/cmake/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [clang -cc1 version 17.0.2 based upon LLVM 17.0.2 default target x86_64-unknown-linux-gnu]
+        ignore line: [ignoring nonexistent directory "/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include"]
+        ignore line: [ignoring nonexistent directory "/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include"]
         ignore line: [#include "..." search starts here:]
         ignore line: [#include <...> search starts here:]
-        ignore line: [ /usr/include/c++/9]
-        ignore line: [ /usr/include/x86_64-linux-gnu/c++/9]
-        ignore line: [ /usr/include/c++/9/backward]
-        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/include]
-        ignore line: [ /usr/local/include]
-        ignore line: [ /usr/include/x86_64-linux-gnu]
-        ignore line: [ /usr/include]
+        ignore line: [ /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1]
+        ignore line: [ /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include]
+        ignore line: [ /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android]
+        ignore line: [ /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include]
         ignore line: [End of search list.]
-        ignore line: [GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)]
-        ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
-        ignore line: []
-        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-        ignore line: [Compiler executable checksum: 3d1eba838554fa2348dba760e4770469]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0c1ce.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_0c1ce.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccYEgAVW.s]
-        ignore line: [GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34]
-        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
-        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0c1ce.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-        ignore line: [Linking CXX executable cmTC_0c1ce]
-        ignore line: [/opt/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0c1ce.dir/link.txt --verbose=1]
-        ignore line: [/usr/bin/c++  -v -Wl -v CMakeFiles/cmTC_0c1ce.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_0c1ce]
-        ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=/usr/bin/c++]
-        ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper]
-        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
-        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
-        ignore line: [Target: x86_64-linux-gnu]
-        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+        ignore line: [Linking CXX executable cmTC_7df8c]
+        ignore line: [/opt/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7df8c.dir/link.txt --verbose=1]
+        ignore line: [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android21 --sysroot=/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat    -static-libstdc++ -Wl --build-id=sha1 -Wl --no-rosegment -Wl --no-undefined-version -Wl --fatal-warnings -Wl --no-undefined -Qunused-arguments   -v CMakeFiles/cmTC_7df8c.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_7df8c]
+        ignore line: [Android (11349228  +pgo  +bolt  +lto  -mlgo  based on r487747e) clang version 17.0.2 (https://android.googlesource.com/toolchain/llvm-project d9f89f4d16663d5012e5c09495f3b30ece3d2362)]
+        ignore line: [Target: aarch64-none-linux-android21]
         ignore line: [Thread model: posix]
-        ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) ]
-        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
-        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_0c1ce' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-        link line: [ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccPqYqkm.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_0c1ce /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. -v CMakeFiles/cmTC_0c1ce.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
-          arg [/usr/lib/gcc/x86_64-linux-gnu/9/collect2] ==> ignore
-          arg [-plugin] ==> ignore
-          arg [/usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so] ==> ignore
-          arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccPqYqkm.res] ==> ignore
-          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
-          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-          arg [-plugin-opt=-pass-through=-lc] ==> ignore
-          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
-          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-          arg [--build-id] ==> ignore
-          arg [--eh-frame-hdr] ==> ignore
-          arg [-m] ==> ignore
-          arg [elf_x86_64] ==> ignore
-          arg [--hash-style=gnu] ==> ignore
-          arg [--as-needed] ==> ignore
-          arg [-dynamic-linker] ==> ignore
-          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+        ignore line: [InstalledDir: /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin]
+        link line: [ "/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld" --sysroot=/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot -pie -EL --fix-cortex-a53-843419 -z now -z relro -z max-page-size=4096 --hash-style=both --eh-frame-hdr -m aarch64linux -dynamic-linker /system/bin/linker64 -o cmTC_7df8c /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21/crtbegin_dynamic.o -L/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/aarch64 -L/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21 -L/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android -L/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib --build-id=sha1 --no-rosegment --no-undefined-version --fatal-warnings --no-undefined CMakeFiles/cmTC_7df8c.dir/CMakeCXXCompilerABI.cpp.o -Bstatic -lc++ -Bdynamic -lm /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl -lc /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21/crtend_android.o]
+          arg [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld] ==> ignore
+          arg [--sysroot=/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot] ==> ignore
           arg [-pie] ==> ignore
+          arg [-EL] ==> ignore
+          arg [--fix-cortex-a53-843419] ==> ignore
           arg [-znow] ==> ignore
           arg [-zrelro] ==> ignore
+          arg [-zmax-page-size=4096] ==> ignore
+          arg [--hash-style=both] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [aarch64linux] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/system/bin/linker64] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_0c1ce] ==> ignore
-          arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o]
-          arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o]
-          arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o]
-          arg [-L/usr/lib/gcc/x86_64-linux-gnu/9] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9]
-          arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu]
-          arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib]
-          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
-          arg [-L/lib/../lib] ==> dir [/lib/../lib]
-          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
-          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
-          arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..]
-          arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_0c1ce.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
-          arg [-lstdc++] ==> lib [stdc++]
+          arg [cmTC_7df8c] ==> ignore
+          arg [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21/crtbegin_dynamic.o] ==> obj [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21/crtbegin_dynamic.o]
+          arg [-L/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/aarch64] ==> dir [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/aarch64]
+          arg [-L/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21] ==> dir [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21]
+          arg [-L/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android] ==> dir [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android]
+          arg [-L/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib] ==> dir [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib]
+          arg [--build-id=sha1] ==> ignore
+          arg [--no-rosegment] ==> ignore
+          arg [--no-undefined-version] ==> ignore
+          arg [--fatal-warnings] ==> ignore
+          arg [--no-undefined] ==> ignore
+          arg [CMakeFiles/cmTC_7df8c.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-Bstatic] ==> search static
+          arg [-lc++] ==> lib [c++]
+          arg [-Bdynamic] ==> search dynamic
           arg [-lm] ==> lib [m]
-          arg [-lgcc_s] ==> lib [gcc_s]
-          arg [-lgcc] ==> lib [gcc]
+          arg [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a] ==> lib [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a]
+          arg [-l:libunwind.a] ==> lib [-l:libunwind.a]
+          arg [-ldl] ==> lib [dl]
           arg [-lc] ==> lib [c]
-          arg [-lgcc_s] ==> lib [gcc_s]
-          arg [-lgcc] ==> lib [gcc]
-          arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o]
-          arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
-        ignore line: [collect2 version 9.4.0]
-        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccPqYqkm.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_0c1ce /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. -v CMakeFiles/cmTC_0c1ce.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
-        linker tool for 'CXX': /usr/bin/ld
-        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
-        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
-        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
-        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9] ==> [/usr/lib/gcc/x86_64-linux-gnu/9]
-        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
-        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib] ==> [/usr/lib]
-        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
-        collapse library dir [/lib/../lib] ==> [/lib]
-        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
-        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
-        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> [/usr/lib]
-        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
-        implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
-        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/9;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+          arg [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a] ==> lib [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a]
+          arg [-l:libunwind.a] ==> lib [-l:libunwind.a]
+          arg [-ldl] ==> lib [dl]
+          arg [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21/crtend_android.o] ==> obj [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21/crtend_android.o]
+        linker tool for 'CXX': /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld
+        remove lib [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a]
+        remove lib [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a]
+        collapse library dir [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/aarch64] ==> [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/aarch64]
+        collapse library dir [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21] ==> [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21]
+        collapse library dir [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android] ==> [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android]
+        collapse library dir [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib] ==> [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib]
+        implicit libs: [c++;m;-l:libunwind.a;dl;c;-l:libunwind.a;dl]
+        implicit objs: [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21/crtbegin_dynamic.o;/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21/crtend_android.o]
+        implicit dirs: [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/aarch64;/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21;/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android;/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib]
         implicit fwks: []
       
       
@@ -567,8 +422,8 @@ events:
       - "/opt/cmake/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     message: |
-      Running the CXX compiler's linker: "/usr/bin/ld" "-v"
-      GNU ld (GNU Binutils for Ubuntu) 2.34
+      Running the CXX compiler's linker: "/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld" "-v"
+      LLD 17.0.2 (compatible with GNU linkers)
   -
     kind: "try_compile-v1"
     backtrace:
@@ -580,28 +435,87 @@ events:
     checks:
       - "Performing Test VAES_SUPPORTED"
     directories:
-      source: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-ToOiC1"
-      binary: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-ToOiC1"
+      source: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-X8FYHc"
+      binary: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-X8FYHc"
     cmakeVariables:
-      CMAKE_CXX_FLAGS: ""
-      CMAKE_CXX_FLAGS_DEBUG: "-g"
-      CMAKE_EXE_LINKER_FLAGS: ""
+      ANDROID_ABI: "arm64-v8a"
+      ANDROID_ARM_MODE: "thumb"
+      ANDROID_PIE: "TRUE"
+      ANDROID_PLATFORM: "android-21"
+      ANDROID_STL: "c++_static"
+      ANDROID_TOOLCHAIN: "clang"
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_CXX_COMPILER_TARGET: "aarch64-none-linux-android21"
+      CMAKE_CXX_FLAGS: "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  "
+      CMAKE_CXX_FLAGS_DEBUG: "-fno-limit-debug-info "
+      CMAKE_C_COMPILER_TARGET: "aarch64-none-linux-android21"
+      CMAKE_EXE_LINKER_FLAGS: "-static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--no-undefined-version -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments  "
       CMAKE_MODULE_PATH: "/workspaces/AidRigCode/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
+      CMAKE_SYSROOT: "/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot"
     buildResult:
       variable: "VAES_SUPPORTED"
       cached: true
       stdout: |
-        Change Dir: '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-ToOiC1'
+        Change Dir: '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-X8FYHc'
         
-        Run Build Command(s): /opt/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_f1d63/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_f1d63.dir/build.make CMakeFiles/cmTC_f1d63.dir/build
-        make[1]: Entering directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-ToOiC1'
-        Building CXX object CMakeFiles/cmTC_f1d63.dir/src.cxx.o
-        /usr/bin/c++ -DVAES_SUPPORTED  -mavx2 -mvaes -o CMakeFiles/cmTC_f1d63.dir/src.cxx.o -c /workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-ToOiC1/src.cxx
-        Linking CXX executable cmTC_f1d63
-        /opt/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f1d63.dir/link.txt --verbose=1
-        /usr/bin/c++ CMakeFiles/cmTC_f1d63.dir/src.cxx.o -o cmTC_f1d63
-        make[1]: Leaving directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-ToOiC1'
+        Run Build Command(s): /opt/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_2a5f4/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_2a5f4.dir/build.make CMakeFiles/cmTC_2a5f4.dir/build
+        make[1]: Entering directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-X8FYHc'
+        Building CXX object CMakeFiles/cmTC_2a5f4.dir/src.cxx.o
+        /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android21 --sysroot=/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot -DVAES_SUPPORTED  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security    -fPIE   -mavx2 -mvaes -MD -MT CMakeFiles/cmTC_2a5f4.dir/src.cxx.o -MF CMakeFiles/cmTC_2a5f4.dir/src.cxx.o.d -o CMakeFiles/cmTC_2a5f4.dir/src.cxx.o -c /workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-X8FYHc/src.cxx
+        clang++: warning: argument unused during compilation: '-mavx2' [-Wunused-command-line-argument]
+        clang++: warning: argument unused during compilation: '-mvaes' [-Wunused-command-line-argument]
+        Linking CXX executable cmTC_2a5f4
+        /opt/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2a5f4.dir/link.txt --verbose=1
+        /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android21 --sysroot=/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security    -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--no-undefined-version -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments    CMakeFiles/cmTC_2a5f4.dir/src.cxx.o -o cmTC_2a5f4  -latomic -lm
+        make[1]: Leaving directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-X8FYHc'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/cmake/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/cmake/share/cmake-3.29/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/cmake/share/cmake-3.29/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "cmake/cpu.cmake:53 (CHECK_CXX_COMPILER_FLAG)"
+      - "CMakeLists.txt:50 (include)"
+    checks:
+      - "Performing Test XMRIG_ARM_CRYPTO"
+    directories:
+      source: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-KQ9LSa"
+      binary: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-KQ9LSa"
+    cmakeVariables:
+      ANDROID_ABI: "arm64-v8a"
+      ANDROID_ARM_MODE: "thumb"
+      ANDROID_PIE: "TRUE"
+      ANDROID_PLATFORM: "android-21"
+      ANDROID_STL: "c++_static"
+      ANDROID_TOOLCHAIN: "clang"
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_CXX_COMPILER_TARGET: "aarch64-none-linux-android21"
+      CMAKE_CXX_FLAGS: "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  "
+      CMAKE_CXX_FLAGS_DEBUG: "-fno-limit-debug-info "
+      CMAKE_C_COMPILER_TARGET: "aarch64-none-linux-android21"
+      CMAKE_EXE_LINKER_FLAGS: "-static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--no-undefined-version -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments  "
+      CMAKE_MODULE_PATH: "/workspaces/AidRigCode/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
+      CMAKE_SYSROOT: "/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot"
+    buildResult:
+      variable: "XMRIG_ARM_CRYPTO"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-KQ9LSa'
+        
+        Run Build Command(s): /opt/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_feb43/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_feb43.dir/build.make CMakeFiles/cmTC_feb43.dir/build
+        make[1]: Entering directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-KQ9LSa'
+        Building CXX object CMakeFiles/cmTC_feb43.dir/src.cxx.o
+        /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android21 --sysroot=/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot -DXMRIG_ARM_CRYPTO  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security    -fPIE   -march=armv8-a+crypto -MD -MT CMakeFiles/cmTC_feb43.dir/src.cxx.o -MF CMakeFiles/cmTC_feb43.dir/src.cxx.o.d -o CMakeFiles/cmTC_feb43.dir/src.cxx.o -c /workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-KQ9LSa/src.cxx
+        Linking CXX executable cmTC_feb43
+        /opt/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_feb43.dir/link.txt --verbose=1
+        /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android21 --sysroot=/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security    -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--no-undefined-version -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments    CMakeFiles/cmTC_feb43.dir/src.cxx.o -o cmTC_feb43  -latomic -lm
+        make[1]: Leaving directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-KQ9LSa'
         
       exitCode: 0
   -
@@ -613,421 +527,39 @@ events:
     checks:
       - "Looking for syslog.h"
     directories:
-      source: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-X5rv80"
-      binary: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-X5rv80"
+      source: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-rZ6Lva"
+      binary: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-rZ6Lva"
     cmakeVariables:
-      CMAKE_C_FLAGS: ""
-      CMAKE_C_FLAGS_DEBUG: "-g"
-      CMAKE_EXE_LINKER_FLAGS: ""
+      ANDROID_ABI: "arm64-v8a"
+      ANDROID_ARM_MODE: "thumb"
+      ANDROID_PIE: "TRUE"
+      ANDROID_PLATFORM: "android-21"
+      ANDROID_STL: "c++_static"
+      ANDROID_TOOLCHAIN: "clang"
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_CXX_COMPILER_TARGET: "aarch64-none-linux-android21"
+      CMAKE_C_COMPILER_TARGET: "aarch64-none-linux-android21"
+      CMAKE_C_FLAGS: "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security "
+      CMAKE_C_FLAGS_DEBUG: "-fno-limit-debug-info "
+      CMAKE_EXE_LINKER_FLAGS: "-static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--no-undefined-version -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments  "
       CMAKE_MODULE_PATH: "/workspaces/AidRigCode/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
+      CMAKE_SYSROOT: "/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot"
     buildResult:
       variable: "HAVE_SYSLOG_H"
       cached: true
       stdout: |
-        Change Dir: '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-X5rv80'
+        Change Dir: '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-rZ6Lva'
         
-        Run Build Command(s): /opt/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_3236b/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_3236b.dir/build.make CMakeFiles/cmTC_3236b.dir/build
-        make[1]: Entering directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-X5rv80'
-        Building C object CMakeFiles/cmTC_3236b.dir/CheckIncludeFile.c.o
-        /usr/bin/cc    -o CMakeFiles/cmTC_3236b.dir/CheckIncludeFile.c.o -c /workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-X5rv80/CheckIncludeFile.c
-        Linking C executable cmTC_3236b
-        /opt/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3236b.dir/link.txt --verbose=1
-        /usr/bin/cc CMakeFiles/cmTC_3236b.dir/CheckIncludeFile.c.o -o cmTC_3236b
-        make[1]: Leaving directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-X5rv80'
-        
-      exitCode: 0
-...
-
----
-events:
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "/opt/cmake/share/cmake-3.29/Modules/CheckSymbolExists.cmake:140 (try_compile)"
-      - "/opt/cmake/share/cmake-3.29/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
-      - "cmake/flags.cmake:94 (check_symbol_exists)"
-      - "CMakeLists.txt:201 (include)"
-    checks:
-      - "Looking for __builtin___clear_cache"
-    directories:
-      source: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-a6Sj8G"
-      binary: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-a6Sj8G"
-    cmakeVariables:
-      CMAKE_C_FLAGS: " -Wall -Wno-strict-aliasing -maes"
-      CMAKE_C_FLAGS_DEBUG: "-g"
-      CMAKE_EXE_LINKER_FLAGS: " -static-libgcc -static-libstdc++"
-      CMAKE_MODULE_PATH: "/workspaces/AidRigCode/cmake"
-    buildResult:
-      variable: "HAVE_BUILTIN_CLEAR_CACHE"
-      cached: true
-      stdout: |
-        Change Dir: '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-a6Sj8G'
-        
-        Run Build Command(s): /opt/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_96b54/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_96b54.dir/build.make CMakeFiles/cmTC_96b54.dir/build
-        make[1]: Entering directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-a6Sj8G'
-        Building C object CMakeFiles/cmTC_96b54.dir/CheckSymbolExists.c.o
-        /usr/bin/cc   -Wall -Wno-strict-aliasing -maes  -std=gnu99 -o CMakeFiles/cmTC_96b54.dir/CheckSymbolExists.c.o -c /workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-a6Sj8G/CheckSymbolExists.c
-        Linking C executable cmTC_96b54
-        /opt/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_96b54.dir/link.txt --verbose=1
-        /usr/bin/cc  -Wall -Wno-strict-aliasing -maes   -static-libgcc -static-libstdc++  CMakeFiles/cmTC_96b54.dir/CheckSymbolExists.c.o -o cmTC_96b54
-        make[1]: Leaving directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-a6Sj8G'
+        Run Build Command(s): /opt/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_a9060/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_a9060.dir/build.make CMakeFiles/cmTC_a9060.dir/build
+        make[1]: Entering directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-rZ6Lva'
+        Building C object CMakeFiles/cmTC_a9060.dir/CheckIncludeFile.c.o
+        /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android21 --sysroot=/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fPIE -MD -MT CMakeFiles/cmTC_a9060.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_a9060.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_a9060.dir/CheckIncludeFile.c.o -c /workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-rZ6Lva/CheckIncludeFile.c
+        Linking C executable cmTC_a9060
+        /opt/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a9060.dir/link.txt --verbose=1
+        /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android21 --sysroot=/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--no-undefined-version -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments    CMakeFiles/cmTC_a9060.dir/CheckIncludeFile.c.o -o cmTC_a9060  -latomic -lm
+        make[1]: Leaving directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-rZ6Lva'
         
       exitCode: 0
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "/opt/cmake/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
-      - "/opt/cmake/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
-      - "src/3rdparty/argon2/CMakeLists.txt:49 (check_c_source_compiles)"
-      - "src/3rdparty/argon2/CMakeLists.txt:69 (add_feature_impl)"
-    checks:
-      - "Performing Test FEATURE_sse2_NOFLAG"
-    directories:
-      source: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-X2HFAH"
-      binary: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-X2HFAH"
-    cmakeVariables:
-      CMAKE_C_FLAGS: " -Wall -Wno-strict-aliasing -maes"
-      CMAKE_C_FLAGS_DEBUG: "-g"
-      CMAKE_EXE_LINKER_FLAGS: " -static-libgcc -static-libstdc++"
-      CMAKE_MODULE_PATH: "/workspaces/AidRigCode/cmake"
-    buildResult:
-      variable: "FEATURE_sse2_NOFLAG"
-      cached: true
-      stdout: |
-        Change Dir: '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-X2HFAH'
-        
-        Run Build Command(s): /opt/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_cba74/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_cba74.dir/build.make CMakeFiles/cmTC_cba74.dir/build
-        make[1]: Entering directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-X2HFAH'
-        Building C object CMakeFiles/cmTC_cba74.dir/src.c.o
-        /usr/bin/cc -DFEATURE_sse2_NOFLAG  -Wall -Wno-strict-aliasing -maes  -std=gnu99 -o CMakeFiles/cmTC_cba74.dir/src.c.o -c /workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-X2HFAH/src.c
-        Linking C executable cmTC_cba74
-        /opt/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cba74.dir/link.txt --verbose=1
-        /usr/bin/cc  -Wall -Wno-strict-aliasing -maes   -static-libgcc -static-libstdc++  CMakeFiles/cmTC_cba74.dir/src.c.o -o cmTC_cba74
-        make[1]: Leaving directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-X2HFAH'
-        
-      exitCode: 0
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "/opt/cmake/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
-      - "/opt/cmake/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
-      - "src/3rdparty/argon2/CMakeLists.txt:49 (check_c_source_compiles)"
-      - "src/3rdparty/argon2/CMakeLists.txt:70 (add_feature_impl)"
-    checks:
-      - "Performing Test FEATURE_ssse3_NOFLAG"
-    directories:
-      source: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-5DSpOE"
-      binary: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-5DSpOE"
-    cmakeVariables:
-      CMAKE_C_FLAGS: " -Wall -Wno-strict-aliasing -maes"
-      CMAKE_C_FLAGS_DEBUG: "-g"
-      CMAKE_EXE_LINKER_FLAGS: " -static-libgcc -static-libstdc++"
-      CMAKE_MODULE_PATH: "/workspaces/AidRigCode/cmake"
-    buildResult:
-      variable: "FEATURE_ssse3_NOFLAG"
-      cached: true
-      stdout: |
-        Change Dir: '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-5DSpOE'
-        
-        Run Build Command(s): /opt/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_bf2d4/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_bf2d4.dir/build.make CMakeFiles/cmTC_bf2d4.dir/build
-        make[1]: Entering directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-5DSpOE'
-        Building C object CMakeFiles/cmTC_bf2d4.dir/src.c.o
-        /usr/bin/cc -DFEATURE_ssse3_NOFLAG  -Wall -Wno-strict-aliasing -maes  -std=gnu99 -o CMakeFiles/cmTC_bf2d4.dir/src.c.o -c /workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-5DSpOE/src.c
-        In file included from /usr/lib/gcc/x86_64-linux-gnu/9/include/immintrin.h:35,
-                         from /usr/lib/gcc/x86_64-linux-gnu/9/include/x86intrin.h:32,
-                         from /workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-5DSpOE/src.c:1:
-        /workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-5DSpOE/src.c: In function ‘function_ssse3’:
-        /usr/lib/gcc/x86_64-linux-gnu/9/include/tmmintrin.h:136:1: error: inlining failed in call to always_inline ‘_mm_shuffle_epi8’: target specific option mismatch
-          136 | _mm_shuffle_epi8 (__m128i __X, __m128i __Y)
-              | ^~~~~~~~~~~~~~~~
-        /workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-5DSpOE/src.c:5:12: note: called from here
-            5 |     *dst = _mm_shuffle_epi8(*a, *b);
-              |            ^~~~~~~~~~~~~~~~~~~~~~~~
-        make[1]: *** [CMakeFiles/cmTC_bf2d4.dir/build.make:78: CMakeFiles/cmTC_bf2d4.dir/src.c.o] Error 1
-        make[1]: Leaving directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-5DSpOE'
-        make: *** [Makefile:127: cmTC_bf2d4/fast] Error 2
-        
-      exitCode: 2
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "/opt/cmake/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
-      - "/opt/cmake/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
-      - "src/3rdparty/argon2/CMakeLists.txt:54 (check_c_source_compiles)"
-      - "src/3rdparty/argon2/CMakeLists.txt:70 (add_feature_impl)"
-    checks:
-      - "Performing Test FEATURE_ssse3_FLAG"
-    directories:
-      source: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-m55c2G"
-      binary: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-m55c2G"
-    cmakeVariables:
-      CMAKE_C_FLAGS: " -Wall -Wno-strict-aliasing -maes"
-      CMAKE_C_FLAGS_DEBUG: "-g"
-      CMAKE_EXE_LINKER_FLAGS: " -static-libgcc -static-libstdc++"
-      CMAKE_MODULE_PATH: "/workspaces/AidRigCode/cmake"
-    buildResult:
-      variable: "FEATURE_ssse3_FLAG"
-      cached: true
-      stdout: |
-        Change Dir: '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-m55c2G'
-        
-        Run Build Command(s): /opt/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_b08dd/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_b08dd.dir/build.make CMakeFiles/cmTC_b08dd.dir/build
-        make[1]: Entering directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-m55c2G'
-        Building C object CMakeFiles/cmTC_b08dd.dir/src.c.o
-        /usr/bin/cc -DFEATURE_ssse3_FLAG  -Wall -Wno-strict-aliasing -maes -mssse3 -std=gnu99 -o CMakeFiles/cmTC_b08dd.dir/src.c.o -c /workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-m55c2G/src.c
-        Linking C executable cmTC_b08dd
-        /opt/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b08dd.dir/link.txt --verbose=1
-        /usr/bin/cc  -Wall -Wno-strict-aliasing -maes -mssse3  -static-libgcc -static-libstdc++  CMakeFiles/cmTC_b08dd.dir/src.c.o -o cmTC_b08dd
-        make[1]: Leaving directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-m55c2G'
-        
-      exitCode: 0
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "/opt/cmake/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
-      - "/opt/cmake/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
-      - "src/3rdparty/argon2/CMakeLists.txt:49 (check_c_source_compiles)"
-      - "src/3rdparty/argon2/CMakeLists.txt:71 (add_feature_impl)"
-    checks:
-      - "Performing Test FEATURE_xop_NOFLAG"
-    directories:
-      source: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-vAZE3F"
-      binary: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-vAZE3F"
-    cmakeVariables:
-      CMAKE_C_FLAGS: " -Wall -Wno-strict-aliasing -maes"
-      CMAKE_C_FLAGS_DEBUG: "-g"
-      CMAKE_EXE_LINKER_FLAGS: " -static-libgcc -static-libstdc++"
-      CMAKE_MODULE_PATH: "/workspaces/AidRigCode/cmake"
-    buildResult:
-      variable: "FEATURE_xop_NOFLAG"
-      cached: true
-      stdout: |
-        Change Dir: '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-vAZE3F'
-        
-        Run Build Command(s): /opt/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_153a3/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_153a3.dir/build.make CMakeFiles/cmTC_153a3.dir/build
-        make[1]: Entering directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-vAZE3F'
-        Building C object CMakeFiles/cmTC_153a3.dir/src.c.o
-        /usr/bin/cc -DFEATURE_xop_NOFLAG  -Wall -Wno-strict-aliasing -maes  -std=gnu99 -o CMakeFiles/cmTC_153a3.dir/src.c.o -c /workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-vAZE3F/src.c
-        In file included from /usr/lib/gcc/x86_64-linux-gnu/9/include/x86intrin.h:38,
-                         from /workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-vAZE3F/src.c:1:
-        /workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-vAZE3F/src.c: In function ‘function_xop’:
-        /workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-vAZE3F/src.c:5:12: error: ‘__builtin_ia32_vprotqi’ needs isa option -mxop
-            5 |     *dst = _mm_roti_epi64(*a, b);
-              |            ^~~~~~~~~~~~~~
-        make[1]: *** [CMakeFiles/cmTC_153a3.dir/build.make:78: CMakeFiles/cmTC_153a3.dir/src.c.o] Error 1
-        make[1]: Leaving directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-vAZE3F'
-        make: *** [Makefile:127: cmTC_153a3/fast] Error 2
-        
-      exitCode: 2
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "/opt/cmake/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
-      - "/opt/cmake/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
-      - "src/3rdparty/argon2/CMakeLists.txt:54 (check_c_source_compiles)"
-      - "src/3rdparty/argon2/CMakeLists.txt:71 (add_feature_impl)"
-    checks:
-      - "Performing Test FEATURE_xop_FLAG"
-    directories:
-      source: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-VlWrfH"
-      binary: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-VlWrfH"
-    cmakeVariables:
-      CMAKE_C_FLAGS: " -Wall -Wno-strict-aliasing -maes"
-      CMAKE_C_FLAGS_DEBUG: "-g"
-      CMAKE_EXE_LINKER_FLAGS: " -static-libgcc -static-libstdc++"
-      CMAKE_MODULE_PATH: "/workspaces/AidRigCode/cmake"
-    buildResult:
-      variable: "FEATURE_xop_FLAG"
-      cached: true
-      stdout: |
-        Change Dir: '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-VlWrfH'
-        
-        Run Build Command(s): /opt/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_9ef2a/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_9ef2a.dir/build.make CMakeFiles/cmTC_9ef2a.dir/build
-        make[1]: Entering directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-VlWrfH'
-        Building C object CMakeFiles/cmTC_9ef2a.dir/src.c.o
-        /usr/bin/cc -DFEATURE_xop_FLAG  -Wall -Wno-strict-aliasing -maes -mxop -std=gnu99 -o CMakeFiles/cmTC_9ef2a.dir/src.c.o -c /workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-VlWrfH/src.c
-        Linking C executable cmTC_9ef2a
-        /opt/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9ef2a.dir/link.txt --verbose=1
-        /usr/bin/cc  -Wall -Wno-strict-aliasing -maes -mxop  -static-libgcc -static-libstdc++  CMakeFiles/cmTC_9ef2a.dir/src.c.o -o cmTC_9ef2a
-        make[1]: Leaving directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-VlWrfH'
-        
-      exitCode: 0
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "/opt/cmake/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
-      - "/opt/cmake/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
-      - "src/3rdparty/argon2/CMakeLists.txt:49 (check_c_source_compiles)"
-      - "src/3rdparty/argon2/CMakeLists.txt:72 (add_feature_impl)"
-    checks:
-      - "Performing Test FEATURE_avx2_NOFLAG"
-    directories:
-      source: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-kTUHTG"
-      binary: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-kTUHTG"
-    cmakeVariables:
-      CMAKE_C_FLAGS: " -Wall -Wno-strict-aliasing -maes"
-      CMAKE_C_FLAGS_DEBUG: "-g"
-      CMAKE_EXE_LINKER_FLAGS: " -static-libgcc -static-libstdc++"
-      CMAKE_MODULE_PATH: "/workspaces/AidRigCode/cmake"
-    buildResult:
-      variable: "FEATURE_avx2_NOFLAG"
-      cached: true
-      stdout: |
-        Change Dir: '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-kTUHTG'
-        
-        Run Build Command(s): /opt/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_419ae/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_419ae.dir/build.make CMakeFiles/cmTC_419ae.dir/build
-        make[1]: Entering directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-kTUHTG'
-        Building C object CMakeFiles/cmTC_419ae.dir/src.c.o
-        /usr/bin/cc -DFEATURE_avx2_NOFLAG  -Wall -Wno-strict-aliasing -maes  -std=gnu99 -o CMakeFiles/cmTC_419ae.dir/src.c.o -c /workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-kTUHTG/src.c
-        /workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-kTUHTG/src.c: In function ‘function_avx2’:
-        /workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-kTUHTG/src.c:5:10: warning: AVX vector return without AVX enabled changes the ABI [-Wpsabi]
-            5 |     *dst = _mm256_xor_si256(*a, *b);
-              |     ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
-        In file included from /usr/lib/gcc/x86_64-linux-gnu/9/include/immintrin.h:53,
-                         from /usr/lib/gcc/x86_64-linux-gnu/9/include/x86intrin.h:32,
-                         from /workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-kTUHTG/src.c:1:
-        /usr/lib/gcc/x86_64-linux-gnu/9/include/avx2intrin.h:913:1: error: inlining failed in call to always_inline ‘_mm256_xor_si256’: target specific option mismatch
-          913 | _mm256_xor_si256 (__m256i __A, __m256i __B)
-              | ^~~~~~~~~~~~~~~~
-        /workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-kTUHTG/src.c:5:12: note: called from here
-            5 |     *dst = _mm256_xor_si256(*a, *b);
-              |            ^~~~~~~~~~~~~~~~~~~~~~~~
-        make[1]: *** [CMakeFiles/cmTC_419ae.dir/build.make:78: CMakeFiles/cmTC_419ae.dir/src.c.o] Error 1
-        make[1]: Leaving directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-kTUHTG'
-        make: *** [Makefile:127: cmTC_419ae/fast] Error 2
-        
-      exitCode: 2
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "/opt/cmake/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
-      - "/opt/cmake/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
-      - "src/3rdparty/argon2/CMakeLists.txt:54 (check_c_source_compiles)"
-      - "src/3rdparty/argon2/CMakeLists.txt:72 (add_feature_impl)"
-    checks:
-      - "Performing Test FEATURE_avx2_FLAG"
-    directories:
-      source: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-tfuG1G"
-      binary: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-tfuG1G"
-    cmakeVariables:
-      CMAKE_C_FLAGS: " -Wall -Wno-strict-aliasing -maes"
-      CMAKE_C_FLAGS_DEBUG: "-g"
-      CMAKE_EXE_LINKER_FLAGS: " -static-libgcc -static-libstdc++"
-      CMAKE_MODULE_PATH: "/workspaces/AidRigCode/cmake"
-    buildResult:
-      variable: "FEATURE_avx2_FLAG"
-      cached: true
-      stdout: |
-        Change Dir: '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-tfuG1G'
-        
-        Run Build Command(s): /opt/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_2c1c6/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_2c1c6.dir/build.make CMakeFiles/cmTC_2c1c6.dir/build
-        make[1]: Entering directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-tfuG1G'
-        Building C object CMakeFiles/cmTC_2c1c6.dir/src.c.o
-        /usr/bin/cc -DFEATURE_avx2_FLAG  -Wall -Wno-strict-aliasing -maes -mavx2 -std=gnu99 -o CMakeFiles/cmTC_2c1c6.dir/src.c.o -c /workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-tfuG1G/src.c
-        Linking C executable cmTC_2c1c6
-        /opt/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2c1c6.dir/link.txt --verbose=1
-        /usr/bin/cc  -Wall -Wno-strict-aliasing -maes -mavx2  -static-libgcc -static-libstdc++  CMakeFiles/cmTC_2c1c6.dir/src.c.o -o cmTC_2c1c6
-        make[1]: Leaving directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-tfuG1G'
-        
-      exitCode: 0
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "/opt/cmake/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
-      - "/opt/cmake/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
-      - "src/3rdparty/argon2/CMakeLists.txt:49 (check_c_source_compiles)"
-      - "src/3rdparty/argon2/CMakeLists.txt:73 (add_feature_impl)"
-    checks:
-      - "Performing Test FEATURE_avx512f_NOFLAG"
-    directories:
-      source: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-tLCogG"
-      binary: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-tLCogG"
-    cmakeVariables:
-      CMAKE_C_FLAGS: " -Wall -Wno-strict-aliasing -maes"
-      CMAKE_C_FLAGS_DEBUG: "-g"
-      CMAKE_EXE_LINKER_FLAGS: " -static-libgcc -static-libstdc++"
-      CMAKE_MODULE_PATH: "/workspaces/AidRigCode/cmake"
-    buildResult:
-      variable: "FEATURE_avx512f_NOFLAG"
-      cached: true
-      stdout: |
-        Change Dir: '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-tLCogG'
-        
-        Run Build Command(s): /opt/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_c7c58/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_c7c58.dir/build.make CMakeFiles/cmTC_c7c58.dir/build
-        make[1]: Entering directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-tLCogG'
-        Building C object CMakeFiles/cmTC_c7c58.dir/src.c.o
-        /usr/bin/cc -DFEATURE_avx512f_NOFLAG  -Wall -Wno-strict-aliasing -maes  -std=gnu99 -o CMakeFiles/cmTC_c7c58.dir/src.c.o -c /workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-tLCogG/src.c
-        In file included from /usr/lib/gcc/x86_64-linux-gnu/9/include/immintrin.h:55,
-                         from /usr/lib/gcc/x86_64-linux-gnu/9/include/x86intrin.h:32,
-                         from /workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-tLCogG/src.c:1:
-        /workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-tLCogG/src.c: In function ‘function_avx512f’:
-        /usr/lib/gcc/x86_64-linux-gnu/9/include/avx512fintrin.h:204:1: error: inlining failed in call to always_inline ‘_mm512_undefined_epi32’: target specific option mismatch
-          204 | _mm512_undefined_epi32 (void)
-              | ^~~~~~~~~~~~~~~~~~~~~~
-        /workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-tLCogG/src.c:5:12: note: called from here
-            5 |     *dst = _mm512_ror_epi64(*a, 57);
-              |            ^~~~~~~~~~~~~~~~
-        make[1]: *** [CMakeFiles/cmTC_c7c58.dir/build.make:78: CMakeFiles/cmTC_c7c58.dir/src.c.o] Error 1
-        make[1]: Leaving directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-tLCogG'
-        make: *** [Makefile:127: cmTC_c7c58/fast] Error 2
-        
-      exitCode: 2
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "/opt/cmake/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
-      - "/opt/cmake/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
-      - "src/3rdparty/argon2/CMakeLists.txt:54 (check_c_source_compiles)"
-      - "src/3rdparty/argon2/CMakeLists.txt:73 (add_feature_impl)"
-    checks:
-      - "Performing Test FEATURE_avx512f_FLAG"
-    directories:
-      source: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-lyFVXE"
-      binary: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-lyFVXE"
-    cmakeVariables:
-      CMAKE_C_FLAGS: " -Wall -Wno-strict-aliasing -maes"
-      CMAKE_C_FLAGS_DEBUG: "-g"
-      CMAKE_EXE_LINKER_FLAGS: " -static-libgcc -static-libstdc++"
-      CMAKE_MODULE_PATH: "/workspaces/AidRigCode/cmake"
-    buildResult:
-      variable: "FEATURE_avx512f_FLAG"
-      cached: true
-      stdout: |
-        Change Dir: '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-lyFVXE'
-        
-        Run Build Command(s): /opt/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_92651/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_92651.dir/build.make CMakeFiles/cmTC_92651.dir/build
-        make[1]: Entering directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-lyFVXE'
-        Building C object CMakeFiles/cmTC_92651.dir/src.c.o
-        /usr/bin/cc -DFEATURE_avx512f_FLAG  -Wall -Wno-strict-aliasing -maes -mavx512f -std=gnu99 -o CMakeFiles/cmTC_92651.dir/src.c.o -c /workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-lyFVXE/src.c
-        Linking C executable cmTC_92651
-        /opt/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_92651.dir/link.txt --verbose=1
-        /usr/bin/cc  -Wall -Wno-strict-aliasing -maes -mavx512f  -static-libgcc -static-libstdc++  CMakeFiles/cmTC_92651.dir/src.c.o -o cmTC_92651
-        make[1]: Leaving directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-lyFVXE'
-        
-      exitCode: 0
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/opt/cmake/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:1165 (message)"
-      - "/opt/cmake/share/cmake-3.29/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
-      - "cmake/asm.cmake:21 (enable_language)"
-      - "CMakeLists.txt:207 (include)"
-    message: |
-      Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
-      cc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0
-      Copyright (C) 2019 Free Software Foundation, Inc.
-      This is free software; see the source for copying conditions.  There is NO
-      warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-      
 ...

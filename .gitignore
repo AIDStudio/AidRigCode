@@ -1,1 +1,5 @@
 third_party/
+android-ndk-r26d-linux.zip
+android-ndk-r26d/
+build_uv_android/
+deps_android/
