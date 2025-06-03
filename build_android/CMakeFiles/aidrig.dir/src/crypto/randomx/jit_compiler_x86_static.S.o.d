@@ -1,0 +1,25 @@
+CMakeFiles/aidrig.dir/src/crypto/randomx/jit_compiler_x86_static.S.o: \
+ /workspaces/AidRigCode/src/crypto/randomx/jit_compiler_x86_static.S \
+ /usr/include/stdc-predef.h \
+ /workspaces/AidRigCode/src/crypto/randomx/asm/program_prologue_linux.inc \
+ /workspaces/AidRigCode/src/crypto/randomx/asm/program_xmm_constants.inc \
+ /workspaces/AidRigCode/src/crypto/randomx/asm/program_imul_rcp_store.inc \
+ /workspaces/AidRigCode/src/crypto/randomx/asm/program_loop_load.inc \
+ /workspaces/AidRigCode/src/crypto/randomx/asm/program_loop_load_xop.inc \
+ /workspaces/AidRigCode/src/crypto/randomx/asm/program_read_dataset.inc \
+ /workspaces/AidRigCode/src/crypto/randomx/asm/program_read_dataset_sshash_init.inc \
+ /workspaces/AidRigCode/src/crypto/randomx/asm/program_read_dataset_sshash_fin.inc \
+ /workspaces/AidRigCode/src/crypto/randomx/asm/program_loop_store.inc \
+ /workspaces/AidRigCode/src/crypto/randomx/asm/program_sshash_avx2_save_registers.inc \
+ /workspaces/AidRigCode/src/crypto/randomx/asm/program_sshash_avx2_constants.inc \
+ /workspaces/AidRigCode/src/crypto/randomx/asm/program_sshash_avx2_loop_begin.inc \
+ /workspaces/AidRigCode/src/crypto/randomx/asm/program_sshash_avx2_loop_end.inc \
+ /workspaces/AidRigCode/src/crypto/randomx/asm/program_sshash_avx2_epilogue.inc \
+ /workspaces/AidRigCode/src/crypto/randomx/asm/program_sshash_avx2_ssh_load.inc \
+ /workspaces/AidRigCode/src/crypto/randomx/asm/program_sshash_avx2_ssh_prefetch.inc \
+ /workspaces/AidRigCode/src/crypto/randomx/asm/program_epilogue_store.inc \
+ /workspaces/AidRigCode/src/crypto/randomx/asm/program_epilogue_linux.inc \
+ /workspaces/AidRigCode/src/crypto/randomx/asm/program_sshash_load.inc \
+ /workspaces/AidRigCode/src/crypto/randomx/asm/program_sshash_prefetch.inc \
+ /workspaces/AidRigCode/src/crypto/randomx/asm/program_sshash_constants.inc \
+ /workspaces/AidRigCode/src/crypto/randomx/asm/randomx_reciprocal.inc

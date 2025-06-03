@@ -1,55 +1,42 @@
 CMakeFiles/aidrig.dir/src/crypto/randomx/blake2/blake2b.c.o: \
-  /storage/emulated/0/aidrig/project/project/aidrigs/src/crypto/randomx/blake2/blake2b.c \
-  /data/data/com.termux/files/usr/lib/clang/20/include/stdint.h \
-  /data/data/com.termux/files/usr/include/stdint.h \
-  /data/data/com.termux/files/usr/include/bits/wchar_limits.h \
-  /data/data/com.termux/files/usr/include/sys/cdefs.h \
-  /data/data/com.termux/files/usr/include/android/versioning.h \
-  /data/data/com.termux/files/usr/include/android/api-level.h \
-  /data/data/com.termux/files/usr/include/bits/get_device_api_level_inlines.h \
-  /data/data/com.termux/files/usr/include/android/ndk-version.h \
-  /data/data/com.termux/files/usr/lib/clang/20/include/stddef.h \
-  /data/data/com.termux/files/usr/lib/clang/20/include/__stddef_header_macro.h \
-  /data/data/com.termux/files/usr/lib/clang/20/include/__stddef_ptrdiff_t.h \
-  /data/data/com.termux/files/usr/lib/clang/20/include/__stddef_size_t.h \
-  /data/data/com.termux/files/usr/lib/clang/20/include/__stddef_wchar_t.h \
-  /data/data/com.termux/files/usr/lib/clang/20/include/__stddef_null.h \
-  /data/data/com.termux/files/usr/lib/clang/20/include/__stddef_offsetof.h \
-  /data/data/com.termux/files/usr/include/string.h \
-  /data/data/com.termux/files/usr/include/xlocale.h \
-  /data/data/com.termux/files/usr/include/bits/strcasecmp.h \
-  /data/data/com.termux/files/usr/include/sys/types.h \
-  /data/data/com.termux/files/usr/include/linux/types.h \
-  /data/data/com.termux/files/usr/include/aarch64-linux-android/asm/types.h \
-  /data/data/com.termux/files/usr/include/asm-generic/types.h \
-  /data/data/com.termux/files/usr/include/asm-generic/int-ll64.h \
-  /data/data/com.termux/files/usr/include/aarch64-linux-android/asm/bitsperlong.h \
-  /data/data/com.termux/files/usr/include/asm-generic/bitsperlong.h \
-  /data/data/com.termux/files/usr/include/linux/posix_types.h \
-  /data/data/com.termux/files/usr/include/linux/stddef.h \
-  /data/data/com.termux/files/usr/include/linux/compiler_types.h \
-  /data/data/com.termux/files/usr/include/linux/compiler.h \
-  /data/data/com.termux/files/usr/include/aarch64-linux-android/asm/posix_types.h \
-  /data/data/com.termux/files/usr/include/asm-generic/posix_types.h \
-  /data/data/com.termux/files/usr/include/bits/pthread_types.h \
-  /data/data/com.termux/files/usr/include/stdio.h \
-  /data/data/com.termux/files/usr/lib/clang/20/include/stdarg.h \
-  /data/data/com.termux/files/usr/lib/clang/20/include/__stdarg_header_macro.h \
-  /data/data/com.termux/files/usr/lib/clang/20/include/__stdarg___gnuc_va_list.h \
-  /data/data/com.termux/files/usr/lib/clang/20/include/__stdarg_va_list.h \
-  /data/data/com.termux/files/usr/lib/clang/20/include/__stdarg_va_arg.h \
-  /data/data/com.termux/files/usr/lib/clang/20/include/__stdarg___va_copy.h \
-  /data/data/com.termux/files/usr/lib/clang/20/include/__stdarg_va_copy.h \
-  /data/data/com.termux/files/usr/include/aarch64-linux-android/asm/fcntl.h \
-  /data/data/com.termux/files/usr/include/asm-generic/fcntl.h \
-  /data/data/com.termux/files/usr/include/bits/flock64.h \
-  /data/data/com.termux/files/usr/include/bits/flock.h \
-  /data/data/com.termux/files/usr/include/bits/seek_constants.h \
-  /storage/emulated/0/aidrig/project/project/aidrigs/src/crypto/randomx/blake2/blake2.h \
-  /data/data/com.termux/files/usr/lib/clang/20/include/limits.h \
-  /data/data/com.termux/files/usr/include/limits.h \
-  /data/data/com.termux/files/usr/lib/clang/20/include/float.h \
-  /data/data/com.termux/files/usr/include/linux/limits.h \
-  /data/data/com.termux/files/usr/include/bits/posix_limits.h \
-  /storage/emulated/0/aidrig/project/project/aidrigs/src/crypto/randomx/blake2/blake2-impl.h \
-  /storage/emulated/0/aidrig/project/project/aidrigs/src/crypto/randomx/blake2/endian.h
+ /workspaces/AidRigCode/src/crypto/randomx/blake2/blake2b.c \
+ /usr/include/stdc-predef.h \
+ /usr/lib/gcc/x86_64-linux-gnu/9/include/stdint.h /usr/include/stdint.h \
+ /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+ /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+ /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+ /usr/include/x86_64-linux-gnu/bits/long-double.h \
+ /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+ /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+ /usr/include/x86_64-linux-gnu/bits/types.h \
+ /usr/include/x86_64-linux-gnu/bits/timesize.h \
+ /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+ /usr/include/x86_64-linux-gnu/bits/time64.h \
+ /usr/include/x86_64-linux-gnu/bits/wchar.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h /usr/include/string.h \
+ /usr/lib/gcc/x86_64-linux-gnu/9/include/stddef.h \
+ /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+ /usr/include/strings.h /usr/include/stdio.h \
+ /usr/lib/gcc/x86_64-linux-gnu/9/include/stdarg.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
+ /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
+ /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
+ /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
+ /workspaces/AidRigCode/src/crypto/randomx/blake2/blake2.h \
+ /usr/lib/gcc/x86_64-linux-gnu/9/include/limits.h \
+ /usr/lib/gcc/x86_64-linux-gnu/9/include/syslimits.h \
+ /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+ /usr/include/linux/limits.h \
+ /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
+ /workspaces/AidRigCode/src/crypto/randomx/blake2/blake2-impl.h \
+ /workspaces/AidRigCode/src/crypto/randomx/blake2/endian.h

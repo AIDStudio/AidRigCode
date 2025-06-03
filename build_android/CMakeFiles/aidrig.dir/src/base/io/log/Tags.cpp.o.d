@@ -1,38 +1,24 @@
 CMakeFiles/aidrig.dir/src/base/io/log/Tags.cpp.o: \
-  /storage/emulated/0/aidrig/project/project/aidrigs/src/base/io/log/Tags.cpp \
-  /storage/emulated/0/aidrig/project/project/aidrigs/src/base/io/log/Tags.h \
-  /data/data/com.termux/files/usr/include/c++/v1/cstddef \
-  /data/data/com.termux/files/usr/include/c++/v1/__assert \
-  /data/data/com.termux/files/usr/include/c++/v1/__config \
-  /data/data/com.termux/files/usr/include/c++/v1/__config_site \
-  /data/data/com.termux/files/usr/include/features.h \
-  /data/data/com.termux/files/usr/include/sys/cdefs.h \
-  /data/data/com.termux/files/usr/include/android/versioning.h \
-  /data/data/com.termux/files/usr/include/android/api-level.h \
-  /data/data/com.termux/files/usr/include/bits/get_device_api_level_inlines.h \
-  /data/data/com.termux/files/usr/include/android/ndk-version.h \
-  /data/data/com.termux/files/usr/include/c++/v1/__verbose_abort \
-  /data/data/com.termux/files/usr/include/c++/v1/__availability \
-  /data/data/com.termux/files/usr/include/c++/v1/__type_traits/enable_if.h \
-  /data/data/com.termux/files/usr/include/c++/v1/__type_traits/integral_constant.h \
-  /data/data/com.termux/files/usr/include/c++/v1/__type_traits/is_integral.h \
-  /data/data/com.termux/files/usr/include/c++/v1/__type_traits/remove_cv.h \
-  /data/data/com.termux/files/usr/include/c++/v1/__type_traits/remove_const.h \
-  /data/data/com.termux/files/usr/include/c++/v1/__type_traits/remove_volatile.h \
-  /data/data/com.termux/files/usr/include/c++/v1/version \
-  /data/data/com.termux/files/usr/include/c++/v1/stddef.h \
-  /data/data/com.termux/files/usr/lib/clang/20/include/stddef.h \
-  /data/data/com.termux/files/usr/lib/clang/20/include/__stddef_header_macro.h \
-  /data/data/com.termux/files/usr/lib/clang/20/include/__stddef_ptrdiff_t.h \
-  /data/data/com.termux/files/usr/lib/clang/20/include/__stddef_size_t.h \
-  /data/data/com.termux/files/usr/lib/clang/20/include/__stddef_wchar_t.h \
-  /data/data/com.termux/files/usr/lib/clang/20/include/__stddef_null.h \
-  /data/data/com.termux/files/usr/lib/clang/20/include/__stddef_nullptr_t.h \
-  /data/data/com.termux/files/usr/lib/clang/20/include/__stddef_max_align_t.h \
-  /data/data/com.termux/files/usr/lib/clang/20/include/__stddef_offsetof.h \
-  /data/data/com.termux/files/usr/include/c++/v1/cstdint \
-  /data/data/com.termux/files/usr/include/c++/v1/stdint.h \
-  /data/data/com.termux/files/usr/lib/clang/20/include/stdint.h \
-  /data/data/com.termux/files/usr/include/stdint.h \
-  /data/data/com.termux/files/usr/include/bits/wchar_limits.h \
-  /storage/emulated/0/aidrig/project/project/aidrigs/src/base/io/log/Log.h
+ /workspaces/AidRigCode/src/base/io/log/Tags.cpp \
+ /usr/include/stdc-predef.h /workspaces/AidRigCode/src/base/io/log/Tags.h \
+ /usr/include/c++/9/cstddef \
+ /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
+ /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
+ /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+ /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+ /usr/include/x86_64-linux-gnu/bits/long-double.h \
+ /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+ /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+ /usr/include/x86_64-linux-gnu/c++/9/bits/cpu_defines.h \
+ /usr/lib/gcc/x86_64-linux-gnu/9/include/stddef.h \
+ /usr/include/c++/9/cstdint \
+ /usr/lib/gcc/x86_64-linux-gnu/9/include/stdint.h /usr/include/stdint.h \
+ /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+ /usr/include/x86_64-linux-gnu/bits/types.h \
+ /usr/include/x86_64-linux-gnu/bits/timesize.h \
+ /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+ /usr/include/x86_64-linux-gnu/bits/time64.h \
+ /usr/include/x86_64-linux-gnu/bits/wchar.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+ /workspaces/AidRigCode/src/base/io/log/Log.h

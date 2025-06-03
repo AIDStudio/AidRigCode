@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/argon2.dir/arch/generic/lib/argon2-arch.c.o"
-  "CMakeFiles/argon2.dir/arch/generic/lib/argon2-arch.c.o.d"
+  "CMakeFiles/argon2.dir/arch/x86_64/lib/argon2-arch.c.o"
+  "CMakeFiles/argon2.dir/arch/x86_64/lib/argon2-arch.c.o.d"
   "CMakeFiles/argon2.dir/lib/argon2.c.o"
   "CMakeFiles/argon2.dir/lib/argon2.c.o.d"
   "CMakeFiles/argon2.dir/lib/blake2/blake2.c.o"

@@ -1,20 +1,20 @@
 CMakeFiles/aidrig.dir/src/crypto/cn/c_groestl.c.o: \
-  /storage/emulated/0/aidrig/project/project/aidrigs/src/crypto/cn/c_groestl.c \
-  /storage/emulated/0/aidrig/project/project/aidrigs/src/crypto/cn/c_groestl.h \
-  /data/data/com.termux/files/usr/lib/clang/20/include/stdint.h \
-  /data/data/com.termux/files/usr/include/stdint.h \
-  /data/data/com.termux/files/usr/include/bits/wchar_limits.h \
-  /data/data/com.termux/files/usr/include/sys/cdefs.h \
-  /data/data/com.termux/files/usr/include/android/versioning.h \
-  /data/data/com.termux/files/usr/include/android/api-level.h \
-  /data/data/com.termux/files/usr/include/bits/get_device_api_level_inlines.h \
-  /data/data/com.termux/files/usr/include/android/ndk-version.h \
-  /data/data/com.termux/files/usr/lib/clang/20/include/stddef.h \
-  /data/data/com.termux/files/usr/lib/clang/20/include/__stddef_header_macro.h \
-  /data/data/com.termux/files/usr/lib/clang/20/include/__stddef_ptrdiff_t.h \
-  /data/data/com.termux/files/usr/lib/clang/20/include/__stddef_size_t.h \
-  /data/data/com.termux/files/usr/lib/clang/20/include/__stddef_wchar_t.h \
-  /data/data/com.termux/files/usr/lib/clang/20/include/__stddef_null.h \
-  /data/data/com.termux/files/usr/lib/clang/20/include/__stddef_offsetof.h \
-  /storage/emulated/0/aidrig/project/project/aidrigs/src/crypto/cn/hash.h \
-  /storage/emulated/0/aidrig/project/project/aidrigs/src/crypto/cn/groestl_tables.h
+ /workspaces/AidRigCode/src/crypto/cn/c_groestl.c \
+ /usr/include/stdc-predef.h \
+ /workspaces/AidRigCode/src/crypto/cn/c_groestl.h \
+ /usr/lib/gcc/x86_64-linux-gnu/9/include/stdint.h /usr/include/stdint.h \
+ /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+ /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+ /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+ /usr/include/x86_64-linux-gnu/bits/long-double.h \
+ /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+ /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+ /usr/include/x86_64-linux-gnu/bits/types.h \
+ /usr/include/x86_64-linux-gnu/bits/timesize.h \
+ /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+ /usr/include/x86_64-linux-gnu/bits/time64.h \
+ /usr/include/x86_64-linux-gnu/bits/wchar.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+ /workspaces/AidRigCode/src/crypto/cn/hash.h \
+ /workspaces/AidRigCode/src/crypto/cn/groestl_tables.h

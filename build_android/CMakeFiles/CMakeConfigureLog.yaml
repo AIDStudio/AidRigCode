@@ -4,20 +4,20 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "/data/data/com.termux/files/usr/share/cmake-3.31/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "/opt/cmake/share/cmake-3.29/Modules/CMakeDetermineSystem.cmake:205 (message)"
       - "CMakeLists.txt:2 (project)"
     message: |
-      The system is: Android - 24 - aarch64
+      The system is: Linux - 6.8.0-1027-azure - x86_64
   -
     kind: "message-v1"
     backtrace:
-      - "/data/data/com.termux/files/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "/data/data/com.termux/files/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/data/data/com.termux/files/usr/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/opt/cmake/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/cmake/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/cmake/share/cmake-3.29/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
       - "CMakeLists.txt:2 (project)"
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-      Compiler: /data/data/com.termux/files/usr/bin/cc 
+      Compiler: /usr/bin/cc 
       Build flags: 
       Id flags:  
       
@@ -27,19 +27,19 @@ events:
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
       
-      The C compiler identification is Clang, found in:
-        /storage/emulated/0/aidrig/project/project/aidrigs/build_android/CMakeFiles/3.31.6/CompilerIdC/a.out
+      The C compiler identification is GNU, found in:
+        /workspaces/AidRigCode/build_android/CMakeFiles/3.29.3/CompilerIdC/a.out
       
   -
     kind: "message-v1"
     backtrace:
-      - "/data/data/com.termux/files/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "/data/data/com.termux/files/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/data/data/com.termux/files/usr/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/opt/cmake/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/cmake/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/cmake/share/cmake-3.29/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
       - "CMakeLists.txt:2 (project)"
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-      Compiler: /data/data/com.termux/files/usr/bin/c++ 
+      Compiler: /usr/bin/c++ 
       Build flags: 
       Id flags:  
       
@@ -49,22 +49,21 @@ events:
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
       
-      The CXX compiler identification is Clang, found in:
-        /storage/emulated/0/aidrig/project/project/aidrigs/build_android/CMakeFiles/3.31.6/CompilerIdCXX/a.out
+      The CXX compiler identification is GNU, found in:
+        /workspaces/AidRigCode/build_android/CMakeFiles/3.29.3/CompilerIdCXX/a.out
       
   -
     kind: "try_compile-v1"
     backtrace:
-      - "/data/data/com.termux/files/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
-      - "/data/data/com.termux/files/usr/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/opt/cmake/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:67 (try_compile)"
+      - "/opt/cmake/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/storage/emulated/0/aidrig/project/project/aidrigs/build_android/CMakeFiles/CMakeScratch/TryCompile-pGXbq3"
-      binary: "/storage/emulated/0/aidrig/project/project/aidrigs/build_android/CMakeFiles/CMakeScratch/TryCompile-pGXbq3"
+      source: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-57nYK2"
+      binary: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-57nYK2"
     cmakeVariables:
-      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/data/data/com.termux/files/usr/bin/clang-scan-deps"
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
       CMAKE_EXE_LINKER_FLAGS: ""
@@ -72,162 +71,252 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/storage/emulated/0/aidrig/project/project/aidrigs/build_android/CMakeFiles/CMakeScratch/TryCompile-pGXbq3'
+        Change Dir: '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-57nYK2'
         
-        Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_f7210/fast
-        /data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_f7210.dir/build.make CMakeFiles/cmTC_f7210.dir/build
-        make[1]: Entering directory '/storage/emulated/0/aidrig/project/project/aidrigs/build_android/CMakeFiles/CMakeScratch/TryCompile-pGXbq3'
-        Building C object CMakeFiles/cmTC_f7210.dir/CMakeCCompilerABI.c.o
-        /data/data/com.termux/files/usr/bin/cc   -O2 -g -DNDEBUG   -v -MD -MT CMakeFiles/cmTC_f7210.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_f7210.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_f7210.dir/CMakeCCompilerABI.c.o -c /data/data/com.termux/files/usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c
-        clang version 20.1.6
-        Target: aarch64-unknown-linux-android24
+        Run Build Command(s): /opt/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_b147f/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_b147f.dir/build.make CMakeFiles/cmTC_b147f.dir/build
+        make[1]: Entering directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-57nYK2'
+        Building C object CMakeFiles/cmTC_b147f.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_b147f.dir/CMakeCCompilerABI.c.o -c /opt/cmake/share/cmake-3.29/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
         Thread model: posix
-        InstalledDir: /data/data/com.termux/files/usr/bin
-         (in-process)
-         "/data/data/com.termux/files/usr/bin/clang-20" -cc1 -triple aarch64-unknown-linux-android24 -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu generic -target-feature +v8a -target-feature +fp-armv8 -target-feature +neon -target-feature +fix-cortex-a53-835769 -target-abi aapcs -debug-info-kind=constructor -dwarf-version=4 -debugger-tuning=gdb -fdebug-compilation-dir=/storage/emulated/0/aidrig/project/project/aidrigs/build_android/CMakeFiles/CMakeScratch/TryCompile-pGXbq3 -v -fcoverage-compilation-dir=/storage/emulated/0/aidrig/project/project/aidrigs/build_android/CMakeFiles/CMakeScratch/TryCompile-pGXbq3 -resource-dir /data/data/com.termux/files/usr/lib/clang/20 -dependency-file CMakeFiles/cmTC_f7210.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_f7210.dir/CMakeCCompilerABI.c.o -sys-header-deps -D NDEBUG -isysroot /data/data/com.termux/files -internal-isystem /data/data/com.termux/files/usr/lib/clang/20/include -internal-isystem /data/data/com.termux/files/usr/local/include -internal-externc-isystem /data/data/com.termux/files/usr/include/aarch64-linux-android -internal-externc-isystem /data/data/com.termux/files/include -internal-externc-isystem /data/data/com.termux/files/usr/include -O2 -ferror-limit 19 -femulated-tls -fno-signed-char -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -vectorize-loops -vectorize-slp -target-feature +outline-atomics -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_f7210.dir/CMakeCCompilerABI.c.o -x c /data/data/com.termux/files/usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c
-        clang -cc1 version 20.1.6 based upon LLVM 20.1.6 default target aarch64-unknown-linux-android24
-        ignoring nonexistent directory "/data/data/com.termux/files/usr/local/include"
-        ignoring nonexistent directory "/data/data/com.termux/files/include"
+        gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b147f.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+         /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -v -imultiarch x86_64-linux-gnu /opt/cmake/share/cmake-3.29/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_b147f.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cc0iAZSG.s
+        GNU C17 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"
         #include "..." search starts here:
         #include <...> search starts here:
-         /data/data/com.termux/files/usr/lib/clang/20/include
-         /data/data/com.termux/files/usr/include/aarch64-linux-android
-         /data/data/com.termux/files/usr/include
+         /usr/lib/gcc/x86_64-linux-gnu/9/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
         End of search list.
-        Linking C executable cmTC_f7210
-        /data/data/com.termux/files/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f7210.dir/link.txt --verbose=1
-        clang version 20.1.6
-        Target: aarch64-unknown-linux-android24
+        GNU C17 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: 01da938ff5dc2163489aa33cb3b747a7
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b147f.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+         as -v --64 -o CMakeFiles/cmTC_b147f.dir/CMakeCCompilerABI.c.o /tmp/cc0iAZSG.s
+        GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34
+        COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b147f.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+        Linking C executable cmTC_b147f
+        /opt/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b147f.dir/link.txt --verbose=1
+        /usr/bin/cc  -v -Wl,-v CMakeFiles/cmTC_b147f.dir/CMakeCCompilerABI.c.o -o cmTC_b147f
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
         Thread model: posix
-        InstalledDir: /data/data/com.termux/files/usr/bin
-         "/data/data/com.termux/files/usr/bin/ld.lld" --sysroot=/data/data/com.termux/files -EL --fix-cortex-a53-843419 -z now -z relro -z max-page-size=16384 --no-rosegment --hash-style=gnu -rpath=/data/data/com.termux/files/usr/lib --eh-frame-hdr -m aarch64linux -pie -dynamic-linker /system/bin/linker64 -o cmTC_f7210 /data/data/com.termux/files/usr/lib/crtbegin_dynamic.o -L/data/data/com.termux/files/usr/lib -L/system/lib64 CMakeFiles/cmTC_f7210.dir/CMakeCCompilerABI.c.o /data/data/com.termux/files/usr/lib/clang/20/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl -lc /data/data/com.termux/files/usr/lib/clang/20/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl /data/data/com.termux/files/usr/lib/crtend_android.o
-        /data/data/com.termux/files/usr/bin/cc -O2 -g -DNDEBUG  -v CMakeFiles/cmTC_f7210.dir/CMakeCCompilerABI.c.o -o cmTC_f7210
-        make[1]: Leaving directory '/storage/emulated/0/aidrig/project/project/aidrigs/build_android/CMakeFiles/CMakeScratch/TryCompile-pGXbq3'
+        gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
+        COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b147f' '-mtune=generic' '-march=x86-64'
+         /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccK1eej9.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_b147f /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. -v CMakeFiles/cmTC_b147f.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+        collect2 version 9.4.0
+        /usr/bin/ld -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccK1eej9.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_b147f /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. -v CMakeFiles/cmTC_b147f.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+        GNU ld (GNU Binutils for Ubuntu) 2.34
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b147f' '-mtune=generic' '-march=x86-64'
+        make[1]: Leaving directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-57nYK2'
         
       exitCode: 0
   -
     kind: "message-v1"
     backtrace:
-      - "/data/data/com.termux/files/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
-      - "/data/data/com.termux/files/usr/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/opt/cmake/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:137 (message)"
+      - "/opt/cmake/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     message: |
       Parsed C implicit include dir info: rv=done
         found start of include info
         found start of implicit include info
-          add: [/data/data/com.termux/files/usr/lib/clang/20/include]
-          add: [/data/data/com.termux/files/usr/include/aarch64-linux-android]
-          add: [/data/data/com.termux/files/usr/include]
+          add: [/usr/lib/gcc/x86_64-linux-gnu/9/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
         end of search list found
-        collapse include dir [/data/data/com.termux/files/usr/lib/clang/20/include] ==> [/data/data/com.termux/files/usr/lib/clang/20/include]
-        collapse include dir [/data/data/com.termux/files/usr/include/aarch64-linux-android] ==> [/data/data/com.termux/files/usr/include/aarch64-linux-android]
-        collapse include dir [/data/data/com.termux/files/usr/include] ==> [/data/data/com.termux/files/usr/include]
-        implicit include dirs: [/data/data/com.termux/files/usr/lib/clang/20/include;/data/data/com.termux/files/usr/include/aarch64-linux-android;/data/data/com.termux/files/usr/include]
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/9/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/9/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/gcc/x86_64-linux-gnu/9/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
       
       
   -
     kind: "message-v1"
     backtrace:
-      - "/data/data/com.termux/files/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
-      - "/data/data/com.termux/files/usr/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/opt/cmake/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:173 (message)"
+      - "/opt/cmake/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     message: |
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
-        ignore line: [Change Dir: '/storage/emulated/0/aidrig/project/project/aidrigs/build_android/CMakeFiles/CMakeScratch/TryCompile-pGXbq3']
+        ignore line: [Change Dir: '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-57nYK2']
         ignore line: []
-        ignore line: [Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_f7210/fast]
-        ignore line: [/data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_f7210.dir/build.make CMakeFiles/cmTC_f7210.dir/build]
-        ignore line: [make[1]: Entering directory '/storage/emulated/0/aidrig/project/project/aidrigs/build_android/CMakeFiles/CMakeScratch/TryCompile-pGXbq3']
-        ignore line: [Building C object CMakeFiles/cmTC_f7210.dir/CMakeCCompilerABI.c.o]
-        ignore line: [/data/data/com.termux/files/usr/bin/cc   -O2 -g -DNDEBUG   -v -MD -MT CMakeFiles/cmTC_f7210.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_f7210.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_f7210.dir/CMakeCCompilerABI.c.o -c /data/data/com.termux/files/usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c]
-        ignore line: [clang version 20.1.6]
-        ignore line: [Target: aarch64-unknown-linux-android24]
+        ignore line: [Run Build Command(s): /opt/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_b147f/fast]
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_b147f.dir/build.make CMakeFiles/cmTC_b147f.dir/build]
+        ignore line: [make[1]: Entering directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-57nYK2']
+        ignore line: [Building C object CMakeFiles/cmTC_b147f.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_b147f.dir/CMakeCCompilerABI.c.o -c /opt/cmake/share/cmake-3.29/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
         ignore line: [Thread model: posix]
-        ignore line: [InstalledDir: /data/data/com.termux/files/usr/bin]
-        ignore line: [ (in-process)]
-        ignore line: [ "/data/data/com.termux/files/usr/bin/clang-20" -cc1 -triple aarch64-unknown-linux-android24 -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu generic -target-feature +v8a -target-feature +fp-armv8 -target-feature +neon -target-feature +fix-cortex-a53-835769 -target-abi aapcs -debug-info-kind=constructor -dwarf-version=4 -debugger-tuning=gdb -fdebug-compilation-dir=/storage/emulated/0/aidrig/project/project/aidrigs/build_android/CMakeFiles/CMakeScratch/TryCompile-pGXbq3 -v -fcoverage-compilation-dir=/storage/emulated/0/aidrig/project/project/aidrigs/build_android/CMakeFiles/CMakeScratch/TryCompile-pGXbq3 -resource-dir /data/data/com.termux/files/usr/lib/clang/20 -dependency-file CMakeFiles/cmTC_f7210.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_f7210.dir/CMakeCCompilerABI.c.o -sys-header-deps -D NDEBUG -isysroot /data/data/com.termux/files -internal-isystem /data/data/com.termux/files/usr/lib/clang/20/include -internal-isystem /data/data/com.termux/files/usr/local/include -internal-externc-isystem /data/data/com.termux/files/usr/include/aarch64-linux-android -internal-externc-isystem /data/data/com.termux/files/include -internal-externc-isystem /data/data/com.termux/files/usr/include -O2 -ferror-limit 19 -femulated-tls -fno-signed-char -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -vectorize-loops -vectorize-slp -target-feature +outline-atomics -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_f7210.dir/CMakeCCompilerABI.c.o -x c /data/data/com.termux/files/usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c]
-        ignore line: [clang -cc1 version 20.1.6 based upon LLVM 20.1.6 default target aarch64-unknown-linux-android24]
-        ignore line: [ignoring nonexistent directory "/data/data/com.termux/files/usr/local/include"]
-        ignore line: [ignoring nonexistent directory "/data/data/com.termux/files/include"]
+        ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b147f.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -v -imultiarch x86_64-linux-gnu /opt/cmake/share/cmake-3.29/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_b147f.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cc0iAZSG.s]
+        ignore line: [GNU C17 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"]
         ignore line: [#include "..." search starts here:]
         ignore line: [#include <...> search starts here:]
-        ignore line: [ /data/data/com.termux/files/usr/lib/clang/20/include]
-        ignore line: [ /data/data/com.termux/files/usr/include/aarch64-linux-android]
-        ignore line: [ /data/data/com.termux/files/usr/include]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
         ignore line: [End of search list.]
-        ignore line: [Linking C executable cmTC_f7210]
-        ignore line: [/data/data/com.termux/files/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f7210.dir/link.txt --verbose=1]
-        ignore line: [clang version 20.1.6]
-        ignore line: [Target: aarch64-unknown-linux-android24]
+        ignore line: [GNU C17 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: 01da938ff5dc2163489aa33cb3b747a7]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b147f.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_b147f.dir/CMakeCCompilerABI.c.o /tmp/cc0iAZSG.s]
+        ignore line: [GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b147f.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+        ignore line: [Linking C executable cmTC_b147f]
+        ignore line: [/opt/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b147f.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/cc  -v -Wl -v CMakeFiles/cmTC_b147f.dir/CMakeCCompilerABI.c.o -o cmTC_b147f]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
         ignore line: [Thread model: posix]
-        ignore line: [InstalledDir: /data/data/com.termux/files/usr/bin]
-        link line: [ "/data/data/com.termux/files/usr/bin/ld.lld" --sysroot=/data/data/com.termux/files -EL --fix-cortex-a53-843419 -z now -z relro -z max-page-size=16384 --no-rosegment --hash-style=gnu -rpath=/data/data/com.termux/files/usr/lib --eh-frame-hdr -m aarch64linux -pie -dynamic-linker /system/bin/linker64 -o cmTC_f7210 /data/data/com.termux/files/usr/lib/crtbegin_dynamic.o -L/data/data/com.termux/files/usr/lib -L/system/lib64 CMakeFiles/cmTC_f7210.dir/CMakeCCompilerABI.c.o /data/data/com.termux/files/usr/lib/clang/20/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl -lc /data/data/com.termux/files/usr/lib/clang/20/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl /data/data/com.termux/files/usr/lib/crtend_android.o]
-          arg [/data/data/com.termux/files/usr/bin/ld.lld] ==> ignore
-          arg [--sysroot=/data/data/com.termux/files] ==> ignore
-          arg [-EL] ==> ignore
-          arg [--fix-cortex-a53-843419] ==> ignore
-          arg [-znow] ==> ignore
-          arg [-zrelro] ==> ignore
-          arg [-zmax-page-size=16384] ==> ignore
-          arg [--no-rosegment] ==> ignore
-          arg [--hash-style=gnu] ==> ignore
-          arg [-rpath=/data/data/com.termux/files/usr/lib] ==> ignore
+        ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) ]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b147f' '-mtune=generic' '-march=x86-64']
+        link line: [ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccK1eej9.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_b147f /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. -v CMakeFiles/cmTC_b147f.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccK1eej9.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--build-id] ==> ignore
           arg [--eh-frame-hdr] ==> ignore
           arg [-m] ==> ignore
-          arg [aarch64linux] ==> ignore
-          arg [-pie] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
           arg [-dynamic-linker] ==> ignore
-          arg [/system/bin/linker64] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_f7210] ==> ignore
-          arg [/data/data/com.termux/files/usr/lib/crtbegin_dynamic.o] ==> obj [/data/data/com.termux/files/usr/lib/crtbegin_dynamic.o]
-          arg [-L/data/data/com.termux/files/usr/lib] ==> dir [/data/data/com.termux/files/usr/lib]
-          arg [-L/system/lib64] ==> dir [/system/lib64]
-          arg [CMakeFiles/cmTC_f7210.dir/CMakeCCompilerABI.c.o] ==> ignore
-          arg [/data/data/com.termux/files/usr/lib/clang/20/lib/linux/libclang_rt.builtins-aarch64-android.a] ==> lib [/data/data/com.termux/files/usr/lib/clang/20/lib/linux/libclang_rt.builtins-aarch64-android.a]
-          arg [-l:libunwind.a] ==> lib [-l:libunwind.a]
-          arg [-ldl] ==> lib [dl]
+          arg [cmTC_b147f] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/9] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_b147f.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
           arg [-lc] ==> lib [c]
-          arg [/data/data/com.termux/files/usr/lib/clang/20/lib/linux/libclang_rt.builtins-aarch64-android.a] ==> lib [/data/data/com.termux/files/usr/lib/clang/20/lib/linux/libclang_rt.builtins-aarch64-android.a]
-          arg [-l:libunwind.a] ==> lib [-l:libunwind.a]
-          arg [-ldl] ==> lib [dl]
-          arg [/data/data/com.termux/files/usr/lib/crtend_android.o] ==> obj [/data/data/com.termux/files/usr/lib/crtend_android.o]
-        linker tool for 'C': /data/data/com.termux/files/usr/bin/ld.lld
-        remove lib [/data/data/com.termux/files/usr/lib/clang/20/lib/linux/libclang_rt.builtins-aarch64-android.a]
-        remove lib [/data/data/com.termux/files/usr/lib/clang/20/lib/linux/libclang_rt.builtins-aarch64-android.a]
-        collapse library dir [/data/data/com.termux/files/usr/lib] ==> [/data/data/com.termux/files/usr/lib]
-        collapse library dir [/system/lib64] ==> [/system/lib64]
-        implicit libs: [-l:libunwind.a;dl;c;-l:libunwind.a;dl]
-        implicit objs: [/data/data/com.termux/files/usr/lib/crtbegin_dynamic.o;/data/data/com.termux/files/usr/lib/crtend_android.o]
-        implicit dirs: [/data/data/com.termux/files/usr/lib;/system/lib64]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [collect2 version 9.4.0]
+        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccK1eej9.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_b147f /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. -v CMakeFiles/cmTC_b147f.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+        linker tool for 'C': /usr/bin/ld
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9] ==> [/usr/lib/gcc/x86_64-linux-gnu/9]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/9;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
         implicit fwks: []
       
       
   -
     kind: "message-v1"
     backtrace:
-      - "/data/data/com.termux/files/usr/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
-      - "/data/data/com.termux/files/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
-      - "/data/data/com.termux/files/usr/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/opt/cmake/share/cmake-3.29/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/opt/cmake/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:210 (cmake_determine_linker_id)"
+      - "/opt/cmake/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     message: |
-      Running the C compiler's linker: "/data/data/com.termux/files/usr/bin/ld.lld" "-v"
-      LLD 20.1.6 (compatible with GNU linkers)
+      Running the C compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils for Ubuntu) 2.34
   -
     kind: "try_compile-v1"
     backtrace:
-      - "/data/data/com.termux/files/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
-      - "/data/data/com.termux/files/usr/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/opt/cmake/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:67 (try_compile)"
+      - "/opt/cmake/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/storage/emulated/0/aidrig/project/project/aidrigs/build_android/CMakeFiles/CMakeScratch/TryCompile-1xt58J"
-      binary: "/storage/emulated/0/aidrig/project/project/aidrigs/build_android/CMakeFiles/CMakeScratch/TryCompile-1xt58J"
+      source: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-sh8KA1"
+      binary: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-sh8KA1"
     cmakeVariables:
-      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/data/data/com.termux/files/usr/bin/clang-scan-deps"
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
       CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
@@ -236,298 +325,709 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/storage/emulated/0/aidrig/project/project/aidrigs/build_android/CMakeFiles/CMakeScratch/TryCompile-1xt58J'
+        Change Dir: '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-sh8KA1'
         
-        Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_67d00/fast
-        /data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_67d00.dir/build.make CMakeFiles/cmTC_67d00.dir/build
-        make[1]: Entering directory '/storage/emulated/0/aidrig/project/project/aidrigs/build_android/CMakeFiles/CMakeScratch/TryCompile-1xt58J'
-        Building CXX object CMakeFiles/cmTC_67d00.dir/CMakeCXXCompilerABI.cpp.o
-        /data/data/com.termux/files/usr/bin/c++   -O2 -g -DNDEBUG   -v -MD -MT CMakeFiles/cmTC_67d00.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_67d00.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_67d00.dir/CMakeCXXCompilerABI.cpp.o -c /data/data/com.termux/files/usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp
-        clang version 20.1.6
-        Target: aarch64-unknown-linux-android24
+        Run Build Command(s): /opt/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_0c1ce/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_0c1ce.dir/build.make CMakeFiles/cmTC_0c1ce.dir/build
+        make[1]: Entering directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-sh8KA1'
+        Building CXX object CMakeFiles/cmTC_0c1ce.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -o CMakeFiles/cmTC_0c1ce.dir/CMakeCXXCompilerABI.cpp.o -c /opt/cmake/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
         Thread model: posix
-        InstalledDir: /data/data/com.termux/files/usr/bin
-         (in-process)
-         "/data/data/com.termux/files/usr/bin/clang-20" -cc1 -triple aarch64-unknown-linux-android24 -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu generic -target-feature +v8a -target-feature +fp-armv8 -target-feature +neon -target-feature +fix-cortex-a53-835769 -target-abi aapcs -debug-info-kind=constructor -dwarf-version=4 -debugger-tuning=gdb -fdebug-compilation-dir=/storage/emulated/0/aidrig/project/project/aidrigs/build_android/CMakeFiles/CMakeScratch/TryCompile-1xt58J -v -fcoverage-compilation-dir=/storage/emulated/0/aidrig/project/project/aidrigs/build_android/CMakeFiles/CMakeScratch/TryCompile-1xt58J -resource-dir /data/data/com.termux/files/usr/lib/clang/20 -dependency-file CMakeFiles/cmTC_67d00.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_67d00.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -D NDEBUG -isysroot /data/data/com.termux/files -internal-isystem /data/data/com.termux/files/usr/include/c++/v1 -internal-isystem /data/data/com.termux/files/usr/lib/clang/20/include -internal-isystem /data/data/com.termux/files/usr/local/include -internal-externc-isystem /data/data/com.termux/files/usr/include/aarch64-linux-android -internal-externc-isystem /data/data/com.termux/files/include -internal-externc-isystem /data/data/com.termux/files/usr/include -O2 -fdeprecated-macro -ferror-limit 19 -femulated-tls -fno-signed-char -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -vectorize-loops -vectorize-slp -target-feature +outline-atomics -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_67d00.dir/CMakeCXXCompilerABI.cpp.o -x c++ /data/data/com.termux/files/usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp
-        clang -cc1 version 20.1.6 based upon LLVM 20.1.6 default target aarch64-unknown-linux-android24
-        ignoring nonexistent directory "/data/data/com.termux/files/usr/local/include"
-        ignoring nonexistent directory "/data/data/com.termux/files/include"
+        gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0c1ce.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+         /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /opt/cmake/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_0c1ce.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccYEgAVW.s
+        GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/9"
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"
         #include "..." search starts here:
         #include <...> search starts here:
-         /data/data/com.termux/files/usr/include/c++/v1
-         /data/data/com.termux/files/usr/lib/clang/20/include
-         /data/data/com.termux/files/usr/include/aarch64-linux-android
-         /data/data/com.termux/files/usr/include
+         /usr/include/c++/9
+         /usr/include/x86_64-linux-gnu/c++/9
+         /usr/include/c++/9/backward
+         /usr/lib/gcc/x86_64-linux-gnu/9/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
         End of search list.
-        Linking CXX executable cmTC_67d00
-        /data/data/com.termux/files/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_67d00.dir/link.txt --verbose=1
-        clang version 20.1.6
-        Target: aarch64-unknown-linux-android24
+        GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: 3d1eba838554fa2348dba760e4770469
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0c1ce.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+         as -v --64 -o CMakeFiles/cmTC_0c1ce.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccYEgAVW.s
+        GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34
+        COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0c1ce.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+        Linking CXX executable cmTC_0c1ce
+        /opt/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0c1ce.dir/link.txt --verbose=1
+        /usr/bin/c++  -v -Wl,-v CMakeFiles/cmTC_0c1ce.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_0c1ce
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
         Thread model: posix
-        InstalledDir: /data/data/com.termux/files/usr/bin
-         "/data/data/com.termux/files/usr/bin/ld.lld" --sysroot=/data/data/com.termux/files -EL --fix-cortex-a53-843419 -z now -z relro -z max-page-size=16384 --no-rosegment --hash-style=gnu -rpath=/data/data/com.termux/files/usr/lib --eh-frame-hdr -m aarch64linux -pie -dynamic-linker /system/bin/linker64 -o cmTC_67d00 /data/data/com.termux/files/usr/lib/crtbegin_dynamic.o -L/data/data/com.termux/files/usr/lib -L/system/lib64 CMakeFiles/cmTC_67d00.dir/CMakeCXXCompilerABI.cpp.o -lc++_shared /data/data/com.termux/files/usr/lib/clang/20/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl -lm -lc /data/data/com.termux/files/usr/lib/clang/20/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl /data/data/com.termux/files/usr/lib/crtend_android.o
-        /data/data/com.termux/files/usr/bin/c++ -O2 -g -DNDEBUG  -v CMakeFiles/cmTC_67d00.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_67d00
-        make[1]: Leaving directory '/storage/emulated/0/aidrig/project/project/aidrigs/build_android/CMakeFiles/CMakeScratch/TryCompile-1xt58J'
+        gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
+        COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_0c1ce' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+         /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccPqYqkm.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_0c1ce /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. -v CMakeFiles/cmTC_0c1ce.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+        collect2 version 9.4.0
+        /usr/bin/ld -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccPqYqkm.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_0c1ce /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. -v CMakeFiles/cmTC_0c1ce.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+        GNU ld (GNU Binutils for Ubuntu) 2.34
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_0c1ce' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+        make[1]: Leaving directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-sh8KA1'
         
       exitCode: 0
   -
     kind: "message-v1"
     backtrace:
-      - "/data/data/com.termux/files/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
-      - "/data/data/com.termux/files/usr/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/opt/cmake/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:137 (message)"
+      - "/opt/cmake/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     message: |
       Parsed CXX implicit include dir info: rv=done
         found start of include info
         found start of implicit include info
-          add: [/data/data/com.termux/files/usr/include/c++/v1]
-          add: [/data/data/com.termux/files/usr/lib/clang/20/include]
-          add: [/data/data/com.termux/files/usr/include/aarch64-linux-android]
-          add: [/data/data/com.termux/files/usr/include]
+          add: [/usr/include/c++/9]
+          add: [/usr/include/x86_64-linux-gnu/c++/9]
+          add: [/usr/include/c++/9/backward]
+          add: [/usr/lib/gcc/x86_64-linux-gnu/9/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
         end of search list found
-        collapse include dir [/data/data/com.termux/files/usr/include/c++/v1] ==> [/data/data/com.termux/files/usr/include/c++/v1]
-        collapse include dir [/data/data/com.termux/files/usr/lib/clang/20/include] ==> [/data/data/com.termux/files/usr/lib/clang/20/include]
-        collapse include dir [/data/data/com.termux/files/usr/include/aarch64-linux-android] ==> [/data/data/com.termux/files/usr/include/aarch64-linux-android]
-        collapse include dir [/data/data/com.termux/files/usr/include] ==> [/data/data/com.termux/files/usr/include]
-        implicit include dirs: [/data/data/com.termux/files/usr/include/c++/v1;/data/data/com.termux/files/usr/lib/clang/20/include;/data/data/com.termux/files/usr/include/aarch64-linux-android;/data/data/com.termux/files/usr/include]
+        collapse include dir [/usr/include/c++/9] ==> [/usr/include/c++/9]
+        collapse include dir [/usr/include/x86_64-linux-gnu/c++/9] ==> [/usr/include/x86_64-linux-gnu/c++/9]
+        collapse include dir [/usr/include/c++/9/backward] ==> [/usr/include/c++/9/backward]
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/9/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/9/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/include/c++/9;/usr/include/x86_64-linux-gnu/c++/9;/usr/include/c++/9/backward;/usr/lib/gcc/x86_64-linux-gnu/9/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
       
       
   -
     kind: "message-v1"
     backtrace:
-      - "/data/data/com.termux/files/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
-      - "/data/data/com.termux/files/usr/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/opt/cmake/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:173 (message)"
+      - "/opt/cmake/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     message: |
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
-        ignore line: [Change Dir: '/storage/emulated/0/aidrig/project/project/aidrigs/build_android/CMakeFiles/CMakeScratch/TryCompile-1xt58J']
+        ignore line: [Change Dir: '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-sh8KA1']
         ignore line: []
-        ignore line: [Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_67d00/fast]
-        ignore line: [/data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_67d00.dir/build.make CMakeFiles/cmTC_67d00.dir/build]
-        ignore line: [make[1]: Entering directory '/storage/emulated/0/aidrig/project/project/aidrigs/build_android/CMakeFiles/CMakeScratch/TryCompile-1xt58J']
-        ignore line: [Building CXX object CMakeFiles/cmTC_67d00.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/data/data/com.termux/files/usr/bin/c++   -O2 -g -DNDEBUG   -v -MD -MT CMakeFiles/cmTC_67d00.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_67d00.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_67d00.dir/CMakeCXXCompilerABI.cpp.o -c /data/data/com.termux/files/usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp]
-        ignore line: [clang version 20.1.6]
-        ignore line: [Target: aarch64-unknown-linux-android24]
+        ignore line: [Run Build Command(s): /opt/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_0c1ce/fast]
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_0c1ce.dir/build.make CMakeFiles/cmTC_0c1ce.dir/build]
+        ignore line: [make[1]: Entering directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-sh8KA1']
+        ignore line: [Building CXX object CMakeFiles/cmTC_0c1ce.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_0c1ce.dir/CMakeCXXCompilerABI.cpp.o -c /opt/cmake/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
         ignore line: [Thread model: posix]
-        ignore line: [InstalledDir: /data/data/com.termux/files/usr/bin]
-        ignore line: [ (in-process)]
-        ignore line: [ "/data/data/com.termux/files/usr/bin/clang-20" -cc1 -triple aarch64-unknown-linux-android24 -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu generic -target-feature +v8a -target-feature +fp-armv8 -target-feature +neon -target-feature +fix-cortex-a53-835769 -target-abi aapcs -debug-info-kind=constructor -dwarf-version=4 -debugger-tuning=gdb -fdebug-compilation-dir=/storage/emulated/0/aidrig/project/project/aidrigs/build_android/CMakeFiles/CMakeScratch/TryCompile-1xt58J -v -fcoverage-compilation-dir=/storage/emulated/0/aidrig/project/project/aidrigs/build_android/CMakeFiles/CMakeScratch/TryCompile-1xt58J -resource-dir /data/data/com.termux/files/usr/lib/clang/20 -dependency-file CMakeFiles/cmTC_67d00.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_67d00.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -D NDEBUG -isysroot /data/data/com.termux/files -internal-isystem /data/data/com.termux/files/usr/include/c++/v1 -internal-isystem /data/data/com.termux/files/usr/lib/clang/20/include -internal-isystem /data/data/com.termux/files/usr/local/include -internal-externc-isystem /data/data/com.termux/files/usr/include/aarch64-linux-android -internal-externc-isystem /data/data/com.termux/files/include -internal-externc-isystem /data/data/com.termux/files/usr/include -O2 -fdeprecated-macro -ferror-limit 19 -femulated-tls -fno-signed-char -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -vectorize-loops -vectorize-slp -target-feature +outline-atomics -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_67d00.dir/CMakeCXXCompilerABI.cpp.o -x c++ /data/data/com.termux/files/usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp]
-        ignore line: [clang -cc1 version 20.1.6 based upon LLVM 20.1.6 default target aarch64-unknown-linux-android24]
-        ignore line: [ignoring nonexistent directory "/data/data/com.termux/files/usr/local/include"]
-        ignore line: [ignoring nonexistent directory "/data/data/com.termux/files/include"]
+        ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0c1ce.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /opt/cmake/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_0c1ce.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccYEgAVW.s]
+        ignore line: [GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/9"]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"]
         ignore line: [#include "..." search starts here:]
         ignore line: [#include <...> search starts here:]
-        ignore line: [ /data/data/com.termux/files/usr/include/c++/v1]
-        ignore line: [ /data/data/com.termux/files/usr/lib/clang/20/include]
-        ignore line: [ /data/data/com.termux/files/usr/include/aarch64-linux-android]
-        ignore line: [ /data/data/com.termux/files/usr/include]
+        ignore line: [ /usr/include/c++/9]
+        ignore line: [ /usr/include/x86_64-linux-gnu/c++/9]
+        ignore line: [ /usr/include/c++/9/backward]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
         ignore line: [End of search list.]
-        ignore line: [Linking CXX executable cmTC_67d00]
-        ignore line: [/data/data/com.termux/files/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_67d00.dir/link.txt --verbose=1]
-        ignore line: [clang version 20.1.6]
-        ignore line: [Target: aarch64-unknown-linux-android24]
+        ignore line: [GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: 3d1eba838554fa2348dba760e4770469]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0c1ce.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_0c1ce.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccYEgAVW.s]
+        ignore line: [GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0c1ce.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        ignore line: [Linking CXX executable cmTC_0c1ce]
+        ignore line: [/opt/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0c1ce.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/c++  -v -Wl -v CMakeFiles/cmTC_0c1ce.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_0c1ce]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
         ignore line: [Thread model: posix]
-        ignore line: [InstalledDir: /data/data/com.termux/files/usr/bin]
-        link line: [ "/data/data/com.termux/files/usr/bin/ld.lld" --sysroot=/data/data/com.termux/files -EL --fix-cortex-a53-843419 -z now -z relro -z max-page-size=16384 --no-rosegment --hash-style=gnu -rpath=/data/data/com.termux/files/usr/lib --eh-frame-hdr -m aarch64linux -pie -dynamic-linker /system/bin/linker64 -o cmTC_67d00 /data/data/com.termux/files/usr/lib/crtbegin_dynamic.o -L/data/data/com.termux/files/usr/lib -L/system/lib64 CMakeFiles/cmTC_67d00.dir/CMakeCXXCompilerABI.cpp.o -lc++_shared /data/data/com.termux/files/usr/lib/clang/20/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl -lm -lc /data/data/com.termux/files/usr/lib/clang/20/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl /data/data/com.termux/files/usr/lib/crtend_android.o]
-          arg [/data/data/com.termux/files/usr/bin/ld.lld] ==> ignore
-          arg [--sysroot=/data/data/com.termux/files] ==> ignore
-          arg [-EL] ==> ignore
-          arg [--fix-cortex-a53-843419] ==> ignore
-          arg [-znow] ==> ignore
-          arg [-zrelro] ==> ignore
-          arg [-zmax-page-size=16384] ==> ignore
-          arg [--no-rosegment] ==> ignore
-          arg [--hash-style=gnu] ==> ignore
-          arg [-rpath=/data/data/com.termux/files/usr/lib] ==> ignore
+        ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) ]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_0c1ce' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        link line: [ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccPqYqkm.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_0c1ce /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. -v CMakeFiles/cmTC_0c1ce.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccPqYqkm.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--build-id] ==> ignore
           arg [--eh-frame-hdr] ==> ignore
           arg [-m] ==> ignore
-          arg [aarch64linux] ==> ignore
-          arg [-pie] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
           arg [-dynamic-linker] ==> ignore
-          arg [/system/bin/linker64] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_67d00] ==> ignore
-          arg [/data/data/com.termux/files/usr/lib/crtbegin_dynamic.o] ==> obj [/data/data/com.termux/files/usr/lib/crtbegin_dynamic.o]
-          arg [-L/data/data/com.termux/files/usr/lib] ==> dir [/data/data/com.termux/files/usr/lib]
-          arg [-L/system/lib64] ==> dir [/system/lib64]
-          arg [CMakeFiles/cmTC_67d00.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
-          arg [-lc++_shared] ==> lib [c++_shared]
-          arg [/data/data/com.termux/files/usr/lib/clang/20/lib/linux/libclang_rt.builtins-aarch64-android.a] ==> lib [/data/data/com.termux/files/usr/lib/clang/20/lib/linux/libclang_rt.builtins-aarch64-android.a]
-          arg [-l:libunwind.a] ==> lib [-l:libunwind.a]
-          arg [-ldl] ==> lib [dl]
+          arg [cmTC_0c1ce] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/9] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_0c1ce.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
           arg [-lc] ==> lib [c]
-          arg [/data/data/com.termux/files/usr/lib/clang/20/lib/linux/libclang_rt.builtins-aarch64-android.a] ==> lib [/data/data/com.termux/files/usr/lib/clang/20/lib/linux/libclang_rt.builtins-aarch64-android.a]
-          arg [-l:libunwind.a] ==> lib [-l:libunwind.a]
-          arg [-ldl] ==> lib [dl]
-          arg [/data/data/com.termux/files/usr/lib/crtend_android.o] ==> obj [/data/data/com.termux/files/usr/lib/crtend_android.o]
-        linker tool for 'CXX': /data/data/com.termux/files/usr/bin/ld.lld
-        remove lib [/data/data/com.termux/files/usr/lib/clang/20/lib/linux/libclang_rt.builtins-aarch64-android.a]
-        remove lib [/data/data/com.termux/files/usr/lib/clang/20/lib/linux/libclang_rt.builtins-aarch64-android.a]
-        collapse library dir [/data/data/com.termux/files/usr/lib] ==> [/data/data/com.termux/files/usr/lib]
-        collapse library dir [/system/lib64] ==> [/system/lib64]
-        implicit libs: [c++_shared;-l:libunwind.a;dl;m;c;-l:libunwind.a;dl]
-        implicit objs: [/data/data/com.termux/files/usr/lib/crtbegin_dynamic.o;/data/data/com.termux/files/usr/lib/crtend_android.o]
-        implicit dirs: [/data/data/com.termux/files/usr/lib;/system/lib64]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [collect2 version 9.4.0]
+        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccPqYqkm.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_0c1ce /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. -v CMakeFiles/cmTC_0c1ce.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+        linker tool for 'CXX': /usr/bin/ld
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9] ==> [/usr/lib/gcc/x86_64-linux-gnu/9]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/9;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
         implicit fwks: []
       
       
   -
     kind: "message-v1"
     backtrace:
-      - "/data/data/com.termux/files/usr/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
-      - "/data/data/com.termux/files/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
-      - "/data/data/com.termux/files/usr/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/opt/cmake/share/cmake-3.29/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/opt/cmake/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:210 (cmake_determine_linker_id)"
+      - "/opt/cmake/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     message: |
-      Running the CXX compiler's linker: "/data/data/com.termux/files/usr/bin/ld.lld" "-v"
-      LLD 20.1.6 (compatible with GNU linkers)
+      Running the CXX compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils for Ubuntu) 2.34
   -
     kind: "try_compile-v1"
     backtrace:
-      - "/data/data/com.termux/files/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
-      - "/data/data/com.termux/files/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
-      - "/data/data/com.termux/files/usr/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "/opt/cmake/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/cmake/share/cmake-3.29/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/cmake/share/cmake-3.29/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
       - "cmake/cpu.cmake:17 (CHECK_CXX_COMPILER_FLAG)"
       - "CMakeLists.txt:50 (include)"
     checks:
       - "Performing Test VAES_SUPPORTED"
     directories:
-      source: "/storage/emulated/0/aidrig/project/project/aidrigs/build_android/CMakeFiles/CMakeScratch/TryCompile-iAFWpW"
-      binary: "/storage/emulated/0/aidrig/project/project/aidrigs/build_android/CMakeFiles/CMakeScratch/TryCompile-iAFWpW"
+      source: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-ToOiC1"
+      binary: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-ToOiC1"
     cmakeVariables:
-      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/data/data/com.termux/files/usr/bin/clang-scan-deps"
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
       CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "/storage/emulated/0/aidrig/project/project/aidrigs/cmake"
+      CMAKE_MODULE_PATH: "/workspaces/AidRigCode/cmake"
     buildResult:
       variable: "VAES_SUPPORTED"
       cached: true
       stdout: |
-        Change Dir: '/storage/emulated/0/aidrig/project/project/aidrigs/build_android/CMakeFiles/CMakeScratch/TryCompile-iAFWpW'
+        Change Dir: '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-ToOiC1'
         
-        Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_e6ae6/fast
-        /data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_e6ae6.dir/build.make CMakeFiles/cmTC_e6ae6.dir/build
-        make[1]: Entering directory '/storage/emulated/0/aidrig/project/project/aidrigs/build_android/CMakeFiles/CMakeScratch/TryCompile-iAFWpW'
-        Building CXX object CMakeFiles/cmTC_e6ae6.dir/src.cxx.o
-        /data/data/com.termux/files/usr/bin/c++ -DVAES_SUPPORTED  -O2 -g -DNDEBUG   -mavx2 -mvaes -MD -MT CMakeFiles/cmTC_e6ae6.dir/src.cxx.o -MF CMakeFiles/cmTC_e6ae6.dir/src.cxx.o.d -o CMakeFiles/cmTC_e6ae6.dir/src.cxx.o -c /storage/emulated/0/aidrig/project/project/aidrigs/build_android/CMakeFiles/CMakeScratch/TryCompile-iAFWpW/src.cxx
-        c++: error: unsupported option '-mavx2' for target 'aarch64-unknown-linux-android24'
-        c++: error: unsupported option '-mvaes' for target 'aarch64-unknown-linux-android24'
-        make[1]: *** [CMakeFiles/cmTC_e6ae6.dir/build.make:82: CMakeFiles/cmTC_e6ae6.dir/src.cxx.o] Error 1
-        make[1]: Leaving directory '/storage/emulated/0/aidrig/project/project/aidrigs/build_android/CMakeFiles/CMakeScratch/TryCompile-iAFWpW'
-        make: *** [Makefile:134: cmTC_e6ae6/fast] Error 2
-        
-      exitCode: 2
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "/data/data/com.termux/files/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
-      - "/data/data/com.termux/files/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
-      - "/data/data/com.termux/files/usr/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
-      - "cmake/cpu.cmake:53 (CHECK_CXX_COMPILER_FLAG)"
-      - "CMakeLists.txt:50 (include)"
-    checks:
-      - "Performing Test XMRIG_ARM_CRYPTO"
-    directories:
-      source: "/storage/emulated/0/aidrig/project/project/aidrigs/build_android/CMakeFiles/CMakeScratch/TryCompile-yr1oUG"
-      binary: "/storage/emulated/0/aidrig/project/project/aidrigs/build_android/CMakeFiles/CMakeScratch/TryCompile-yr1oUG"
-    cmakeVariables:
-      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/data/data/com.termux/files/usr/bin/clang-scan-deps"
-      CMAKE_CXX_FLAGS: ""
-      CMAKE_CXX_FLAGS_DEBUG: "-g"
-      CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "/storage/emulated/0/aidrig/project/project/aidrigs/cmake"
-    buildResult:
-      variable: "XMRIG_ARM_CRYPTO"
-      cached: true
-      stdout: |
-        Change Dir: '/storage/emulated/0/aidrig/project/project/aidrigs/build_android/CMakeFiles/CMakeScratch/TryCompile-yr1oUG'
-        
-        Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_5c079/fast
-        /data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_5c079.dir/build.make CMakeFiles/cmTC_5c079.dir/build
-        make[1]: Entering directory '/storage/emulated/0/aidrig/project/project/aidrigs/build_android/CMakeFiles/CMakeScratch/TryCompile-yr1oUG'
-        Building CXX object CMakeFiles/cmTC_5c079.dir/src.cxx.o
-        /data/data/com.termux/files/usr/bin/c++ -DXMRIG_ARM_CRYPTO  -O2 -g -DNDEBUG   -march=armv8-a+crypto -MD -MT CMakeFiles/cmTC_5c079.dir/src.cxx.o -MF CMakeFiles/cmTC_5c079.dir/src.cxx.o.d -o CMakeFiles/cmTC_5c079.dir/src.cxx.o -c /storage/emulated/0/aidrig/project/project/aidrigs/build_android/CMakeFiles/CMakeScratch/TryCompile-yr1oUG/src.cxx
-        Linking CXX executable cmTC_5c079
-        /data/data/com.termux/files/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5c079.dir/link.txt --verbose=1
-        /data/data/com.termux/files/usr/bin/c++ -O2 -g -DNDEBUG CMakeFiles/cmTC_5c079.dir/src.cxx.o -o cmTC_5c079
-        make[1]: Leaving directory '/storage/emulated/0/aidrig/project/project/aidrigs/build_android/CMakeFiles/CMakeScratch/TryCompile-yr1oUG'
+        Run Build Command(s): /opt/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_f1d63/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_f1d63.dir/build.make CMakeFiles/cmTC_f1d63.dir/build
+        make[1]: Entering directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-ToOiC1'
+        Building CXX object CMakeFiles/cmTC_f1d63.dir/src.cxx.o
+        /usr/bin/c++ -DVAES_SUPPORTED  -mavx2 -mvaes -o CMakeFiles/cmTC_f1d63.dir/src.cxx.o -c /workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-ToOiC1/src.cxx
+        Linking CXX executable cmTC_f1d63
+        /opt/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f1d63.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_f1d63.dir/src.cxx.o -o cmTC_f1d63
+        make[1]: Leaving directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-ToOiC1'
         
       exitCode: 0
   -
     kind: "try_compile-v1"
     backtrace:
-      - "/data/data/com.termux/files/usr/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "/opt/cmake/share/cmake-3.29/Modules/CheckIncludeFile.cmake:90 (try_compile)"
       - "src/base/base.cmake:177 (CHECK_INCLUDE_FILE)"
       - "CMakeLists.txt:52 (include)"
     checks:
       - "Looking for syslog.h"
     directories:
-      source: "/storage/emulated/0/aidrig/project/project/aidrigs/build_android/CMakeFiles/CMakeScratch/TryCompile-5S7zln"
-      binary: "/storage/emulated/0/aidrig/project/project/aidrigs/build_android/CMakeFiles/CMakeScratch/TryCompile-5S7zln"
+      source: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-X5rv80"
+      binary: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-X5rv80"
     cmakeVariables:
-      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/data/data/com.termux/files/usr/bin/clang-scan-deps"
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
       CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "/storage/emulated/0/aidrig/project/project/aidrigs/cmake"
+      CMAKE_MODULE_PATH: "/workspaces/AidRigCode/cmake"
     buildResult:
       variable: "HAVE_SYSLOG_H"
       cached: true
       stdout: |
-        Change Dir: '/storage/emulated/0/aidrig/project/project/aidrigs/build_android/CMakeFiles/CMakeScratch/TryCompile-5S7zln'
+        Change Dir: '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-X5rv80'
         
-        Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_96ed7/fast
-        /data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_96ed7.dir/build.make CMakeFiles/cmTC_96ed7.dir/build
-        make[1]: Entering directory '/storage/emulated/0/aidrig/project/project/aidrigs/build_android/CMakeFiles/CMakeScratch/TryCompile-5S7zln'
-        Building C object CMakeFiles/cmTC_96ed7.dir/CheckIncludeFile.c.o
-        /data/data/com.termux/files/usr/bin/cc   -O2 -g -DNDEBUG -MD -MT CMakeFiles/cmTC_96ed7.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_96ed7.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_96ed7.dir/CheckIncludeFile.c.o -c /storage/emulated/0/aidrig/project/project/aidrigs/build_android/CMakeFiles/CMakeScratch/TryCompile-5S7zln/CheckIncludeFile.c
-        Linking C executable cmTC_96ed7
-        /data/data/com.termux/files/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_96ed7.dir/link.txt --verbose=1
-        /data/data/com.termux/files/usr/bin/cc -O2 -g -DNDEBUG CMakeFiles/cmTC_96ed7.dir/CheckIncludeFile.c.o -o cmTC_96ed7
-        make[1]: Leaving directory '/storage/emulated/0/aidrig/project/project/aidrigs/build_android/CMakeFiles/CMakeScratch/TryCompile-5S7zln'
+        Run Build Command(s): /opt/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_3236b/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_3236b.dir/build.make CMakeFiles/cmTC_3236b.dir/build
+        make[1]: Entering directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-X5rv80'
+        Building C object CMakeFiles/cmTC_3236b.dir/CheckIncludeFile.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_3236b.dir/CheckIncludeFile.c.o -c /workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-X5rv80/CheckIncludeFile.c
+        Linking C executable cmTC_3236b
+        /opt/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3236b.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_3236b.dir/CheckIncludeFile.c.o -o cmTC_3236b
+        make[1]: Leaving directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-X5rv80'
         
       exitCode: 0
+...
+
+---
+events:
   -
     kind: "try_compile-v1"
     backtrace:
-      - "/data/data/com.termux/files/usr/share/cmake-3.31/Modules/CheckSymbolExists.cmake:163 (try_compile)"
-      - "/data/data/com.termux/files/usr/share/cmake-3.31/Modules/CheckSymbolExists.cmake:68 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "/opt/cmake/share/cmake-3.29/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "/opt/cmake/share/cmake-3.29/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
       - "cmake/flags.cmake:94 (check_symbol_exists)"
       - "CMakeLists.txt:201 (include)"
     checks:
       - "Looking for __builtin___clear_cache"
     directories:
-      source: "/storage/emulated/0/aidrig/project/project/aidrigs/build_android/CMakeFiles/CMakeScratch/TryCompile-E72msM"
-      binary: "/storage/emulated/0/aidrig/project/project/aidrigs/build_android/CMakeFiles/CMakeScratch/TryCompile-E72msM"
+      source: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-a6Sj8G"
+      binary: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-a6Sj8G"
     cmakeVariables:
-      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/data/data/com.termux/files/usr/bin/clang-scan-deps"
-      CMAKE_C_FLAGS: " -Wall -march=armv8-a+crypto"
+      CMAKE_C_FLAGS: " -Wall -Wno-strict-aliasing -maes"
       CMAKE_C_FLAGS_DEBUG: "-g"
-      CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "/storage/emulated/0/aidrig/project/project/aidrigs/cmake"
+      CMAKE_EXE_LINKER_FLAGS: " -static-libgcc -static-libstdc++"
+      CMAKE_MODULE_PATH: "/workspaces/AidRigCode/cmake"
     buildResult:
       variable: "HAVE_BUILTIN_CLEAR_CACHE"
       cached: true
       stdout: |
-        Change Dir: '/storage/emulated/0/aidrig/project/project/aidrigs/build_android/CMakeFiles/CMakeScratch/TryCompile-E72msM'
+        Change Dir: '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-a6Sj8G'
         
-        Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_85be2/fast
-        /data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_85be2.dir/build.make CMakeFiles/cmTC_85be2.dir/build
-        make[1]: Entering directory '/storage/emulated/0/aidrig/project/project/aidrigs/build_android/CMakeFiles/CMakeScratch/TryCompile-E72msM'
-        Building C object CMakeFiles/cmTC_85be2.dir/CheckSymbolExists.c.o
-        /data/data/com.termux/files/usr/bin/cc   -Wall -march=armv8-a+crypto  -O2 -g -DNDEBUG -std=gnu99 -MD -MT CMakeFiles/cmTC_85be2.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_85be2.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_85be2.dir/CheckSymbolExists.c.o -c /storage/emulated/0/aidrig/project/project/aidrigs/build_android/CMakeFiles/CMakeScratch/TryCompile-E72msM/CheckSymbolExists.c
-        /storage/emulated/0/aidrig/project/project/aidrigs/build_android/CMakeFiles/CMakeScratch/TryCompile-E72msM/CheckSymbolExists.c:8:19: error: builtin functions must be directly called
-            8 |   return ((int*)(&__builtin___clear_cache))[argc];
-              |                   ^
-        1 error generated.
-        make[1]: *** [CMakeFiles/cmTC_85be2.dir/build.make:82: CMakeFiles/cmTC_85be2.dir/CheckSymbolExists.c.o] Error 1
-        make[1]: Leaving directory '/storage/emulated/0/aidrig/project/project/aidrigs/build_android/CMakeFiles/CMakeScratch/TryCompile-E72msM'
-        make: *** [Makefile:134: cmTC_85be2/fast] Error 2
+        Run Build Command(s): /opt/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_96b54/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_96b54.dir/build.make CMakeFiles/cmTC_96b54.dir/build
+        make[1]: Entering directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-a6Sj8G'
+        Building C object CMakeFiles/cmTC_96b54.dir/CheckSymbolExists.c.o
+        /usr/bin/cc   -Wall -Wno-strict-aliasing -maes  -std=gnu99 -o CMakeFiles/cmTC_96b54.dir/CheckSymbolExists.c.o -c /workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-a6Sj8G/CheckSymbolExists.c
+        Linking C executable cmTC_96b54
+        /opt/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_96b54.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wall -Wno-strict-aliasing -maes   -static-libgcc -static-libstdc++  CMakeFiles/cmTC_96b54.dir/CheckSymbolExists.c.o -o cmTC_96b54
+        make[1]: Leaving directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-a6Sj8G'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/cmake/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/cmake/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "src/3rdparty/argon2/CMakeLists.txt:49 (check_c_source_compiles)"
+      - "src/3rdparty/argon2/CMakeLists.txt:69 (add_feature_impl)"
+    checks:
+      - "Performing Test FEATURE_sse2_NOFLAG"
+    directories:
+      source: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-X2HFAH"
+      binary: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-X2HFAH"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wall -Wno-strict-aliasing -maes"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -static-libgcc -static-libstdc++"
+      CMAKE_MODULE_PATH: "/workspaces/AidRigCode/cmake"
+    buildResult:
+      variable: "FEATURE_sse2_NOFLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-X2HFAH'
+        
+        Run Build Command(s): /opt/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_cba74/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_cba74.dir/build.make CMakeFiles/cmTC_cba74.dir/build
+        make[1]: Entering directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-X2HFAH'
+        Building C object CMakeFiles/cmTC_cba74.dir/src.c.o
+        /usr/bin/cc -DFEATURE_sse2_NOFLAG  -Wall -Wno-strict-aliasing -maes  -std=gnu99 -o CMakeFiles/cmTC_cba74.dir/src.c.o -c /workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-X2HFAH/src.c
+        Linking C executable cmTC_cba74
+        /opt/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cba74.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wall -Wno-strict-aliasing -maes   -static-libgcc -static-libstdc++  CMakeFiles/cmTC_cba74.dir/src.c.o -o cmTC_cba74
+        make[1]: Leaving directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-X2HFAH'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/cmake/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/cmake/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "src/3rdparty/argon2/CMakeLists.txt:49 (check_c_source_compiles)"
+      - "src/3rdparty/argon2/CMakeLists.txt:70 (add_feature_impl)"
+    checks:
+      - "Performing Test FEATURE_ssse3_NOFLAG"
+    directories:
+      source: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-5DSpOE"
+      binary: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-5DSpOE"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wall -Wno-strict-aliasing -maes"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -static-libgcc -static-libstdc++"
+      CMAKE_MODULE_PATH: "/workspaces/AidRigCode/cmake"
+    buildResult:
+      variable: "FEATURE_ssse3_NOFLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-5DSpOE'
+        
+        Run Build Command(s): /opt/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_bf2d4/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_bf2d4.dir/build.make CMakeFiles/cmTC_bf2d4.dir/build
+        make[1]: Entering directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-5DSpOE'
+        Building C object CMakeFiles/cmTC_bf2d4.dir/src.c.o
+        /usr/bin/cc -DFEATURE_ssse3_NOFLAG  -Wall -Wno-strict-aliasing -maes  -std=gnu99 -o CMakeFiles/cmTC_bf2d4.dir/src.c.o -c /workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-5DSpOE/src.c
+        In file included from /usr/lib/gcc/x86_64-linux-gnu/9/include/immintrin.h:35,
+                         from /usr/lib/gcc/x86_64-linux-gnu/9/include/x86intrin.h:32,
+                         from /workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-5DSpOE/src.c:1:
+        /workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-5DSpOE/src.c: In function ‘function_ssse3’:
+        /usr/lib/gcc/x86_64-linux-gnu/9/include/tmmintrin.h:136:1: error: inlining failed in call to always_inline ‘_mm_shuffle_epi8’: target specific option mismatch
+          136 | _mm_shuffle_epi8 (__m128i __X, __m128i __Y)
+              | ^~~~~~~~~~~~~~~~
+        /workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-5DSpOE/src.c:5:12: note: called from here
+            5 |     *dst = _mm_shuffle_epi8(*a, *b);
+              |            ^~~~~~~~~~~~~~~~~~~~~~~~
+        make[1]: *** [CMakeFiles/cmTC_bf2d4.dir/build.make:78: CMakeFiles/cmTC_bf2d4.dir/src.c.o] Error 1
+        make[1]: Leaving directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-5DSpOE'
+        make: *** [Makefile:127: cmTC_bf2d4/fast] Error 2
         
       exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/cmake/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/cmake/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "src/3rdparty/argon2/CMakeLists.txt:54 (check_c_source_compiles)"
+      - "src/3rdparty/argon2/CMakeLists.txt:70 (add_feature_impl)"
+    checks:
+      - "Performing Test FEATURE_ssse3_FLAG"
+    directories:
+      source: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-m55c2G"
+      binary: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-m55c2G"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wall -Wno-strict-aliasing -maes"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -static-libgcc -static-libstdc++"
+      CMAKE_MODULE_PATH: "/workspaces/AidRigCode/cmake"
+    buildResult:
+      variable: "FEATURE_ssse3_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-m55c2G'
+        
+        Run Build Command(s): /opt/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_b08dd/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_b08dd.dir/build.make CMakeFiles/cmTC_b08dd.dir/build
+        make[1]: Entering directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-m55c2G'
+        Building C object CMakeFiles/cmTC_b08dd.dir/src.c.o
+        /usr/bin/cc -DFEATURE_ssse3_FLAG  -Wall -Wno-strict-aliasing -maes -mssse3 -std=gnu99 -o CMakeFiles/cmTC_b08dd.dir/src.c.o -c /workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-m55c2G/src.c
+        Linking C executable cmTC_b08dd
+        /opt/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b08dd.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wall -Wno-strict-aliasing -maes -mssse3  -static-libgcc -static-libstdc++  CMakeFiles/cmTC_b08dd.dir/src.c.o -o cmTC_b08dd
+        make[1]: Leaving directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-m55c2G'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/cmake/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/cmake/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "src/3rdparty/argon2/CMakeLists.txt:49 (check_c_source_compiles)"
+      - "src/3rdparty/argon2/CMakeLists.txt:71 (add_feature_impl)"
+    checks:
+      - "Performing Test FEATURE_xop_NOFLAG"
+    directories:
+      source: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-vAZE3F"
+      binary: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-vAZE3F"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wall -Wno-strict-aliasing -maes"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -static-libgcc -static-libstdc++"
+      CMAKE_MODULE_PATH: "/workspaces/AidRigCode/cmake"
+    buildResult:
+      variable: "FEATURE_xop_NOFLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-vAZE3F'
+        
+        Run Build Command(s): /opt/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_153a3/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_153a3.dir/build.make CMakeFiles/cmTC_153a3.dir/build
+        make[1]: Entering directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-vAZE3F'
+        Building C object CMakeFiles/cmTC_153a3.dir/src.c.o
+        /usr/bin/cc -DFEATURE_xop_NOFLAG  -Wall -Wno-strict-aliasing -maes  -std=gnu99 -o CMakeFiles/cmTC_153a3.dir/src.c.o -c /workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-vAZE3F/src.c
+        In file included from /usr/lib/gcc/x86_64-linux-gnu/9/include/x86intrin.h:38,
+                         from /workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-vAZE3F/src.c:1:
+        /workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-vAZE3F/src.c: In function ‘function_xop’:
+        /workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-vAZE3F/src.c:5:12: error: ‘__builtin_ia32_vprotqi’ needs isa option -mxop
+            5 |     *dst = _mm_roti_epi64(*a, b);
+              |            ^~~~~~~~~~~~~~
+        make[1]: *** [CMakeFiles/cmTC_153a3.dir/build.make:78: CMakeFiles/cmTC_153a3.dir/src.c.o] Error 1
+        make[1]: Leaving directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-vAZE3F'
+        make: *** [Makefile:127: cmTC_153a3/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/cmake/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/cmake/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "src/3rdparty/argon2/CMakeLists.txt:54 (check_c_source_compiles)"
+      - "src/3rdparty/argon2/CMakeLists.txt:71 (add_feature_impl)"
+    checks:
+      - "Performing Test FEATURE_xop_FLAG"
+    directories:
+      source: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-VlWrfH"
+      binary: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-VlWrfH"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wall -Wno-strict-aliasing -maes"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -static-libgcc -static-libstdc++"
+      CMAKE_MODULE_PATH: "/workspaces/AidRigCode/cmake"
+    buildResult:
+      variable: "FEATURE_xop_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-VlWrfH'
+        
+        Run Build Command(s): /opt/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_9ef2a/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_9ef2a.dir/build.make CMakeFiles/cmTC_9ef2a.dir/build
+        make[1]: Entering directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-VlWrfH'
+        Building C object CMakeFiles/cmTC_9ef2a.dir/src.c.o
+        /usr/bin/cc -DFEATURE_xop_FLAG  -Wall -Wno-strict-aliasing -maes -mxop -std=gnu99 -o CMakeFiles/cmTC_9ef2a.dir/src.c.o -c /workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-VlWrfH/src.c
+        Linking C executable cmTC_9ef2a
+        /opt/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9ef2a.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wall -Wno-strict-aliasing -maes -mxop  -static-libgcc -static-libstdc++  CMakeFiles/cmTC_9ef2a.dir/src.c.o -o cmTC_9ef2a
+        make[1]: Leaving directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-VlWrfH'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/cmake/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/cmake/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "src/3rdparty/argon2/CMakeLists.txt:49 (check_c_source_compiles)"
+      - "src/3rdparty/argon2/CMakeLists.txt:72 (add_feature_impl)"
+    checks:
+      - "Performing Test FEATURE_avx2_NOFLAG"
+    directories:
+      source: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-kTUHTG"
+      binary: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-kTUHTG"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wall -Wno-strict-aliasing -maes"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -static-libgcc -static-libstdc++"
+      CMAKE_MODULE_PATH: "/workspaces/AidRigCode/cmake"
+    buildResult:
+      variable: "FEATURE_avx2_NOFLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-kTUHTG'
+        
+        Run Build Command(s): /opt/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_419ae/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_419ae.dir/build.make CMakeFiles/cmTC_419ae.dir/build
+        make[1]: Entering directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-kTUHTG'
+        Building C object CMakeFiles/cmTC_419ae.dir/src.c.o
+        /usr/bin/cc -DFEATURE_avx2_NOFLAG  -Wall -Wno-strict-aliasing -maes  -std=gnu99 -o CMakeFiles/cmTC_419ae.dir/src.c.o -c /workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-kTUHTG/src.c
+        /workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-kTUHTG/src.c: In function ‘function_avx2’:
+        /workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-kTUHTG/src.c:5:10: warning: AVX vector return without AVX enabled changes the ABI [-Wpsabi]
+            5 |     *dst = _mm256_xor_si256(*a, *b);
+              |     ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+        In file included from /usr/lib/gcc/x86_64-linux-gnu/9/include/immintrin.h:53,
+                         from /usr/lib/gcc/x86_64-linux-gnu/9/include/x86intrin.h:32,
+                         from /workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-kTUHTG/src.c:1:
+        /usr/lib/gcc/x86_64-linux-gnu/9/include/avx2intrin.h:913:1: error: inlining failed in call to always_inline ‘_mm256_xor_si256’: target specific option mismatch
+          913 | _mm256_xor_si256 (__m256i __A, __m256i __B)
+              | ^~~~~~~~~~~~~~~~
+        /workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-kTUHTG/src.c:5:12: note: called from here
+            5 |     *dst = _mm256_xor_si256(*a, *b);
+              |            ^~~~~~~~~~~~~~~~~~~~~~~~
+        make[1]: *** [CMakeFiles/cmTC_419ae.dir/build.make:78: CMakeFiles/cmTC_419ae.dir/src.c.o] Error 1
+        make[1]: Leaving directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-kTUHTG'
+        make: *** [Makefile:127: cmTC_419ae/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/cmake/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/cmake/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "src/3rdparty/argon2/CMakeLists.txt:54 (check_c_source_compiles)"
+      - "src/3rdparty/argon2/CMakeLists.txt:72 (add_feature_impl)"
+    checks:
+      - "Performing Test FEATURE_avx2_FLAG"
+    directories:
+      source: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-tfuG1G"
+      binary: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-tfuG1G"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wall -Wno-strict-aliasing -maes"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -static-libgcc -static-libstdc++"
+      CMAKE_MODULE_PATH: "/workspaces/AidRigCode/cmake"
+    buildResult:
+      variable: "FEATURE_avx2_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-tfuG1G'
+        
+        Run Build Command(s): /opt/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_2c1c6/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_2c1c6.dir/build.make CMakeFiles/cmTC_2c1c6.dir/build
+        make[1]: Entering directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-tfuG1G'
+        Building C object CMakeFiles/cmTC_2c1c6.dir/src.c.o
+        /usr/bin/cc -DFEATURE_avx2_FLAG  -Wall -Wno-strict-aliasing -maes -mavx2 -std=gnu99 -o CMakeFiles/cmTC_2c1c6.dir/src.c.o -c /workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-tfuG1G/src.c
+        Linking C executable cmTC_2c1c6
+        /opt/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2c1c6.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wall -Wno-strict-aliasing -maes -mavx2  -static-libgcc -static-libstdc++  CMakeFiles/cmTC_2c1c6.dir/src.c.o -o cmTC_2c1c6
+        make[1]: Leaving directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-tfuG1G'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/cmake/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/cmake/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "src/3rdparty/argon2/CMakeLists.txt:49 (check_c_source_compiles)"
+      - "src/3rdparty/argon2/CMakeLists.txt:73 (add_feature_impl)"
+    checks:
+      - "Performing Test FEATURE_avx512f_NOFLAG"
+    directories:
+      source: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-tLCogG"
+      binary: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-tLCogG"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wall -Wno-strict-aliasing -maes"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -static-libgcc -static-libstdc++"
+      CMAKE_MODULE_PATH: "/workspaces/AidRigCode/cmake"
+    buildResult:
+      variable: "FEATURE_avx512f_NOFLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-tLCogG'
+        
+        Run Build Command(s): /opt/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_c7c58/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_c7c58.dir/build.make CMakeFiles/cmTC_c7c58.dir/build
+        make[1]: Entering directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-tLCogG'
+        Building C object CMakeFiles/cmTC_c7c58.dir/src.c.o
+        /usr/bin/cc -DFEATURE_avx512f_NOFLAG  -Wall -Wno-strict-aliasing -maes  -std=gnu99 -o CMakeFiles/cmTC_c7c58.dir/src.c.o -c /workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-tLCogG/src.c
+        In file included from /usr/lib/gcc/x86_64-linux-gnu/9/include/immintrin.h:55,
+                         from /usr/lib/gcc/x86_64-linux-gnu/9/include/x86intrin.h:32,
+                         from /workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-tLCogG/src.c:1:
+        /workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-tLCogG/src.c: In function ‘function_avx512f’:
+        /usr/lib/gcc/x86_64-linux-gnu/9/include/avx512fintrin.h:204:1: error: inlining failed in call to always_inline ‘_mm512_undefined_epi32’: target specific option mismatch
+          204 | _mm512_undefined_epi32 (void)
+              | ^~~~~~~~~~~~~~~~~~~~~~
+        /workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-tLCogG/src.c:5:12: note: called from here
+            5 |     *dst = _mm512_ror_epi64(*a, 57);
+              |            ^~~~~~~~~~~~~~~~
+        make[1]: *** [CMakeFiles/cmTC_c7c58.dir/build.make:78: CMakeFiles/cmTC_c7c58.dir/src.c.o] Error 1
+        make[1]: Leaving directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-tLCogG'
+        make: *** [Makefile:127: cmTC_c7c58/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/cmake/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/cmake/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "src/3rdparty/argon2/CMakeLists.txt:54 (check_c_source_compiles)"
+      - "src/3rdparty/argon2/CMakeLists.txt:73 (add_feature_impl)"
+    checks:
+      - "Performing Test FEATURE_avx512f_FLAG"
+    directories:
+      source: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-lyFVXE"
+      binary: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-lyFVXE"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wall -Wno-strict-aliasing -maes"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -static-libgcc -static-libstdc++"
+      CMAKE_MODULE_PATH: "/workspaces/AidRigCode/cmake"
+    buildResult:
+      variable: "FEATURE_avx512f_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-lyFVXE'
+        
+        Run Build Command(s): /opt/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_92651/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_92651.dir/build.make CMakeFiles/cmTC_92651.dir/build
+        make[1]: Entering directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-lyFVXE'
+        Building C object CMakeFiles/cmTC_92651.dir/src.c.o
+        /usr/bin/cc -DFEATURE_avx512f_FLAG  -Wall -Wno-strict-aliasing -maes -mavx512f -std=gnu99 -o CMakeFiles/cmTC_92651.dir/src.c.o -c /workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-lyFVXE/src.c
+        Linking C executable cmTC_92651
+        /opt/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_92651.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wall -Wno-strict-aliasing -maes -mavx512f  -static-libgcc -static-libstdc++  CMakeFiles/cmTC_92651.dir/src.c.o -o cmTC_92651
+        make[1]: Leaving directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-lyFVXE'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/cmake/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:1165 (message)"
+      - "/opt/cmake/share/cmake-3.29/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "cmake/asm.cmake:21 (enable_language)"
+      - "CMakeLists.txt:207 (include)"
+    message: |
+      Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
+      cc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0
+      Copyright (C) 2019 Free Software Foundation, Inc.
+      This is free software; see the source for copying conditions.  There is NO
+      warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+      
 ...
