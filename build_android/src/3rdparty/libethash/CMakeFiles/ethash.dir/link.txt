@@ -1,0 +1,2 @@
+/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-ar qc libethash.a CMakeFiles/ethash.dir/ethash_internal.c.o CMakeFiles/ethash.dir/keccakf800.c.o
+/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-ranlib libethash.a

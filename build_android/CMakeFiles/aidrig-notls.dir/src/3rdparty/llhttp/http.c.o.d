@@ -1,0 +1,30 @@
+CMakeFiles/aidrig-notls.dir/src/3rdparty/llhttp/http.c.o: \
+  /workspaces/AidRigCode/src/3rdparty/llhttp/http.c \
+  /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/stdio.h \
+  /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/sys/cdefs.h \
+  /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/android/versioning.h \
+  /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/android/api-level.h \
+  /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/bits/get_device_api_level_inlines.h \
+  /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/android/ndk-version.h \
+  /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/sys/types.h \
+  /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include/stddef.h \
+  /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include/stdint.h \
+  /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/stdint.h \
+  /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/bits/wchar_limits.h \
+  /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/linux/types.h \
+  /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android/asm/types.h \
+  /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/asm-generic/types.h \
+  /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/asm-generic/int-ll64.h \
+  /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android/asm/bitsperlong.h \
+  /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/asm-generic/bitsperlong.h \
+  /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/linux/posix_types.h \
+  /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/linux/stddef.h \
+  /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/linux/compiler_types.h \
+  /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/linux/compiler.h \
+  /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android/asm/posix_types.h \
+  /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/asm-generic/posix_types.h \
+  /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/bits/pthread_types.h \
+  /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include/stdarg.h \
+  /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/bits/seek_constants.h \
+  /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/bits/fortify/stdio.h \
+  /workspaces/AidRigCode/src/3rdparty/llhttp/llhttp.h

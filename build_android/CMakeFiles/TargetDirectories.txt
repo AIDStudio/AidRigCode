@@ -1,0 +1,12 @@
+/workspaces/AidRigCode/build_android/CMakeFiles/aidrig-notls.dir
+/workspaces/AidRigCode/build_android/CMakeFiles/edit_cache.dir
+/workspaces/AidRigCode/build_android/CMakeFiles/rebuild_cache.dir
+/workspaces/AidRigCode/build_android/src/3rdparty/argon2/CMakeFiles/argon2.dir
+/workspaces/AidRigCode/build_android/src/3rdparty/argon2/CMakeFiles/edit_cache.dir
+/workspaces/AidRigCode/build_android/src/3rdparty/argon2/CMakeFiles/rebuild_cache.dir
+/workspaces/AidRigCode/build_android/src/3rdparty/libethash/CMakeFiles/ethash.dir
+/workspaces/AidRigCode/build_android/src/3rdparty/libethash/CMakeFiles/edit_cache.dir
+/workspaces/AidRigCode/build_android/src/3rdparty/libethash/CMakeFiles/rebuild_cache.dir
+/workspaces/AidRigCode/build_android/src/crypto/ghostrider/CMakeFiles/ghostrider.dir
+/workspaces/AidRigCode/build_android/src/crypto/ghostrider/CMakeFiles/edit_cache.dir
+/workspaces/AidRigCode/build_android/src/crypto/ghostrider/CMakeFiles/rebuild_cache.dir

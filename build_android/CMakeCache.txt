@@ -18,7 +18,7 @@
 ANDROID_ABI:UNINITIALIZED=arm64-v8a
 
 //No help, variable specified on the command line.
-ANDROID_PLATFORM:UNINITIALIZED=android-21
+ANDROID_PLATFORM:UNINITIALIZED=android-24
 
 //Force ARMv7 (32 bit) architecture, use with caution if automatic
 // detection fails, but you sure it may work
@@ -26,16 +26,16 @@ ARM_V7:BOOL=OFF
 
 //Force ARMv8 (64 bit) architecture, use with caution if automatic
 // detection fails, but you sure it may work
-ARM_V8:BOOL=OFF
+ARM_V8:BOOL=ON
 
 //Build static binary
 BUILD_STATIC:BOOL=OFF
 
 //Path to a program.
-CMAKE_ADDR2LINE:FILEPATH=/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-addr2line
+CMAKE_ADDR2LINE:FILEPATH=/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-addr2line
 
 //Archiver
-CMAKE_AR:FILEPATH=/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-ar
+CMAKE_AR:FILEPATH=/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-ar
 
 //Flags used by the compiler during all build types.
 CMAKE_ASM_FLAGS:STRING=
@@ -54,13 +54,13 @@ CMAKE_BUILD_TYPE:STRING=Release
 CMAKE_COLOR_MAKEFILE:BOOL=ON
 
 //LLVM archiver
-CMAKE_CXX_COMPILER_AR:FILEPATH=/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-ar
+CMAKE_CXX_COMPILER_AR:FILEPATH=/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-ar
 
 //`clang-scan-deps` dependency scanner
 CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS:FILEPATH=CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND
 
 //Generate index for LLVM archive
-CMAKE_CXX_COMPILER_RANLIB:FILEPATH=/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-ranlib
+CMAKE_CXX_COMPILER_RANLIB:FILEPATH=/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-ranlib
 
 //Flags used by the compiler during all build types.
 CMAKE_CXX_FLAGS:STRING=
@@ -81,13 +81,13 @@ CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 CMAKE_CXX_STANDARD_LIBRARIES:STRING=-latomic -lm
 
 //LLVM archiver
-CMAKE_C_COMPILER_AR:FILEPATH=/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-ar
+CMAKE_C_COMPILER_AR:FILEPATH=/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-ar
 
 //`clang-scan-deps` dependency scanner
 CMAKE_C_COMPILER_CLANG_SCAN_DEPS:FILEPATH=CMAKE_C_COMPILER_CLANG_SCAN_DEPS-NOTFOUND
 
 //Generate index for LLVM archive
-CMAKE_C_COMPILER_RANLIB:FILEPATH=/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-ranlib
+CMAKE_C_COMPILER_RANLIB:FILEPATH=/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-ranlib
 
 //Flags used by the compiler during all build types.
 CMAKE_C_FLAGS:STRING=
@@ -111,7 +111,7 @@ CMAKE_C_STANDARD_LIBRARIES:STRING=-latomic -lm
 CMAKE_DLLTOOL:FILEPATH=/usr/bin/llvm-dlltool
 
 //Flags used by the linker.
-CMAKE_EXE_LINKER_FLAGS:STRING=
+CMAKE_EXE_LINKER_FLAGS:STRING=-fuse-ld=lld
 
 //Flags used by the linker during DEBUG builds.
 CMAKE_EXE_LINKER_FLAGS_DEBUG:STRING=
@@ -135,7 +135,7 @@ CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=/workspaces/AidRigCode/build_android/CMa
 CMAKE_INSTALL_PREFIX:PATH=/usr/local
 
 //Path to a program.
-CMAKE_LINKER:FILEPATH=/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld
+CMAKE_LINKER:FILEPATH=/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld
 
 //Path to a program.
 CMAKE_MAKE_PROGRAM:FILEPATH=/usr/bin/make
@@ -160,13 +160,13 @@ CMAKE_MODULE_LINKER_FLAGS_RELEASE:STRING=
 CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
 //Path to a program.
-CMAKE_NM:FILEPATH=/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-nm
+CMAKE_NM:FILEPATH=/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-nm
 
 //Path to a program.
-CMAKE_OBJCOPY:FILEPATH=/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-objcopy
+CMAKE_OBJCOPY:FILEPATH=/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-objcopy
 
 //Path to a program.
-CMAKE_OBJDUMP:FILEPATH=/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-objdump
+CMAKE_OBJDUMP:FILEPATH=/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-objdump
 
 //Value Computed by CMake
 CMAKE_PROJECT_DESCRIPTION:STATIC=
@@ -178,10 +178,10 @@ CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 CMAKE_PROJECT_NAME:STATIC=aidrig
 
 //Ranlib
-CMAKE_RANLIB:FILEPATH=/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-ranlib
+CMAKE_RANLIB:FILEPATH=/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-ranlib
 
 //Path to a program.
-CMAKE_READELF:FILEPATH=/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-readelf
+CMAKE_READELF:FILEPATH=/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-readelf
 
 //Flags used by the linker during the creation of dll's.
 CMAKE_SHARED_LINKER_FLAGS:STRING=
@@ -230,19 +230,28 @@ CMAKE_STATIC_LINKER_FLAGS_RELEASE:STRING=
 CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
 //Strip
-CMAKE_STRIP:FILEPATH=/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-strip
+CMAKE_STRIP:FILEPATH=/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-strip
 
 //Path to a program.
 CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 
 //The CMake toolchain file
-CMAKE_TOOLCHAIN_FILE:FILEPATH=/home/codespace/android-ndk/build/cmake/android.toolchain.cmake
+CMAKE_TOOLCHAIN_FILE:FILEPATH=/workspaces/AidRigCode/android-ndk-r26d/build/cmake/android.toolchain.cmake
 
 //If this value is on, makefiles will be generated without the
 // .SILENT directive, and all commands will be echoed to the console
 // during the make.  This is useful for debugging only. With Visual
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
+
+//Value Computed by CMake
+GhostRider_BINARY_DIR:STATIC=/workspaces/AidRigCode/build_android/src/crypto/ghostrider
+
+//Value Computed by CMake
+GhostRider_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+GhostRider_SOURCE_DIR:STATIC=/workspaces/AidRigCode/src/crypto/ghostrider
 
 //Enable hwloc debug helpers and log
 HWLOC_DEBUG:BOOL=OFF
@@ -255,16 +264,16 @@ UV_LIBRARY:FILEPATH=UV_LIBRARY-NOTFOUND
 
 //Enable ADL (AMD Display Library) or sysfs support (only if OpenCL
 // backend enabled)
-WITH_ADL:BOOL=ON
+WITH_ADL:BOOL=OFF
 
 //Enable Argon2 algorithms family
 WITH_ARGON2:BOOL=ON
 
 //Enable ASM PoW implementations
-WITH_ASM:BOOL=ON
+WITH_ASM:BOOL=OFF
 
 //Enable AVX2 for Blake2
-WITH_AVX2:BOOL=ON
+WITH_AVX2:BOOL=OFF
 
 //Enable builtin RandomX benchmark and stress test
 WITH_BENCHMARK:BOOL=ON
@@ -282,13 +291,13 @@ WITH_CN_LITE:BOOL=ON
 WITH_CN_PICO:BOOL=ON
 
 //Enable CUDA backend
-WITH_CUDA:BOOL=ON
+WITH_CUDA:BOOL=OFF
 
 //Enable debug log output
 WITH_DEBUG_LOG:BOOL=OFF
 
 //Enable DMI/SMBIOS reader
-WITH_DMI:BOOL=ON
+WITH_DMI:BOOL=OFF
 
 //Enable internal embedded JSON config
 WITH_EMBEDDED_CONFIG:BOOL=OFF
@@ -312,14 +321,14 @@ WITH_INTERLEAVE_DEBUG_LOG:BOOL=OFF
 WITH_KAWPOW:BOOL=ON
 
 //Enable MSR mod & 1st-gen Ryzen fix
-WITH_MSR:BOOL=ON
+WITH_MSR:BOOL=OFF
 
 //Enable NVML (NVIDIA Management Library) support (only if CUDA
 // backend enabled)
-WITH_NVML:BOOL=ON
+WITH_NVML:BOOL=OFF
 
 //Enable OpenCL backend
-WITH_OPENCL:BOOL=ON
+WITH_OPENCL:BOOL=OFF
 
 //Target OpenCL version
 WITH_OPENCL_VERSION:STRING=200
@@ -334,16 +343,19 @@ WITH_RANDOMX:BOOL=ON
 WITH_SECURE_JIT:BOOL=OFF
 
 //Enable SSE 4.1 for Blake2
-WITH_SSE4_1:BOOL=ON
+WITH_SSE4_1:BOOL=OFF
 
 //Enable strict checks for OpenCL cache
 WITH_STRICT_CACHE:BOOL=ON
 
 //Enable OpenSSL support
-WITH_TLS:BOOL=ON
+WITH_TLS:BOOL=OFF
 
 //Enable VAES instructions for Cryptonight
-WITH_VAES:BOOL=ON
+WITH_VAES:BOOL=OFF
+
+//No help, variable specified on the command line.
+XMRIG_DEPS:UNINITIALIZED=/workspaces/AidRigCode/deps_android
 
 //Value Computed by CMake
 aidrig_BINARY_DIR:STATIC=/workspaces/AidRigCode/build_android
@@ -353,6 +365,24 @@ aidrig_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 aidrig_SOURCE_DIR:STATIC=/workspaces/AidRigCode
+
+//Value Computed by CMake
+argon2_BINARY_DIR:STATIC=/workspaces/AidRigCode/build_android/src/3rdparty/argon2
+
+//Value Computed by CMake
+argon2_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+argon2_SOURCE_DIR:STATIC=/workspaces/AidRigCode/src/3rdparty/argon2
+
+//Value Computed by CMake
+ethash_BINARY_DIR:STATIC=/workspaces/AidRigCode/build_android/src/3rdparty/libethash
+
+//Value Computed by CMake
+ethash_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+ethash_SOURCE_DIR:STATIC=/workspaces/AidRigCode/src/3rdparty/libethash
 
 
 ########################
@@ -465,7 +495,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=4
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -510,6 +540,10 @@ CMAKE_TAPI-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Details about finding UV
+FIND_PACKAGE_MESSAGE_DETAILS_UV:INTERNAL=[/workspaces/AidRigCode/deps_android/lib/libuv.a][/workspaces/AidRigCode/deps_android/include][v()]
+//Have symbol __builtin___clear_cache
+HAVE_BUILTIN_CLEAR_CACHE:INTERNAL=
 //Have include syslog.h
 HAVE_SYSLOG_H:INTERNAL=1
 //Test VAES_SUPPORTED

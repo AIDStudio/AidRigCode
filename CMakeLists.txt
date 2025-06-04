@@ -181,7 +181,7 @@ else()
         src/crypto/common/VirtualMemory_unix.cpp
     )
     if (XMRIG_OS_ANDROID)
-        set(EXTRA_LIBS pthread rt dl log) # ITT VAN!
+        set(EXTRA_LIBS atomic dl log m)
     elseif (XMRIG_OS_LINUX)
         list(APPEND SOURCES_OS
             src/crypto/common/LinuxMemory.h
@@ -254,3 +254,32 @@ if (CMAKE_CXX_COMPILER_ID MATCHES Clang AND CMAKE_BUILD_TYPE STREQUAL Release AN
 endif()
 
 target_link_libraries(${CMAKE_PROJECT_NAME} ${XMRIG_ASM_LIBRARY} ${OPENSSL_LIBRARIES} ${UV_LIBRARIES} ${EXTRA_LIBS} ${CPUID_LIB} ${ARGON2_LIBRARY} ${ETHASH_LIBRARY} ${GHOSTRIDER_LIBRARY})
+
+if(ANDROID)
+    # Android-specific settings
+    set(WITH_ASM OFF)
+    set(WITH_HWLOC OFF)
+    set(WITH_MSR OFF)
+    set(WITH_DMI OFF)
+    set(WITH_OPENCL OFF)
+    set(WITH_CUDA OFF)
+    set(WITH_TLS ON)
+    set(ARM_V8 ON)
+    
+    # Enable static linking for Android
+    set(BUILD_STATIC ON)
+    set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -static-libstdc++ -static-libgcc")
+    
+    # Set UV library path from deps
+    if(DEFINED XMRIG_DEPS)
+        set(UV_LIBRARY "${XMRIG_DEPS}/lib/libuv.a")
+        set(UV_INCLUDE_DIR "${XMRIG_DEPS}/include")
+    endif()
+    
+    # Strip binary for release builds
+    if(CMAKE_BUILD_TYPE STREQUAL "Release")
+        add_custom_command(TARGET ${CMAKE_PROJECT_NAME} POST_BUILD
+            COMMAND ${CMAKE_STRIP} ${CMAKE_PROJECT_NAME}
+            COMMENT "Stripping binary for size optimization")
+    endif()
+endif()

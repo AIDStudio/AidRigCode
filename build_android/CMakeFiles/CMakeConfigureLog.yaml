@@ -18,9 +18,9 @@ events:
       - "CMakeLists.txt:2 (project)"
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-      Compiler: /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang 
+      Compiler: /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/clang 
       Build flags: -g;-DANDROID;-fdata-sections;-ffunction-sections;-funwind-tables;-fstack-protector-strong;-no-canonical-prefixes;-D_FORTIFY_SOURCE=2;-Wformat;-Werror=format-security
-      Id flags: -c;--target=aarch64-none-linux-android21 
+      Id flags: -c;--target=aarch64-none-linux-android24 
       
       The output was:
       0
@@ -40,9 +40,9 @@ events:
       - "CMakeLists.txt:2 (project)"
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-      Compiler: /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ 
+      Compiler: /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ 
       Build flags: -g;-DANDROID;-fdata-sections;-ffunction-sections;-funwind-tables;-fstack-protector-strong;-no-canonical-prefixes;-D_FORTIFY_SOURCE=2;-Wformat;-Werror=format-security
-      Id flags: -c;--target=aarch64-none-linux-android21 
+      Id flags: -c;--target=aarch64-none-linux-android24 
       
       The output was:
       0
@@ -62,58 +62,58 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-tvSsNd"
-      binary: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-tvSsNd"
+      source: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-fJ90wX"
+      binary: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-fJ90wX"
     cmakeVariables:
       ANDROID_ABI: "arm64-v8a"
       ANDROID_ARM_MODE: "thumb"
       ANDROID_PIE: "TRUE"
-      ANDROID_PLATFORM: "android-21"
+      ANDROID_PLATFORM: "android-24"
       ANDROID_STL: "c++_static"
       ANDROID_TOOLCHAIN: "clang"
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
-      CMAKE_CXX_COMPILER_TARGET: "aarch64-none-linux-android21"
-      CMAKE_C_COMPILER_TARGET: "aarch64-none-linux-android21"
+      CMAKE_CXX_COMPILER_TARGET: "aarch64-none-linux-android24"
+      CMAKE_C_COMPILER_TARGET: "aarch64-none-linux-android24"
       CMAKE_C_FLAGS: "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat "
       CMAKE_C_FLAGS_DEBUG: "-fno-limit-debug-info "
-      CMAKE_EXE_LINKER_FLAGS: "-static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--no-undefined-version -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments  "
+      CMAKE_EXE_LINKER_FLAGS: "-static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--no-undefined-version -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments  -fuse-ld=lld"
       CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
-      CMAKE_SYSROOT: "/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot"
+      CMAKE_SYSROOT: "/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot"
     buildResult:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-tvSsNd'
+        Change Dir: '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-fJ90wX'
         
-        Run Build Command(s): /opt/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_dc5db/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_dc5db.dir/build.make CMakeFiles/cmTC_dc5db.dir/build
-        make[1]: Entering directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-tvSsNd'
-        Building C object CMakeFiles/cmTC_dc5db.dir/CMakeCCompilerABI.c.o
-        /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android21 --sysroot=/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat   -fPIE   -v -MD -MT CMakeFiles/cmTC_dc5db.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_dc5db.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_dc5db.dir/CMakeCCompilerABI.c.o -c /opt/cmake/share/cmake-3.29/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): /opt/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_b7ccf/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_b7ccf.dir/build.make CMakeFiles/cmTC_b7ccf.dir/build
+        make[1]: Entering directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-fJ90wX'
+        Building C object CMakeFiles/cmTC_b7ccf.dir/CMakeCCompilerABI.c.o
+        /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android24 --sysroot=/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat   -fPIE   -v -MD -MT CMakeFiles/cmTC_b7ccf.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_b7ccf.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_b7ccf.dir/CMakeCCompilerABI.c.o -c /opt/cmake/share/cmake-3.29/Modules/CMakeCCompilerABI.c
         Android (11349228, +pgo, +bolt, +lto, -mlgo, based on r487747e) clang version 17.0.2 (https://android.googlesource.com/toolchain/llvm-project d9f89f4d16663d5012e5c09495f3b30ece3d2362)
-        Target: aarch64-none-linux-android21
+        Target: aarch64-none-linux-android24
         Thread model: posix
-        InstalledDir: /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin
+        InstalledDir: /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin
          (in-process)
-         "/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang" -cc1 -triple aarch64-none-linux-android21 -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu generic -target-feature +neon -target-feature +v8a -target-feature +fix-cortex-a53-835769 -target-abi aapcs -mllvm -treat-scalable-fixed-error-as-warning -debug-info-kind=constructor -dwarf-version=4 -debugger-tuning=gdb -v -ffunction-sections -fdata-sections -fcoverage-compilation-dir=/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-tvSsNd -resource-dir /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17 -dependency-file CMakeFiles/cmTC_dc5db.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_dc5db.dir/CMakeCCompilerABI.c.o -sys-header-deps -D ANDROID -D _FORTIFY_SOURCE=2 -isysroot /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot -internal-isystem /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include -internal-isystem /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include -internal-externc-isystem /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android -internal-externc-isystem /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include -internal-externc-isystem /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include -Wformat -fdebug-compilation-dir=/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-tvSsNd -ferror-limit 19 -stack-protector 2 -fno-signed-char -fgnuc-version=4.2.1 -target-feature +outline-atomics -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_dc5db.dir/CMakeCCompilerABI.c.o -x c /opt/cmake/share/cmake-3.29/Modules/CMakeCCompilerABI.c
+         "/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/clang" -cc1 -triple aarch64-none-linux-android24 -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu generic -target-feature +neon -target-feature +v8a -target-feature +fix-cortex-a53-835769 -target-abi aapcs -mllvm -treat-scalable-fixed-error-as-warning -debug-info-kind=constructor -dwarf-version=4 -debugger-tuning=gdb -v -ffunction-sections -fdata-sections -fcoverage-compilation-dir=/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-fJ90wX -resource-dir /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17 -dependency-file CMakeFiles/cmTC_b7ccf.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_b7ccf.dir/CMakeCCompilerABI.c.o -sys-header-deps -D ANDROID -D _FORTIFY_SOURCE=2 -isysroot /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot -internal-isystem /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include -internal-isystem /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include -internal-externc-isystem /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android -internal-externc-isystem /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include -internal-externc-isystem /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include -Wformat -fdebug-compilation-dir=/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-fJ90wX -ferror-limit 19 -stack-protector 2 -fno-signed-char -fgnuc-version=4.2.1 -target-feature +outline-atomics -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_b7ccf.dir/CMakeCCompilerABI.c.o -x c /opt/cmake/share/cmake-3.29/Modules/CMakeCCompilerABI.c
         clang -cc1 version 17.0.2 based upon LLVM 17.0.2 default target x86_64-unknown-linux-gnu
-        ignoring nonexistent directory "/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include"
-        ignoring nonexistent directory "/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include"
+        ignoring nonexistent directory "/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include"
+        ignoring nonexistent directory "/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include"
         #include "..." search starts here:
         #include <...> search starts here:
-         /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include
-         /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android
-         /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include
+         /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include
+         /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android
+         /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include
         End of search list.
-        Linking C executable cmTC_dc5db
-        /opt/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dc5db.dir/link.txt --verbose=1
-        /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android21 --sysroot=/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat   -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--no-undefined-version -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments   -v CMakeFiles/cmTC_dc5db.dir/CMakeCCompilerABI.c.o -o cmTC_dc5db
+        Linking C executable cmTC_b7ccf
+        /opt/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b7ccf.dir/link.txt --verbose=1
+        /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android24 --sysroot=/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat   -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--no-undefined-version -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments  -fuse-ld=lld -v CMakeFiles/cmTC_b7ccf.dir/CMakeCCompilerABI.c.o -o cmTC_b7ccf
         Android (11349228, +pgo, +bolt, +lto, -mlgo, based on r487747e) clang version 17.0.2 (https://android.googlesource.com/toolchain/llvm-project d9f89f4d16663d5012e5c09495f3b30ece3d2362)
-        Target: aarch64-none-linux-android21
+        Target: aarch64-none-linux-android24
         Thread model: posix
-        InstalledDir: /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin
-         "/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld" --sysroot=/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot -pie -EL --fix-cortex-a53-843419 -z now -z relro -z max-page-size=4096 --hash-style=both --eh-frame-hdr -m aarch64linux -dynamic-linker /system/bin/linker64 -o cmTC_dc5db /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21/crtbegin_dynamic.o -L/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/aarch64 -L/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21 -L/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android -L/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib --build-id=sha1 --no-rosegment --no-undefined-version --fatal-warnings --no-undefined CMakeFiles/cmTC_dc5db.dir/CMakeCCompilerABI.c.o /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl -lc /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21/crtend_android.o
-        make[1]: Leaving directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-tvSsNd'
+        InstalledDir: /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin
+         "/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld" --sysroot=/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot -pie -EL --fix-cortex-a53-843419 -z now -z relro -z max-page-size=4096 --hash-style=gnu --eh-frame-hdr -m aarch64linux -dynamic-linker /system/bin/linker64 -o cmTC_b7ccf /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtbegin_dynamic.o -L/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/aarch64 -L/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24 -L/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android -L/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib --build-id=sha1 --no-rosegment --no-undefined-version --fatal-warnings --no-undefined CMakeFiles/cmTC_b7ccf.dir/CMakeCCompilerABI.c.o /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl -lc /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtend_android.o
+        make[1]: Leaving directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-fJ90wX'
         
       exitCode: 0
   -
@@ -126,14 +126,14 @@ events:
       Parsed C implicit include dir info: rv=done
         found start of include info
         found start of implicit include info
-          add: [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include]
-          add: [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android]
-          add: [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include]
+          add: [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include]
+          add: [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android]
+          add: [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include]
         end of search list found
-        collapse include dir [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include] ==> [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include]
-        collapse include dir [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android] ==> [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android]
-        collapse include dir [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include] ==> [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include]
-        implicit include dirs: [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include;/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android;/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include]
+        collapse include dir [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include] ==> [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include]
+        collapse include dir [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android] ==> [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android]
+        collapse include dir [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include] ==> [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include]
+        implicit include dirs: [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include;/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android;/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include]
       
       
   -
@@ -146,81 +146,81 @@ events:
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
-        ignore line: [Change Dir: '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-tvSsNd']
+        ignore line: [Change Dir: '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-fJ90wX']
         ignore line: []
-        ignore line: [Run Build Command(s): /opt/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_dc5db/fast]
-        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_dc5db.dir/build.make CMakeFiles/cmTC_dc5db.dir/build]
-        ignore line: [make[1]: Entering directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-tvSsNd']
-        ignore line: [Building C object CMakeFiles/cmTC_dc5db.dir/CMakeCCompilerABI.c.o]
-        ignore line: [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android21 --sysroot=/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat   -fPIE   -v -MD -MT CMakeFiles/cmTC_dc5db.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_dc5db.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_dc5db.dir/CMakeCCompilerABI.c.o -c /opt/cmake/share/cmake-3.29/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): /opt/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_b7ccf/fast]
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_b7ccf.dir/build.make CMakeFiles/cmTC_b7ccf.dir/build]
+        ignore line: [make[1]: Entering directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-fJ90wX']
+        ignore line: [Building C object CMakeFiles/cmTC_b7ccf.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android24 --sysroot=/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat   -fPIE   -v -MD -MT CMakeFiles/cmTC_b7ccf.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_b7ccf.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_b7ccf.dir/CMakeCCompilerABI.c.o -c /opt/cmake/share/cmake-3.29/Modules/CMakeCCompilerABI.c]
         ignore line: [Android (11349228  +pgo  +bolt  +lto  -mlgo  based on r487747e) clang version 17.0.2 (https://android.googlesource.com/toolchain/llvm-project d9f89f4d16663d5012e5c09495f3b30ece3d2362)]
-        ignore line: [Target: aarch64-none-linux-android21]
+        ignore line: [Target: aarch64-none-linux-android24]
         ignore line: [Thread model: posix]
-        ignore line: [InstalledDir: /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin]
+        ignore line: [InstalledDir: /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin]
         ignore line: [ (in-process)]
-        ignore line: [ "/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang" -cc1 -triple aarch64-none-linux-android21 -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu generic -target-feature +neon -target-feature +v8a -target-feature +fix-cortex-a53-835769 -target-abi aapcs -mllvm -treat-scalable-fixed-error-as-warning -debug-info-kind=constructor -dwarf-version=4 -debugger-tuning=gdb -v -ffunction-sections -fdata-sections -fcoverage-compilation-dir=/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-tvSsNd -resource-dir /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17 -dependency-file CMakeFiles/cmTC_dc5db.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_dc5db.dir/CMakeCCompilerABI.c.o -sys-header-deps -D ANDROID -D _FORTIFY_SOURCE=2 -isysroot /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot -internal-isystem /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include -internal-isystem /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include -internal-externc-isystem /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android -internal-externc-isystem /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include -internal-externc-isystem /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include -Wformat -fdebug-compilation-dir=/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-tvSsNd -ferror-limit 19 -stack-protector 2 -fno-signed-char -fgnuc-version=4.2.1 -target-feature +outline-atomics -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_dc5db.dir/CMakeCCompilerABI.c.o -x c /opt/cmake/share/cmake-3.29/Modules/CMakeCCompilerABI.c]
+        ignore line: [ "/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/clang" -cc1 -triple aarch64-none-linux-android24 -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu generic -target-feature +neon -target-feature +v8a -target-feature +fix-cortex-a53-835769 -target-abi aapcs -mllvm -treat-scalable-fixed-error-as-warning -debug-info-kind=constructor -dwarf-version=4 -debugger-tuning=gdb -v -ffunction-sections -fdata-sections -fcoverage-compilation-dir=/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-fJ90wX -resource-dir /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17 -dependency-file CMakeFiles/cmTC_b7ccf.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_b7ccf.dir/CMakeCCompilerABI.c.o -sys-header-deps -D ANDROID -D _FORTIFY_SOURCE=2 -isysroot /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot -internal-isystem /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include -internal-isystem /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include -internal-externc-isystem /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android -internal-externc-isystem /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include -internal-externc-isystem /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include -Wformat -fdebug-compilation-dir=/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-fJ90wX -ferror-limit 19 -stack-protector 2 -fno-signed-char -fgnuc-version=4.2.1 -target-feature +outline-atomics -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_b7ccf.dir/CMakeCCompilerABI.c.o -x c /opt/cmake/share/cmake-3.29/Modules/CMakeCCompilerABI.c]
         ignore line: [clang -cc1 version 17.0.2 based upon LLVM 17.0.2 default target x86_64-unknown-linux-gnu]
-        ignore line: [ignoring nonexistent directory "/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include"]
-        ignore line: [ignoring nonexistent directory "/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include"]
+        ignore line: [ignoring nonexistent directory "/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include"]
+        ignore line: [ignoring nonexistent directory "/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include"]
         ignore line: [#include "..." search starts here:]
         ignore line: [#include <...> search starts here:]
-        ignore line: [ /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include]
-        ignore line: [ /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android]
-        ignore line: [ /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include]
+        ignore line: [ /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include]
+        ignore line: [ /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android]
+        ignore line: [ /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include]
         ignore line: [End of search list.]
-        ignore line: [Linking C executable cmTC_dc5db]
-        ignore line: [/opt/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dc5db.dir/link.txt --verbose=1]
-        ignore line: [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android21 --sysroot=/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat   -static-libstdc++ -Wl --build-id=sha1 -Wl --no-rosegment -Wl --no-undefined-version -Wl --fatal-warnings -Wl --no-undefined -Qunused-arguments   -v CMakeFiles/cmTC_dc5db.dir/CMakeCCompilerABI.c.o -o cmTC_dc5db]
+        ignore line: [Linking C executable cmTC_b7ccf]
+        ignore line: [/opt/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b7ccf.dir/link.txt --verbose=1]
+        ignore line: [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android24 --sysroot=/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat   -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--no-undefined-version -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments  -fuse-ld=lld -v CMakeFiles/cmTC_b7ccf.dir/CMakeCCompilerABI.c.o -o cmTC_b7ccf]
         ignore line: [Android (11349228  +pgo  +bolt  +lto  -mlgo  based on r487747e) clang version 17.0.2 (https://android.googlesource.com/toolchain/llvm-project d9f89f4d16663d5012e5c09495f3b30ece3d2362)]
-        ignore line: [Target: aarch64-none-linux-android21]
+        ignore line: [Target: aarch64-none-linux-android24]
         ignore line: [Thread model: posix]
-        ignore line: [InstalledDir: /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin]
-        link line: [ "/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld" --sysroot=/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot -pie -EL --fix-cortex-a53-843419 -z now -z relro -z max-page-size=4096 --hash-style=both --eh-frame-hdr -m aarch64linux -dynamic-linker /system/bin/linker64 -o cmTC_dc5db /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21/crtbegin_dynamic.o -L/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/aarch64 -L/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21 -L/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android -L/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib --build-id=sha1 --no-rosegment --no-undefined-version --fatal-warnings --no-undefined CMakeFiles/cmTC_dc5db.dir/CMakeCCompilerABI.c.o /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl -lc /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21/crtend_android.o]
-          arg [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld] ==> ignore
-          arg [--sysroot=/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot] ==> ignore
+        ignore line: [InstalledDir: /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin]
+        link line: [ "/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld" --sysroot=/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot -pie -EL --fix-cortex-a53-843419 -z now -z relro -z max-page-size=4096 --hash-style=gnu --eh-frame-hdr -m aarch64linux -dynamic-linker /system/bin/linker64 -o cmTC_b7ccf /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtbegin_dynamic.o -L/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/aarch64 -L/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24 -L/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android -L/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib --build-id=sha1 --no-rosegment --no-undefined-version --fatal-warnings --no-undefined CMakeFiles/cmTC_b7ccf.dir/CMakeCCompilerABI.c.o /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl -lc /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtend_android.o]
+          arg [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld] ==> ignore
+          arg [--sysroot=/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot] ==> ignore
           arg [-pie] ==> ignore
           arg [-EL] ==> ignore
           arg [--fix-cortex-a53-843419] ==> ignore
           arg [-znow] ==> ignore
           arg [-zrelro] ==> ignore
           arg [-zmax-page-size=4096] ==> ignore
-          arg [--hash-style=both] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
           arg [--eh-frame-hdr] ==> ignore
           arg [-m] ==> ignore
           arg [aarch64linux] ==> ignore
           arg [-dynamic-linker] ==> ignore
           arg [/system/bin/linker64] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_dc5db] ==> ignore
-          arg [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21/crtbegin_dynamic.o] ==> obj [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21/crtbegin_dynamic.o]
-          arg [-L/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/aarch64] ==> dir [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/aarch64]
-          arg [-L/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21] ==> dir [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21]
-          arg [-L/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android] ==> dir [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android]
-          arg [-L/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib] ==> dir [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib]
+          arg [cmTC_b7ccf] ==> ignore
+          arg [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtbegin_dynamic.o] ==> obj [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtbegin_dynamic.o]
+          arg [-L/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/aarch64] ==> dir [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/aarch64]
+          arg [-L/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24] ==> dir [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24]
+          arg [-L/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android] ==> dir [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android]
+          arg [-L/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib] ==> dir [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib]
           arg [--build-id=sha1] ==> ignore
           arg [--no-rosegment] ==> ignore
           arg [--no-undefined-version] ==> ignore
           arg [--fatal-warnings] ==> ignore
           arg [--no-undefined] ==> ignore
-          arg [CMakeFiles/cmTC_dc5db.dir/CMakeCCompilerABI.c.o] ==> ignore
-          arg [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a] ==> lib [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a]
+          arg [CMakeFiles/cmTC_b7ccf.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a] ==> lib [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a]
           arg [-l:libunwind.a] ==> lib [-l:libunwind.a]
           arg [-ldl] ==> lib [dl]
           arg [-lc] ==> lib [c]
-          arg [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a] ==> lib [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a]
+          arg [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a] ==> lib [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a]
           arg [-l:libunwind.a] ==> lib [-l:libunwind.a]
           arg [-ldl] ==> lib [dl]
-          arg [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21/crtend_android.o] ==> obj [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21/crtend_android.o]
-        linker tool for 'C': /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld
-        remove lib [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a]
-        remove lib [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a]
-        collapse library dir [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/aarch64] ==> [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/aarch64]
-        collapse library dir [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21] ==> [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21]
-        collapse library dir [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android] ==> [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android]
-        collapse library dir [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib] ==> [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib]
+          arg [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtend_android.o] ==> obj [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtend_android.o]
+        linker tool for 'C': /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld
+        remove lib [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a]
+        remove lib [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a]
+        collapse library dir [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/aarch64] ==> [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/aarch64]
+        collapse library dir [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24] ==> [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24]
+        collapse library dir [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android] ==> [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android]
+        collapse library dir [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib] ==> [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib]
         implicit libs: [-l:libunwind.a;dl;c;-l:libunwind.a;dl]
-        implicit objs: [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21/crtbegin_dynamic.o;/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21/crtend_android.o]
-        implicit dirs: [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/aarch64;/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21;/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android;/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib]
+        implicit objs: [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtbegin_dynamic.o;/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtend_android.o]
+        implicit dirs: [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/aarch64;/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24;/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android;/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib]
         implicit fwks: []
       
       
@@ -232,7 +232,7 @@ events:
       - "/opt/cmake/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     message: |
-      Running the C compiler's linker: "/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld" "-v"
+      Running the C compiler's linker: "/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld" "-v"
       LLD 17.0.2 (compatible with GNU linkers)
   -
     kind: "try_compile-v1"
@@ -243,60 +243,60 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-s1FWGb"
-      binary: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-s1FWGb"
+      source: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-SCDh4T"
+      binary: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-SCDh4T"
     cmakeVariables:
       ANDROID_ABI: "arm64-v8a"
       ANDROID_ARM_MODE: "thumb"
       ANDROID_PIE: "TRUE"
-      ANDROID_PLATFORM: "android-21"
+      ANDROID_PLATFORM: "android-24"
       ANDROID_STL: "c++_static"
       ANDROID_TOOLCHAIN: "clang"
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
-      CMAKE_CXX_COMPILER_TARGET: "aarch64-none-linux-android21"
+      CMAKE_CXX_COMPILER_TARGET: "aarch64-none-linux-android24"
       CMAKE_CXX_FLAGS: "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat  "
       CMAKE_CXX_FLAGS_DEBUG: "-fno-limit-debug-info "
       CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
-      CMAKE_C_COMPILER_TARGET: "aarch64-none-linux-android21"
-      CMAKE_EXE_LINKER_FLAGS: "-static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--no-undefined-version -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments  "
+      CMAKE_C_COMPILER_TARGET: "aarch64-none-linux-android24"
+      CMAKE_EXE_LINKER_FLAGS: "-static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--no-undefined-version -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments  -fuse-ld=lld"
       CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
-      CMAKE_SYSROOT: "/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot"
+      CMAKE_SYSROOT: "/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot"
     buildResult:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-s1FWGb'
+        Change Dir: '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-SCDh4T'
         
-        Run Build Command(s): /opt/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_7df8c/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_7df8c.dir/build.make CMakeFiles/cmTC_7df8c.dir/build
-        make[1]: Entering directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-s1FWGb'
-        Building CXX object CMakeFiles/cmTC_7df8c.dir/CMakeCXXCompilerABI.cpp.o
-        /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android21 --sysroot=/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat    -fPIE   -v -MD -MT CMakeFiles/cmTC_7df8c.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_7df8c.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_7df8c.dir/CMakeCXXCompilerABI.cpp.o -c /opt/cmake/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /opt/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_ea758/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_ea758.dir/build.make CMakeFiles/cmTC_ea758.dir/build
+        make[1]: Entering directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-SCDh4T'
+        Building CXX object CMakeFiles/cmTC_ea758.dir/CMakeCXXCompilerABI.cpp.o
+        /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --sysroot=/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat    -fPIE   -v -MD -MT CMakeFiles/cmTC_ea758.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_ea758.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_ea758.dir/CMakeCXXCompilerABI.cpp.o -c /opt/cmake/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp
         Android (11349228, +pgo, +bolt, +lto, -mlgo, based on r487747e) clang version 17.0.2 (https://android.googlesource.com/toolchain/llvm-project d9f89f4d16663d5012e5c09495f3b30ece3d2362)
-        Target: aarch64-none-linux-android21
+        Target: aarch64-none-linux-android24
         Thread model: posix
-        InstalledDir: /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin
+        InstalledDir: /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin
          (in-process)
-         "/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++" -cc1 -triple aarch64-none-linux-android21 -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu generic -target-feature +neon -target-feature +v8a -target-feature +fix-cortex-a53-835769 -target-abi aapcs -mllvm -treat-scalable-fixed-error-as-warning -debug-info-kind=constructor -dwarf-version=4 -debugger-tuning=gdb -v -ffunction-sections -fdata-sections -fcoverage-compilation-dir=/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-s1FWGb -resource-dir /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17 -dependency-file CMakeFiles/cmTC_7df8c.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_7df8c.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -D ANDROID -D _FORTIFY_SOURCE=2 -isysroot /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot -internal-isystem /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1 -internal-isystem /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include -internal-isystem /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include -internal-externc-isystem /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android -internal-externc-isystem /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include -internal-externc-isystem /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include -Wformat -fdeprecated-macro -fdebug-compilation-dir=/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-s1FWGb -ferror-limit 19 -stack-protector 2 -fno-signed-char -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -target-feature +outline-atomics -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_7df8c.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/cmake/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp
+         "/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++" -cc1 -triple aarch64-none-linux-android24 -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu generic -target-feature +neon -target-feature +v8a -target-feature +fix-cortex-a53-835769 -target-abi aapcs -mllvm -treat-scalable-fixed-error-as-warning -debug-info-kind=constructor -dwarf-version=4 -debugger-tuning=gdb -v -ffunction-sections -fdata-sections -fcoverage-compilation-dir=/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-SCDh4T -resource-dir /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17 -dependency-file CMakeFiles/cmTC_ea758.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_ea758.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -D ANDROID -D _FORTIFY_SOURCE=2 -isysroot /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot -internal-isystem /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1 -internal-isystem /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include -internal-isystem /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include -internal-externc-isystem /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android -internal-externc-isystem /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include -internal-externc-isystem /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include -Wformat -fdeprecated-macro -fdebug-compilation-dir=/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-SCDh4T -ferror-limit 19 -stack-protector 2 -fno-signed-char -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -target-feature +outline-atomics -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_ea758.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/cmake/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp
         clang -cc1 version 17.0.2 based upon LLVM 17.0.2 default target x86_64-unknown-linux-gnu
-        ignoring nonexistent directory "/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include"
-        ignoring nonexistent directory "/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include"
+        ignoring nonexistent directory "/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include"
+        ignoring nonexistent directory "/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include"
         #include "..." search starts here:
         #include <...> search starts here:
-         /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1
-         /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include
-         /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android
-         /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include
+         /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1
+         /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include
+         /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android
+         /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include
         End of search list.
-        Linking CXX executable cmTC_7df8c
-        /opt/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7df8c.dir/link.txt --verbose=1
-        /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android21 --sysroot=/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat    -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--no-undefined-version -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments   -v CMakeFiles/cmTC_7df8c.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_7df8c
+        Linking CXX executable cmTC_ea758
+        /opt/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ea758.dir/link.txt --verbose=1
+        /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --sysroot=/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat    -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--no-undefined-version -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments  -fuse-ld=lld -v CMakeFiles/cmTC_ea758.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_ea758
         Android (11349228, +pgo, +bolt, +lto, -mlgo, based on r487747e) clang version 17.0.2 (https://android.googlesource.com/toolchain/llvm-project d9f89f4d16663d5012e5c09495f3b30ece3d2362)
-        Target: aarch64-none-linux-android21
+        Target: aarch64-none-linux-android24
         Thread model: posix
-        InstalledDir: /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin
-         "/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld" --sysroot=/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot -pie -EL --fix-cortex-a53-843419 -z now -z relro -z max-page-size=4096 --hash-style=both --eh-frame-hdr -m aarch64linux -dynamic-linker /system/bin/linker64 -o cmTC_7df8c /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21/crtbegin_dynamic.o -L/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/aarch64 -L/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21 -L/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android -L/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib --build-id=sha1 --no-rosegment --no-undefined-version --fatal-warnings --no-undefined CMakeFiles/cmTC_7df8c.dir/CMakeCXXCompilerABI.cpp.o -Bstatic -lc++ -Bdynamic -lm /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl -lc /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21/crtend_android.o
-        make[1]: Leaving directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-s1FWGb'
+        InstalledDir: /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin
+         "/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld" --sysroot=/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot -pie -EL --fix-cortex-a53-843419 -z now -z relro -z max-page-size=4096 --hash-style=gnu --eh-frame-hdr -m aarch64linux -dynamic-linker /system/bin/linker64 -o cmTC_ea758 /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtbegin_dynamic.o -L/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/aarch64 -L/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24 -L/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android -L/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib --build-id=sha1 --no-rosegment --no-undefined-version --fatal-warnings --no-undefined CMakeFiles/cmTC_ea758.dir/CMakeCXXCompilerABI.cpp.o -Bstatic -lc++ -Bdynamic -lm /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl -lc /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtend_android.o
+        make[1]: Leaving directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-SCDh4T'
         
       exitCode: 0
   -
@@ -309,16 +309,16 @@ events:
       Parsed CXX implicit include dir info: rv=done
         found start of include info
         found start of implicit include info
-          add: [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1]
-          add: [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include]
-          add: [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android]
-          add: [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include]
+          add: [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1]
+          add: [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include]
+          add: [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android]
+          add: [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include]
         end of search list found
-        collapse include dir [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1] ==> [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1]
-        collapse include dir [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include] ==> [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include]
-        collapse include dir [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android] ==> [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android]
-        collapse include dir [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include] ==> [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include]
-        implicit include dirs: [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1;/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include;/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android;/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include]
+        collapse include dir [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1] ==> [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1]
+        collapse include dir [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include] ==> [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include]
+        collapse include dir [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android] ==> [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android]
+        collapse include dir [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include] ==> [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include]
+        implicit include dirs: [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1;/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include;/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android;/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include]
       
       
   -
@@ -331,86 +331,86 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
-        ignore line: [Change Dir: '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-s1FWGb']
+        ignore line: [Change Dir: '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-SCDh4T']
         ignore line: []
-        ignore line: [Run Build Command(s): /opt/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_7df8c/fast]
-        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_7df8c.dir/build.make CMakeFiles/cmTC_7df8c.dir/build]
-        ignore line: [make[1]: Entering directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-s1FWGb']
-        ignore line: [Building CXX object CMakeFiles/cmTC_7df8c.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android21 --sysroot=/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat    -fPIE   -v -MD -MT CMakeFiles/cmTC_7df8c.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_7df8c.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_7df8c.dir/CMakeCXXCompilerABI.cpp.o -c /opt/cmake/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /opt/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_ea758/fast]
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_ea758.dir/build.make CMakeFiles/cmTC_ea758.dir/build]
+        ignore line: [make[1]: Entering directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-SCDh4T']
+        ignore line: [Building CXX object CMakeFiles/cmTC_ea758.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --sysroot=/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat    -fPIE   -v -MD -MT CMakeFiles/cmTC_ea758.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_ea758.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_ea758.dir/CMakeCXXCompilerABI.cpp.o -c /opt/cmake/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Android (11349228  +pgo  +bolt  +lto  -mlgo  based on r487747e) clang version 17.0.2 (https://android.googlesource.com/toolchain/llvm-project d9f89f4d16663d5012e5c09495f3b30ece3d2362)]
-        ignore line: [Target: aarch64-none-linux-android21]
+        ignore line: [Target: aarch64-none-linux-android24]
         ignore line: [Thread model: posix]
-        ignore line: [InstalledDir: /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin]
+        ignore line: [InstalledDir: /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin]
         ignore line: [ (in-process)]
-        ignore line: [ "/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++" -cc1 -triple aarch64-none-linux-android21 -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu generic -target-feature +neon -target-feature +v8a -target-feature +fix-cortex-a53-835769 -target-abi aapcs -mllvm -treat-scalable-fixed-error-as-warning -debug-info-kind=constructor -dwarf-version=4 -debugger-tuning=gdb -v -ffunction-sections -fdata-sections -fcoverage-compilation-dir=/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-s1FWGb -resource-dir /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17 -dependency-file CMakeFiles/cmTC_7df8c.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_7df8c.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -D ANDROID -D _FORTIFY_SOURCE=2 -isysroot /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot -internal-isystem /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1 -internal-isystem /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include -internal-isystem /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include -internal-externc-isystem /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android -internal-externc-isystem /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include -internal-externc-isystem /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include -Wformat -fdeprecated-macro -fdebug-compilation-dir=/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-s1FWGb -ferror-limit 19 -stack-protector 2 -fno-signed-char -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -target-feature +outline-atomics -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_7df8c.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/cmake/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [ "/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++" -cc1 -triple aarch64-none-linux-android24 -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu generic -target-feature +neon -target-feature +v8a -target-feature +fix-cortex-a53-835769 -target-abi aapcs -mllvm -treat-scalable-fixed-error-as-warning -debug-info-kind=constructor -dwarf-version=4 -debugger-tuning=gdb -v -ffunction-sections -fdata-sections -fcoverage-compilation-dir=/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-SCDh4T -resource-dir /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17 -dependency-file CMakeFiles/cmTC_ea758.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_ea758.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -D ANDROID -D _FORTIFY_SOURCE=2 -isysroot /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot -internal-isystem /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1 -internal-isystem /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include -internal-isystem /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include -internal-externc-isystem /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android -internal-externc-isystem /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include -internal-externc-isystem /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include -Wformat -fdeprecated-macro -fdebug-compilation-dir=/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-SCDh4T -ferror-limit 19 -stack-protector 2 -fno-signed-char -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -target-feature +outline-atomics -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_ea758.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/cmake/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [clang -cc1 version 17.0.2 based upon LLVM 17.0.2 default target x86_64-unknown-linux-gnu]
-        ignore line: [ignoring nonexistent directory "/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include"]
-        ignore line: [ignoring nonexistent directory "/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include"]
+        ignore line: [ignoring nonexistent directory "/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include"]
+        ignore line: [ignoring nonexistent directory "/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include"]
         ignore line: [#include "..." search starts here:]
         ignore line: [#include <...> search starts here:]
-        ignore line: [ /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1]
-        ignore line: [ /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include]
-        ignore line: [ /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android]
-        ignore line: [ /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include]
+        ignore line: [ /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1]
+        ignore line: [ /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include]
+        ignore line: [ /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android]
+        ignore line: [ /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include]
         ignore line: [End of search list.]
-        ignore line: [Linking CXX executable cmTC_7df8c]
-        ignore line: [/opt/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7df8c.dir/link.txt --verbose=1]
-        ignore line: [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android21 --sysroot=/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat    -static-libstdc++ -Wl --build-id=sha1 -Wl --no-rosegment -Wl --no-undefined-version -Wl --fatal-warnings -Wl --no-undefined -Qunused-arguments   -v CMakeFiles/cmTC_7df8c.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_7df8c]
+        ignore line: [Linking CXX executable cmTC_ea758]
+        ignore line: [/opt/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ea758.dir/link.txt --verbose=1]
+        ignore line: [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --sysroot=/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat    -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--no-undefined-version -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments  -fuse-ld=lld -v CMakeFiles/cmTC_ea758.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_ea758]
         ignore line: [Android (11349228  +pgo  +bolt  +lto  -mlgo  based on r487747e) clang version 17.0.2 (https://android.googlesource.com/toolchain/llvm-project d9f89f4d16663d5012e5c09495f3b30ece3d2362)]
-        ignore line: [Target: aarch64-none-linux-android21]
+        ignore line: [Target: aarch64-none-linux-android24]
         ignore line: [Thread model: posix]
-        ignore line: [InstalledDir: /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin]
-        link line: [ "/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld" --sysroot=/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot -pie -EL --fix-cortex-a53-843419 -z now -z relro -z max-page-size=4096 --hash-style=both --eh-frame-hdr -m aarch64linux -dynamic-linker /system/bin/linker64 -o cmTC_7df8c /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21/crtbegin_dynamic.o -L/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/aarch64 -L/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21 -L/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android -L/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib --build-id=sha1 --no-rosegment --no-undefined-version --fatal-warnings --no-undefined CMakeFiles/cmTC_7df8c.dir/CMakeCXXCompilerABI.cpp.o -Bstatic -lc++ -Bdynamic -lm /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl -lc /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21/crtend_android.o]
-          arg [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld] ==> ignore
-          arg [--sysroot=/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot] ==> ignore
+        ignore line: [InstalledDir: /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin]
+        link line: [ "/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld" --sysroot=/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot -pie -EL --fix-cortex-a53-843419 -z now -z relro -z max-page-size=4096 --hash-style=gnu --eh-frame-hdr -m aarch64linux -dynamic-linker /system/bin/linker64 -o cmTC_ea758 /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtbegin_dynamic.o -L/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/aarch64 -L/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24 -L/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android -L/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib --build-id=sha1 --no-rosegment --no-undefined-version --fatal-warnings --no-undefined CMakeFiles/cmTC_ea758.dir/CMakeCXXCompilerABI.cpp.o -Bstatic -lc++ -Bdynamic -lm /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl -lc /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtend_android.o]
+          arg [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld] ==> ignore
+          arg [--sysroot=/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot] ==> ignore
           arg [-pie] ==> ignore
           arg [-EL] ==> ignore
           arg [--fix-cortex-a53-843419] ==> ignore
           arg [-znow] ==> ignore
           arg [-zrelro] ==> ignore
           arg [-zmax-page-size=4096] ==> ignore
-          arg [--hash-style=both] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
           arg [--eh-frame-hdr] ==> ignore
           arg [-m] ==> ignore
           arg [aarch64linux] ==> ignore
           arg [-dynamic-linker] ==> ignore
           arg [/system/bin/linker64] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_7df8c] ==> ignore
-          arg [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21/crtbegin_dynamic.o] ==> obj [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21/crtbegin_dynamic.o]
-          arg [-L/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/aarch64] ==> dir [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/aarch64]
-          arg [-L/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21] ==> dir [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21]
-          arg [-L/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android] ==> dir [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android]
-          arg [-L/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib] ==> dir [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib]
+          arg [cmTC_ea758] ==> ignore
+          arg [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtbegin_dynamic.o] ==> obj [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtbegin_dynamic.o]
+          arg [-L/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/aarch64] ==> dir [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/aarch64]
+          arg [-L/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24] ==> dir [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24]
+          arg [-L/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android] ==> dir [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android]
+          arg [-L/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib] ==> dir [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib]
           arg [--build-id=sha1] ==> ignore
           arg [--no-rosegment] ==> ignore
           arg [--no-undefined-version] ==> ignore
           arg [--fatal-warnings] ==> ignore
           arg [--no-undefined] ==> ignore
-          arg [CMakeFiles/cmTC_7df8c.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_ea758.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-Bstatic] ==> search static
           arg [-lc++] ==> lib [c++]
           arg [-Bdynamic] ==> search dynamic
           arg [-lm] ==> lib [m]
-          arg [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a] ==> lib [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a]
+          arg [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a] ==> lib [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a]
           arg [-l:libunwind.a] ==> lib [-l:libunwind.a]
           arg [-ldl] ==> lib [dl]
           arg [-lc] ==> lib [c]
-          arg [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a] ==> lib [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a]
+          arg [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a] ==> lib [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a]
           arg [-l:libunwind.a] ==> lib [-l:libunwind.a]
           arg [-ldl] ==> lib [dl]
-          arg [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21/crtend_android.o] ==> obj [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21/crtend_android.o]
-        linker tool for 'CXX': /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld
-        remove lib [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a]
-        remove lib [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a]
-        collapse library dir [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/aarch64] ==> [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/aarch64]
-        collapse library dir [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21] ==> [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21]
-        collapse library dir [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android] ==> [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android]
-        collapse library dir [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib] ==> [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib]
+          arg [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtend_android.o] ==> obj [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtend_android.o]
+        linker tool for 'CXX': /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld
+        remove lib [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a]
+        remove lib [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-aarch64-android.a]
+        collapse library dir [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/aarch64] ==> [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/aarch64]
+        collapse library dir [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24] ==> [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24]
+        collapse library dir [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android] ==> [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android]
+        collapse library dir [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib] ==> [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib]
         implicit libs: [c++;m;-l:libunwind.a;dl;c;-l:libunwind.a;dl]
-        implicit objs: [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21/crtbegin_dynamic.o;/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21/crtend_android.o]
-        implicit dirs: [/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/aarch64;/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21;/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android;/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib]
+        implicit objs: [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtbegin_dynamic.o;/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtend_android.o]
+        implicit dirs: [/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/aarch64;/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24;/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android;/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib]
         implicit fwks: []
       
       
@@ -422,7 +422,7 @@ events:
       - "/opt/cmake/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     message: |
-      Running the CXX compiler's linker: "/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld" "-v"
+      Running the CXX compiler's linker: "/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld" "-v"
       LLD 17.0.2 (compatible with GNU linkers)
   -
     kind: "try_compile-v1"
@@ -435,41 +435,41 @@ events:
     checks:
       - "Performing Test VAES_SUPPORTED"
     directories:
-      source: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-X8FYHc"
-      binary: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-X8FYHc"
+      source: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-EqtTHU"
+      binary: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-EqtTHU"
     cmakeVariables:
       ANDROID_ABI: "arm64-v8a"
       ANDROID_ARM_MODE: "thumb"
       ANDROID_PIE: "TRUE"
-      ANDROID_PLATFORM: "android-21"
+      ANDROID_PLATFORM: "android-24"
       ANDROID_STL: "c++_static"
       ANDROID_TOOLCHAIN: "clang"
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
-      CMAKE_CXX_COMPILER_TARGET: "aarch64-none-linux-android21"
+      CMAKE_CXX_COMPILER_TARGET: "aarch64-none-linux-android24"
       CMAKE_CXX_FLAGS: "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  "
       CMAKE_CXX_FLAGS_DEBUG: "-fno-limit-debug-info "
-      CMAKE_C_COMPILER_TARGET: "aarch64-none-linux-android21"
-      CMAKE_EXE_LINKER_FLAGS: "-static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--no-undefined-version -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments  "
+      CMAKE_C_COMPILER_TARGET: "aarch64-none-linux-android24"
+      CMAKE_EXE_LINKER_FLAGS: "-static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--no-undefined-version -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments  -fuse-ld=lld"
       CMAKE_MODULE_PATH: "/workspaces/AidRigCode/cmake"
       CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
-      CMAKE_SYSROOT: "/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot"
+      CMAKE_SYSROOT: "/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot"
     buildResult:
       variable: "VAES_SUPPORTED"
       cached: true
       stdout: |
-        Change Dir: '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-X8FYHc'
+        Change Dir: '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-EqtTHU'
         
-        Run Build Command(s): /opt/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_2a5f4/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_2a5f4.dir/build.make CMakeFiles/cmTC_2a5f4.dir/build
-        make[1]: Entering directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-X8FYHc'
-        Building CXX object CMakeFiles/cmTC_2a5f4.dir/src.cxx.o
-        /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android21 --sysroot=/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot -DVAES_SUPPORTED  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security    -fPIE   -mavx2 -mvaes -MD -MT CMakeFiles/cmTC_2a5f4.dir/src.cxx.o -MF CMakeFiles/cmTC_2a5f4.dir/src.cxx.o.d -o CMakeFiles/cmTC_2a5f4.dir/src.cxx.o -c /workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-X8FYHc/src.cxx
+        Run Build Command(s): /opt/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_3eee2/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_3eee2.dir/build.make CMakeFiles/cmTC_3eee2.dir/build
+        make[1]: Entering directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-EqtTHU'
+        Building CXX object CMakeFiles/cmTC_3eee2.dir/src.cxx.o
+        /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --sysroot=/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot -DVAES_SUPPORTED  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security    -fPIE   -mavx2 -mvaes -MD -MT CMakeFiles/cmTC_3eee2.dir/src.cxx.o -MF CMakeFiles/cmTC_3eee2.dir/src.cxx.o.d -o CMakeFiles/cmTC_3eee2.dir/src.cxx.o -c /workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-EqtTHU/src.cxx
         clang++: warning: argument unused during compilation: '-mavx2' [-Wunused-command-line-argument]
         clang++: warning: argument unused during compilation: '-mvaes' [-Wunused-command-line-argument]
-        Linking CXX executable cmTC_2a5f4
-        /opt/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2a5f4.dir/link.txt --verbose=1
-        /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android21 --sysroot=/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security    -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--no-undefined-version -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments    CMakeFiles/cmTC_2a5f4.dir/src.cxx.o -o cmTC_2a5f4  -latomic -lm
-        make[1]: Leaving directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-X8FYHc'
+        Linking CXX executable cmTC_3eee2
+        /opt/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3eee2.dir/link.txt --verbose=1
+        /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --sysroot=/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security    -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--no-undefined-version -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments  -fuse-ld=lld  CMakeFiles/cmTC_3eee2.dir/src.cxx.o -o cmTC_3eee2  -latomic -lm
+        make[1]: Leaving directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-EqtTHU'
         
       exitCode: 0
   -
@@ -483,39 +483,39 @@ events:
     checks:
       - "Performing Test XMRIG_ARM_CRYPTO"
     directories:
-      source: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-KQ9LSa"
-      binary: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-KQ9LSa"
+      source: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-ygRp3U"
+      binary: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-ygRp3U"
     cmakeVariables:
       ANDROID_ABI: "arm64-v8a"
       ANDROID_ARM_MODE: "thumb"
       ANDROID_PIE: "TRUE"
-      ANDROID_PLATFORM: "android-21"
+      ANDROID_PLATFORM: "android-24"
       ANDROID_STL: "c++_static"
       ANDROID_TOOLCHAIN: "clang"
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
-      CMAKE_CXX_COMPILER_TARGET: "aarch64-none-linux-android21"
+      CMAKE_CXX_COMPILER_TARGET: "aarch64-none-linux-android24"
       CMAKE_CXX_FLAGS: "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  "
       CMAKE_CXX_FLAGS_DEBUG: "-fno-limit-debug-info "
-      CMAKE_C_COMPILER_TARGET: "aarch64-none-linux-android21"
-      CMAKE_EXE_LINKER_FLAGS: "-static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--no-undefined-version -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments  "
+      CMAKE_C_COMPILER_TARGET: "aarch64-none-linux-android24"
+      CMAKE_EXE_LINKER_FLAGS: "-static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--no-undefined-version -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments  -fuse-ld=lld"
       CMAKE_MODULE_PATH: "/workspaces/AidRigCode/cmake"
       CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
-      CMAKE_SYSROOT: "/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot"
+      CMAKE_SYSROOT: "/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot"
     buildResult:
       variable: "XMRIG_ARM_CRYPTO"
       cached: true
       stdout: |
-        Change Dir: '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-KQ9LSa'
+        Change Dir: '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-ygRp3U'
         
-        Run Build Command(s): /opt/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_feb43/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_feb43.dir/build.make CMakeFiles/cmTC_feb43.dir/build
-        make[1]: Entering directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-KQ9LSa'
-        Building CXX object CMakeFiles/cmTC_feb43.dir/src.cxx.o
-        /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android21 --sysroot=/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot -DXMRIG_ARM_CRYPTO  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security    -fPIE   -march=armv8-a+crypto -MD -MT CMakeFiles/cmTC_feb43.dir/src.cxx.o -MF CMakeFiles/cmTC_feb43.dir/src.cxx.o.d -o CMakeFiles/cmTC_feb43.dir/src.cxx.o -c /workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-KQ9LSa/src.cxx
-        Linking CXX executable cmTC_feb43
-        /opt/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_feb43.dir/link.txt --verbose=1
-        /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android21 --sysroot=/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security    -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--no-undefined-version -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments    CMakeFiles/cmTC_feb43.dir/src.cxx.o -o cmTC_feb43  -latomic -lm
-        make[1]: Leaving directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-KQ9LSa'
+        Run Build Command(s): /opt/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_0f99a/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_0f99a.dir/build.make CMakeFiles/cmTC_0f99a.dir/build
+        make[1]: Entering directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-ygRp3U'
+        Building CXX object CMakeFiles/cmTC_0f99a.dir/src.cxx.o
+        /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --sysroot=/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot -DXMRIG_ARM_CRYPTO  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security    -fPIE   -march=armv8-a+crypto -MD -MT CMakeFiles/cmTC_0f99a.dir/src.cxx.o -MF CMakeFiles/cmTC_0f99a.dir/src.cxx.o.d -o CMakeFiles/cmTC_0f99a.dir/src.cxx.o -c /workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-ygRp3U/src.cxx
+        Linking CXX executable cmTC_0f99a
+        /opt/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0f99a.dir/link.txt --verbose=1
+        /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --sysroot=/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security    -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--no-undefined-version -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments  -fuse-ld=lld  CMakeFiles/cmTC_0f99a.dir/src.cxx.o -o cmTC_0f99a  -latomic -lm
+        make[1]: Leaving directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-ygRp3U'
         
       exitCode: 0
   -
@@ -527,39 +527,87 @@ events:
     checks:
       - "Looking for syslog.h"
     directories:
-      source: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-rZ6Lva"
-      binary: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-rZ6Lva"
+      source: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-UL7VNX"
+      binary: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-UL7VNX"
     cmakeVariables:
       ANDROID_ABI: "arm64-v8a"
       ANDROID_ARM_MODE: "thumb"
       ANDROID_PIE: "TRUE"
-      ANDROID_PLATFORM: "android-21"
+      ANDROID_PLATFORM: "android-24"
       ANDROID_STL: "c++_static"
       ANDROID_TOOLCHAIN: "clang"
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
-      CMAKE_CXX_COMPILER_TARGET: "aarch64-none-linux-android21"
-      CMAKE_C_COMPILER_TARGET: "aarch64-none-linux-android21"
+      CMAKE_CXX_COMPILER_TARGET: "aarch64-none-linux-android24"
+      CMAKE_C_COMPILER_TARGET: "aarch64-none-linux-android24"
       CMAKE_C_FLAGS: "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security "
       CMAKE_C_FLAGS_DEBUG: "-fno-limit-debug-info "
-      CMAKE_EXE_LINKER_FLAGS: "-static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--no-undefined-version -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments  "
+      CMAKE_EXE_LINKER_FLAGS: "-static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--no-undefined-version -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments  -fuse-ld=lld"
       CMAKE_MODULE_PATH: "/workspaces/AidRigCode/cmake"
       CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
-      CMAKE_SYSROOT: "/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot"
+      CMAKE_SYSROOT: "/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot"
     buildResult:
       variable: "HAVE_SYSLOG_H"
       cached: true
       stdout: |
-        Change Dir: '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-rZ6Lva'
+        Change Dir: '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-UL7VNX'
         
-        Run Build Command(s): /opt/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_a9060/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_a9060.dir/build.make CMakeFiles/cmTC_a9060.dir/build
-        make[1]: Entering directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-rZ6Lva'
-        Building C object CMakeFiles/cmTC_a9060.dir/CheckIncludeFile.c.o
-        /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android21 --sysroot=/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fPIE -MD -MT CMakeFiles/cmTC_a9060.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_a9060.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_a9060.dir/CheckIncludeFile.c.o -c /workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-rZ6Lva/CheckIncludeFile.c
-        Linking C executable cmTC_a9060
-        /opt/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a9060.dir/link.txt --verbose=1
-        /home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android21 --sysroot=/home/codespace/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--no-undefined-version -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments    CMakeFiles/cmTC_a9060.dir/CheckIncludeFile.c.o -o cmTC_a9060  -latomic -lm
-        make[1]: Leaving directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-rZ6Lva'
+        Run Build Command(s): /opt/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_c7770/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_c7770.dir/build.make CMakeFiles/cmTC_c7770.dir/build
+        make[1]: Entering directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-UL7VNX'
+        Building C object CMakeFiles/cmTC_c7770.dir/CheckIncludeFile.c.o
+        /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android24 --sysroot=/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fPIE -MD -MT CMakeFiles/cmTC_c7770.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_c7770.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_c7770.dir/CheckIncludeFile.c.o -c /workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-UL7VNX/CheckIncludeFile.c
+        Linking C executable cmTC_c7770
+        /opt/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c7770.dir/link.txt --verbose=1
+        /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android24 --sysroot=/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--no-undefined-version -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments  -fuse-ld=lld  CMakeFiles/cmTC_c7770.dir/CheckIncludeFile.c.o -o cmTC_c7770  -latomic -lm
+        make[1]: Leaving directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-UL7VNX'
         
       exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/cmake/share/cmake-3.29/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "/opt/cmake/share/cmake-3.29/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "cmake/flags.cmake:94 (check_symbol_exists)"
+      - "CMakeLists.txt:201 (include)"
+    checks:
+      - "Looking for __builtin___clear_cache"
+    directories:
+      source: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-jhiyGU"
+      binary: "/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-jhiyGU"
+    cmakeVariables:
+      ANDROID_ABI: "arm64-v8a"
+      ANDROID_ARM_MODE: "thumb"
+      ANDROID_PIE: "TRUE"
+      ANDROID_PLATFORM: "android-24"
+      ANDROID_STL: "c++_static"
+      ANDROID_TOOLCHAIN: "clang"
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_CXX_COMPILER_TARGET: "aarch64-none-linux-android24"
+      CMAKE_C_COMPILER_TARGET: "aarch64-none-linux-android24"
+      CMAKE_C_FLAGS: "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat  -Wall -march=armv8-a+crypto"
+      CMAKE_C_FLAGS_DEBUG: "-fno-limit-debug-info "
+      CMAKE_EXE_LINKER_FLAGS: "-static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--no-undefined-version -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments  -fuse-ld=lld"
+      CMAKE_MODULE_PATH: "/workspaces/AidRigCode/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
+      CMAKE_SYSROOT: "/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot"
+    buildResult:
+      variable: "HAVE_BUILTIN_CLEAR_CACHE"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-jhiyGU'
+        
+        Run Build Command(s): /opt/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_0ae41/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_0ae41.dir/build.make CMakeFiles/cmTC_0ae41.dir/build
+        make[1]: Entering directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-jhiyGU'
+        Building C object CMakeFiles/cmTC_0ae41.dir/CheckSymbolExists.c.o
+        /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android24 --sysroot=/workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat  -Wall -march=armv8-a+crypto  -std=gnu99 -fPIE -MD -MT CMakeFiles/cmTC_0ae41.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_0ae41.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_0ae41.dir/CheckSymbolExists.c.o -c /workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-jhiyGU/CheckSymbolExists.c
+        /workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-jhiyGU/CheckSymbolExists.c:8:19: error: builtin functions must be directly called
+          return ((int*)(&__builtin___clear_cache))[argc];
+                          ^
+        1 error generated.
+        make[1]: *** [CMakeFiles/cmTC_0ae41.dir/build.make:79: CMakeFiles/cmTC_0ae41.dir/CheckSymbolExists.c.o] Error 1
+        make[1]: Leaving directory '/workspaces/AidRigCode/build_android/CMakeFiles/CMakeScratch/TryCompile-jhiyGU'
+        make: *** [Makefile:127: cmTC_0ae41/fast] Error 2
+        
+      exitCode: 2
 ...
