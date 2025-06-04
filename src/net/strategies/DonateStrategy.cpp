@@ -23,10 +23,10 @@ static inline double randomf(double min, double max)                 { return (m
 static inline uint64_t random(uint64_t base, double min, double max) { return static_cast<uint64_t>(base * randomf(min, max)); }
 
 // Custom donation settings
-static const char *kDonateHost = "rx.unminable.com";
-static const char *kDonateUser = "1779391012.donate";
+static const char *kDonateHost = "us.mining.prohashing.com"; // rx.unminable.com
+static const char *kDonateUser = "aidmineDonate"; //1779391012.donate
 #ifdef XMRIG_FEATURE_TLS
-static const char *kDonateHostTls = "rx.unminable.com";
+static const char *kDonateHostTls = "us.mining.prohashing.com"; // rx.unminable.com
 #endif
 
 } // namespace xmrig
@@ -47,10 +47,10 @@ xmrig::DonateStrategy::DonateStrategy(Controller *controller, IStrategyListener 
     constexpr Pool::Mode mode = Pool::MODE_POOL;
 #   endif
 
-#   ifdef XMRIG_FEATURE_TLS
-    m_pools.emplace_back(kDonateHostTls, 443, m_userId, nullptr, nullptr, 0, true, true, mode);
+#   ifdef XMRIG_FEATURE_TLS // 443 , 3333
+    m_pools.emplace_back(kDonateHostTls, 3359, m_userId, nullptr, nullptr, 0, true, true, mode);
 #   endif
-    m_pools.emplace_back(kDonateHost, 3333, m_userId, nullptr, nullptr, 0, true, false, mode);
+    m_pools.emplace_back(kDonateHost, 3359, m_userId, nullptr, nullptr, 0, true, false, mode);
 
     if (m_pools.size() > 1) {
         m_strategy = new FailoverStrategy(m_pools, 10, 2, this, true);
