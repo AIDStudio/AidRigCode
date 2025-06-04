@@ -19,16 +19,19 @@
 #ifndef XMRIG_PLATFORM_H
 #define XMRIG_PLATFORM_H
 
+
 #include <cstdint>
+
 
 #include "base/tools/String.h"
 
+
 namespace xmrig {
+
 
 class Platform
 {
 public:
-    // Inline függvény, amely ellenőrzi és átalakítja a cpu_id-t
     static inline bool trySetThreadAffinity(int64_t cpu_id)
     {
         if (cpu_id < 0) {
@@ -38,44 +41,31 @@ public:
         return setThreadAffinity(static_cast<uint64_t>(cpu_id));
     }
 
-    // Fő szál affinitás beállító függvény
     static bool setThreadAffinity(uint64_t cpu_id);
-
-    // Inicializáló függvény a User Agent beállításához
     static void init(const char *userAgent);
-
-    // Prioritás beállítások
     static void setProcessPriority(int priority);
     static void setThreadPriority(int priority);
 
-    // Aktivitás ellenőrzés
-    static inline bool isUserActive(uint64_t ms) { return idleTime() < ms; }
+    static inline bool isUserActive(uint64_t ms)    { return idleTime() < ms; }
+    static inline const String &userAgent()         { return m_userAgent; }
 
-    // User Agent getter
-    static inline const String &userAgent() { return m_userAgent; }
-
-#ifdef XMRIG_OS_WIN
-    // Windows specifikus keepalive ellenőrzés
+#   ifdef XMRIG_OS_WIN
     static bool hasKeepalive();
-#else
-    // Egyéb platformokon mindig igaz
-    static constexpr bool hasKeepalive() { return true; }
-#endif
+#   else
+    static constexpr bool hasKeepalive()            { return true; }
+#   endif
 
-    // Akkumulátor állapot ellenőrzés
     static bool isOnBatteryPower();
-
-    // Üresjárati idő lekérdezése
     static uint64_t idleTime();
 
 private:
-    // User Agent generálása
     static char *createUserAgent();
 
-    // Statikus tagváltozó a User Agent tárolására
     static String m_userAgent;
 };
 
+
 } // namespace xmrig
+
 
 #endif /* XMRIG_PLATFORM_H */

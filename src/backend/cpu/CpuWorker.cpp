@@ -238,10 +238,8 @@ void xmrig::CpuWorker<N>::hashrateData(uint64_t &hashCount, uint64_t &, uint64_t
 
 
 template<size_t N>
-void xmrig::CpuWorker<N>::start() {
-    // Pre-allocate buffers
-    alignas(16) uint64_t tempHash[8] = {};
-    
+void xmrig::CpuWorker<N>::start()
+{
     while (Nonce::sequence(Nonce::CPU) > 0) {
         if (Nonce::isPaused()) {
             do {
@@ -256,10 +254,10 @@ void xmrig::CpuWorker<N>::start() {
             consumeJob();
         }
 
-        // Optimize cache usage
-        for (size_t i = 0; i < N; i++) {
-            __builtin_prefetch(&m_memory[i * 64]); // 64 = cache line size
-        }
+#       ifdef XMRIG_ALGO_RANDOMX
+        bool first = true;
+        alignas(16) uint64_t tempHash[8] = {};
+#       endif
 
         while (!Nonce::isOutdated(Nonce::CPU, m_job.sequence())) {
             const Job &job = m_job.currentJob();
@@ -273,39 +271,96 @@ void xmrig::CpuWorker<N>::start() {
                 current_job_nonces[i] = readUnaligned(m_job.nonce(i));
             }
 
+#           ifdef XMRIG_FEATURE_BENCHMARK
+            if (m_benchSize) {
+                if (current_job_nonces[0] >= m_benchSize) {
+                    return BenchState::done();
+                }
+
+                // Make each hash dependent on the previous one in single thread benchmark to prevent cheating with multiple threads
+                if (m_threads == 1) {
+                    *(uint64_t*)(m_job.blob()) ^= BenchState::data();
+                }
+            }
+#           endif
+
             bool valid = true;
 
-            // Use optimized implementations based on CPU features
-            if (m_hwAES && job.algorithm().family() == Algorithm::RANDOM_X) {
-                if (!m_vm) {
-                    allocateRandomX_VM();
+            uint8_t miner_signature_saved[64];
+
+#           ifdef XMRIG_ALGO_RANDOMX
+            uint8_t* miner_signature_ptr = m_job.blob() + m_job.nonceOffset() + m_job.nonceSize();
+            if (job.algorithm().family() == Algorithm::RANDOM_X) {
+                if (first) {
+                    first = false;
+                    if (job.hasMinerSignature()) {
+                        job.generateMinerSignature(m_job.blob(), job.size(), miner_signature_ptr);
+                    }
+                    randomx_calculate_hash_first(m_vm, tempHash, m_job.blob(), job.size());
                 }
-                randomx_calculate_hash_first(m_vm, tempHash, m_job.blob(), job.size());
+
+                if (!nextRound()) {
+                    break;
+                }
+
+                if (job.hasMinerSignature()) {
+                    memcpy(miner_signature_saved, miner_signature_ptr, sizeof(miner_signature_saved));
+                    job.generateMinerSignature(m_job.blob(), job.size(), miner_signature_ptr);
+                }
                 randomx_calculate_hash_next(m_vm, tempHash, m_job.blob(), job.size(), m_hash);
             }
-            else {
-                fn(job.algorithm())(m_job.blob(), job.size(), m_hash, m_ctx, job.height());
+            else
+#           endif
+            {
+                switch (job.algorithm().family()) {
+
+#               ifdef XMRIG_ALGO_GHOSTRIDER
+                case Algorithm::GHOSTRIDER:
+                    if (N == 8) {
+                        ghostrider::hash_octa(m_job.blob(), job.size(), m_hash, m_ctx, m_ghHelper);
+                    }
+                    else {
+                        valid = false;
+                    }
+                    break;
+#               endif
+
+                default:
+                    fn(job.algorithm())(m_job.blob(), job.size(), m_hash, m_ctx, job.height());
+                    break;
+                }
+
+                if (!nextRound()) {
+                    break;
+                };
             }
 
-            // Process results
             if (valid) {
                 for (size_t i = 0; i < N; ++i) {
                     const uint64_t value = *reinterpret_cast<uint64_t*>(m_hash + (i * 32) + 24);
+
+#                   ifdef XMRIG_FEATURE_BENCHMARK
+                    if (m_benchSize) {
+                        if (current_job_nonces[i] < m_benchSize) {
+                            BenchState::add(value);
+                        }
+                    }
+                    else
+#                   endif
                     if (value < job.target()) {
-                        JobResults::submit(job, current_job_nonces[i], m_hash + (i * 32));
+                        JobResults::submit(job, current_job_nonces[i], m_hash + (i * 32), job.hasMinerSignature() ? miner_signature_saved : nullptr);
                     }
                 }
                 m_count += N;
             }
 
-            if (!nextRound()) {
-                break;
-            }
-
-            // Adaptive yield
             if (m_yield) {
                 std::this_thread::yield();
             }
+        }
+
+        if (!Nonce::isPaused()) {
+            consumeJob();
         }
     }
 }

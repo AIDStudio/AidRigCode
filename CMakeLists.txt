@@ -1,11 +1,5 @@
-cmake_minimum_required(VERSION 3.10)
+cmake_minimum_required(VERSION 3.5)
 project(aidrig)
-
-set(CMAKE_C_FLAGS_RELEASE "-O3 -fno-fast-math ${CMAKE_C_FLAGS_RELEASE}")
-set(CMAKE_CXX_FLAGS_RELEASE "-O3 -fno-fast-math ${CMAKE_CXX_FLAGS_RELEASE}")
-
-set(CMAKE_BUILD_TYPE "Release")
-set(CMAKE_BUILD_TYPE "Debug")
 
 option(WITH_HWLOC           "Enable hwloc support" ON)
 option(WITH_CN_LITE         "Enable CryptoNight-Lite algorithms family" ON)
@@ -138,7 +132,7 @@ set(SOURCES_CRYPTO
 )
 
 if (CMAKE_C_COMPILER_ID MATCHES GNU)
-    set_source_files_properties(src/crypto/cn/CnHash.cpp PROPERTIES COMPILE_FLAGS "-O3 -fno-fast-math -fno-tree-vectorize")
+    set_source_files_properties(src/crypto/cn/CnHash.cpp PROPERTIES COMPILE_FLAGS "-Ofast -fno-tree-vectorize")
 endif()
 
 if (WITH_VAES)
@@ -146,7 +140,7 @@ if (WITH_VAES)
     set(HEADERS_CRYPTO "${HEADERS_CRYPTO}" src/crypto/cn/CryptoNight_x86_vaes.h)
     set(SOURCES_CRYPTO "${SOURCES_CRYPTO}" src/crypto/cn/CryptoNight_x86_vaes.cpp)
     if (CMAKE_C_COMPILER_ID MATCHES GNU OR CMAKE_C_COMPILER_ID MATCHES Clang)
-        set_source_files_properties(src/crypto/cn/CryptoNight_x86_vaes.cpp PROPERTIES COMPILE_FLAGS "-O3 -fno-fast-math -fno-tree-vectorize -mavx2 -mvaes")
+        set_source_files_properties(src/crypto/cn/CryptoNight_x86_vaes.cpp PROPERTIES COMPILE_FLAGS "-Ofast -fno-tree-vectorize -mavx2 -mvaes")
     endif()
 endif()
 
@@ -175,13 +169,13 @@ elseif (XMRIG_OS_APPLE)
     find_library(IOKIT_LIBRARY IOKit)
     find_library(CORESERVICES_LIBRARY CoreServices)
     set(EXTRA_LIBS ${IOKIT_LIBRARY} ${CORESERVICES_LIBRARY})
-else() 
+else()
     list(APPEND SOURCES_OS
         src/App_unix.cpp
         src/crypto/common/VirtualMemory_unix.cpp
     )
     if (XMRIG_OS_ANDROID)
-        set(EXTRA_LIBS atomic dl log m)
+        set(EXTRA_LIBS pthread rt dl log)
     elseif (XMRIG_OS_LINUX)
         list(APPEND SOURCES_OS
             src/crypto/common/LinuxMemory.h
@@ -251,35 +245,4 @@ endif()
 
 if (CMAKE_CXX_COMPILER_ID MATCHES Clang AND CMAKE_BUILD_TYPE STREQUAL Release AND NOT CMAKE_GENERATOR STREQUAL Xcode)
     add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD COMMAND ${CMAKE_STRIP} ${CMAKE_PROJECT_NAME})
-endif()
-
-target_link_libraries(${CMAKE_PROJECT_NAME} ${XMRIG_ASM_LIBRARY} ${OPENSSL_LIBRARIES} ${UV_LIBRARIES} ${EXTRA_LIBS} ${CPUID_LIB} ${ARGON2_LIBRARY} ${ETHASH_LIBRARY} ${GHOSTRIDER_LIBRARY})
-
-if(ANDROID)
-    # Android-specific settings
-    set(WITH_ASM OFF)
-    set(WITH_HWLOC OFF)
-    set(WITH_MSR OFF)
-    set(WITH_DMI OFF)
-    set(WITH_OPENCL OFF)
-    set(WITH_CUDA OFF)
-    set(WITH_TLS ON)
-    set(ARM_V8 ON)
-    
-    # Enable static linking for Android
-    set(BUILD_STATIC ON)
-    set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -static-libstdc++ -static-libgcc")
-    
-    # Set UV library path from deps
-    if(DEFINED XMRIG_DEPS)
-        set(UV_LIBRARY "${XMRIG_DEPS}/lib/libuv.a")
-        set(UV_INCLUDE_DIR "${XMRIG_DEPS}/include")
-    endif()
-    
-    # Strip binary for release builds
-    if(CMAKE_BUILD_TYPE STREQUAL "Release")
-        add_custom_command(TARGET ${CMAKE_PROJECT_NAME} POST_BUILD
-            COMMAND ${CMAKE_STRIP} ${CMAKE_PROJECT_NAME}
-            COMMENT "Stripping binary for size optimization")
-    endif()
 endif()

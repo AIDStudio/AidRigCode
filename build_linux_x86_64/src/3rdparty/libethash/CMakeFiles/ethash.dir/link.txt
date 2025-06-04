@@ -1,2 +1,0 @@
-/usr/bin/x86_64-linux-gnu-ar qc libethash.a  CMakeFiles/ethash.dir/ethash_internal.c.o CMakeFiles/ethash.dir/keccakf800.c.o
-/usr/bin/x86_64-linux-gnu-ranlib libethash.a

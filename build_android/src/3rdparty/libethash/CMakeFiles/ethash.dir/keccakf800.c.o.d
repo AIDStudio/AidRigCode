@@ -1,11 +1,17 @@
 src/3rdparty/libethash/CMakeFiles/ethash.dir/keccakf800.c.o: \
-  /workspaces/AidRigCode/src/3rdparty/libethash/keccakf800.c \
-  /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include/stdint.h \
-  /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/stdint.h \
-  /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/bits/wchar_limits.h \
-  /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/sys/cdefs.h \
-  /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/android/versioning.h \
-  /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/android/api-level.h \
-  /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/bits/get_device_api_level_inlines.h \
-  /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/android/ndk-version.h \
-  /workspaces/AidRigCode/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include/stddef.h
+  /storage/emulated/0/aidrig/project/project/aidrigs/src/3rdparty/libethash/keccakf800.c \
+  /data/data/com.termux/files/usr/lib/clang/20/include/stdint.h \
+  /data/data/com.termux/files/usr/include/stdint.h \
+  /data/data/com.termux/files/usr/include/bits/wchar_limits.h \
+  /data/data/com.termux/files/usr/include/sys/cdefs.h \
+  /data/data/com.termux/files/usr/include/android/versioning.h \
+  /data/data/com.termux/files/usr/include/android/api-level.h \
+  /data/data/com.termux/files/usr/include/bits/get_device_api_level_inlines.h \
+  /data/data/com.termux/files/usr/include/android/ndk-version.h \
+  /data/data/com.termux/files/usr/lib/clang/20/include/stddef.h \
+  /data/data/com.termux/files/usr/lib/clang/20/include/__stddef_header_macro.h \
+  /data/data/com.termux/files/usr/lib/clang/20/include/__stddef_ptrdiff_t.h \
+  /data/data/com.termux/files/usr/lib/clang/20/include/__stddef_size_t.h \
+  /data/data/com.termux/files/usr/lib/clang/20/include/__stddef_wchar_t.h \
+  /data/data/com.termux/files/usr/lib/clang/20/include/__stddef_null.h \
+  /data/data/com.termux/files/usr/lib/clang/20/include/__stddef_offsetof.h

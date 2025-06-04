@@ -86,7 +86,7 @@ static const id_part arm_part[] = {
     { 0xd02, "Cortex-A34" },
     { 0xd03, "Cortex-A53" },
     { 0xd04, "Cortex-A35" },
-    { 0xd05, "Cortex-A55" }, // Cortex-A55
+    { 0xd05, "Cortex-A55" },
     { 0xd06, "Cortex-A65" },
     { 0xd07, "Cortex-A57" },
     { 0xd08, "Cortex-A72" },
@@ -101,7 +101,7 @@ static const id_part arm_part[] = {
     { 0xd20, "Cortex-M23" },
     { 0xd21, "Cortex-M33" },
     { 0xd40, "Neoverse-V1" },
-    { 0xd41, "Cortex-A78" }, // Nem mutatja
+    { 0xd41, "Cortex-A78" },
     { 0xd42, "Cortex-A78AE" },
     { 0xd43, "Cortex-A65AE" },
     { 0xd44, "Cortex-X1" },

@@ -1,2 +1,0 @@
-/usr/bin/x86_64-linux-gnu-ar qc libxmrig-asm.a  CMakeFiles/xmrig-asm.dir/src/crypto/cn/asm/cn_main_loop.S.o CMakeFiles/xmrig-asm.dir/src/crypto/cn/asm/CryptonightR_template.S.o
-/usr/bin/x86_64-linux-gnu-ranlib libxmrig-asm.a

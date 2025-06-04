@@ -1,2 +1,0 @@
-/usr/bin/x86_64-linux-gnu-ar qc libargon2-avx2.a  CMakeFiles/argon2-avx2.dir/arch/x86_64/lib/argon2-avx2.c.o
-/usr/bin/x86_64-linux-gnu-ranlib libargon2-avx2.a

@@ -18,12 +18,12 @@
 
 #include "base/tools/String.h"
 
+
 #include <array>
 #include <cstring>
 #include <fstream>
-#include <set>
 #include <thread>
-#include <string>
+
 
 #if __ARM_FEATURE_CRYPTO && !defined(__APPLE__)
 #   include <sys/auxv.h>
@@ -38,44 +38,13 @@
 #   endif
 #endif
 
+
 #include "backend/cpu/platform/BasicCpuInfo.h"
 #include "3rdparty/rapidjson/document.h"
 
+
 #if defined(XMRIG_OS_UNIX)
 namespace xmrig {
-
-// Több CPU mag modelljének detektálása /proc/cpuinfo alapján
-static std::string detectCpuModels()
-{
-    std::ifstream cpuinfo("/proc/cpuinfo");
-    std::string line;
-    std::set<std::string> models;
-
-    while (std::getline(cpuinfo, line)) {
-        if (line.find("Processor") != std::string::npos || line.find("model name") != std::string::npos) {
-            auto pos = line.find(":");
-            if (pos != std::string::npos) {
-                std::string model = line.substr(pos + 1);
-                // Trim spaces
-                model.erase(0, model.find_first_not_of(" \t"));
-                model.erase(model.find_last_not_of(" \t") + 1);
-                models.insert(model);
-            }
-        }
-    }
-
-    if (models.empty())
-        return "";
-
-    // Összefűzzük a modelleket vesszővel elválasztva
-    std::string combined;
-    for (const auto &m : models) {
-        if (!combined.empty())
-            combined += ", ";
-        combined += m;
-    }
-    return combined;
-}
 
 extern String cpu_name_arm();
 
@@ -93,14 +62,12 @@ xmrig::BasicCpuInfo::BasicCpuInfo() :
         m_units[i] = i;
     }
 
-    // Alapértelmezett architektúra
 #   if (XMRIG_ARM == 8)
     memcpy(m_brand, "ARMv8", 5);
 #   else
     memcpy(m_brand, "ARMv7", 5);
 #   endif
 
-    // AES flag ellenőrzés
 #   if __ARM_FEATURE_CRYPTO
 #   if defined(__APPLE__)
     m_flags.set(FLAG_AES, true);
@@ -113,22 +80,9 @@ xmrig::BasicCpuInfo::BasicCpuInfo() :
 #   endif
 
 #   if defined(XMRIG_OS_UNIX)
-    // Több CPU modell detektálása
-    std::string detectedModels = detectCpuModels();
-
-    if (!detectedModels.empty()) {
-        // Az m_brand-be írjuk az összes modellt vesszővel elválasztva
-        strncpy(m_brand, detectedModels.c_str(), sizeof(m_brand) - 1);
-        m_brand[sizeof(m_brand) - 1] = '\0';
-    }
-    else {
-        // Ha nem sikerült beolvasni, cpu_name_arm-t hívjuk
-        auto name = cpu_name_arm();
-        if (!name.isNull()) {
-            strncpy(m_brand, name, sizeof(m_brand) - 1);
-            m_brand[sizeof(m_brand) - 1] = '\0';
-        }
-        // Ha cpu_name_arm sem elérhető, akkor marad az alapértelmezett ARMv8/ARMv7
+    auto name = cpu_name_arm();
+    if (!name.isNull()) {
+        strncpy(m_brand, name, sizeof(m_brand) - 1);
     }
 
     m_flags.set(FLAG_PDPE1GB, std::ifstream("/sys/kernel/mm/hugepages/hugepages-1048576kB/nr_hugepages").good());

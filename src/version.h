@@ -4,15 +4,15 @@
 #define APP_ID        "aidrig"
 #define APP_NAME      "AIDRig"
 #define APP_DESC      "AIDRig miner"
-#define APP_VERSION   "0.1.5 dev"
+#define APP_VERSION   "0.2.0 dev"
 #define APP_DOMAIN    "aidrig"
 #define APP_SITE      "no_page"
 #define APP_COPYRIGHT "Copyright (C) 2025"
 #define APP_KIND      "miner"
 
 #define APP_VER_MAJOR  0 
-#define APP_VER_MINOR  1 
-#define APP_VER_PATCH  5 
+#define APP_VER_MINOR  2 
+#define APP_VER_PATCH  0 
 
 #ifndef NDEBUG
 #define BUILD_TYPE   "DEBUG"
